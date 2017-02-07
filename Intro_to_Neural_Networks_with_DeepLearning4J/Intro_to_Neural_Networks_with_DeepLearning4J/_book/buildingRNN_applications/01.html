@@ -1,0 +1,1050 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Building RNN Applications · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Introduction_to_machine_learning/">
+            
+                <a href="../Introduction_to_machine_learning/">
+            
+                    
+                    Introduction to machine learning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Introduction_to_machine_learning/01.html">
+            
+                <a href="../Introduction_to_machine_learning/01.html">
+            
+                    
+                    Introduction to machine learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../DL4J_overview/">
+            
+                <a href="../DL4J_overview/">
+            
+                    
+                    DL4J OVerview
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../DL4J_overview/01.html">
+            
+                <a href="../DL4J_overview/01.html">
+            
+                    
+                    DL4J
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../DeepLearning_Intro/">
+            
+                <a href="../DeepLearning_Intro/">
+            
+                    
+                    DeepLearning_Intro
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../DeepLearning_Intro/01.html">
+            
+                <a href="../DeepLearning_Intro/01.html">
+            
+                    
+                    DeepLearning_Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Recurrent_Neural_Networks/">
+            
+                <a href="../Recurrent_Neural_Networks/">
+            
+                    
+                    Recurrent Nerual Networks
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Recurrent_Neural_Networks/01.html">
+            
+                <a href="../Recurrent_Neural_Networks/01.html">
+            
+                    
+                    Recurrent Neural Networks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../ETL_Vectorization/">
+            
+                <a href="../ETL_Vectorization/">
+            
+                    
+                    ETL Vectorization
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../ETL_Vectorization/01.html">
+            
+                <a href="../ETL_Vectorization/01.html">
+            
+                    
+                    Recurrent Neural Networks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Building RNN Applications
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.7.1" data-path="01.html">
+            
+                <a href="01.html">
+            
+                    
+                    Building RNN Applications
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Building RNN Applications</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="building-recurrent-neural-network-applications">Building recurrent neural network applications</h1>
+<h1 id="table-of-contents">Table of Contents</h1>
+<ol>
+<li>Goals of the DeepLearning4J project</li>
+<li>Parts of the DeepLearning4J project</li>
+<li>DataVec</li>
+<li>ND4J</li>
+<li>DL4J</li>
+</ol>
+<h2 id=""><div style="page-break-after: always;"></div></h2>
+<h1 id="building-recurrent-neural-network-applications">Building recurrent neural network applications</h1>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="overview">Overview</h1>
+<ul>
+<li>Basics of Building RNN Input</li>
+<li>Building Input for Local Training</li>
+<li>Building Input for Spark Training</li>
+<li>Model Architecture, Training, and Evaluation</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="goal-model-sensor-data-with-rnn">Goal: Model Sensor Data with RNN</h1>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="where-is-data">Where is data?</h1>
+<ul>
+<li>What format is data in?<ul>
+<li>Leverage ideas from Wednesday&#x2019;s last unit on ETL!</li>
+<li>Convert raw data to DataSet</li>
+</ul>
+</li>
+<li>Setup a RNN Model<ul>
+<li>Architecture</li>
+</ul>
+</li>
+<li>Executing training<ul>
+<li>Local</li>
+<li>Spark</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="basics-of-rnn-input">Basics of RNN Input</h1>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="from-raw-input-to-ndarrays">From Raw Input to NDArrays</h1>
+<ul>
+<li>Raw Input </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>&#x2026;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>albumin</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.5</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>alp</td>
+<td>0.0</td>
+<td>0.1</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>alt</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.9</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>ast</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.4</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="from-raw-input-to-ndarrays">From Raw Input to NDArrays</h1>
+<ul>
+<li>NDArray
+<img src="../resources/RNN_Data.png" alt="alt text"></li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="question">Question</h1>
+<ul>
+<li>Given a data set with two values<ul>
+<li>Temperature taken 1 per hour</li>
+<li>Total precipitation taken once a day at hour 24</li>
+</ul>
+</li>
+<li>Describe the data format<ul>
+<li>How many data points in a days worth of data</li>
+<li>What if temp was taken every minute?</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="key-dataset-vectorization-questions">Key DataSet Vectorization Questions</h1>
+<ul>
+<li>How is the input data laid out?<ul>
+<li>File format?</li>
+<li>Single or Multiple Files?</li>
+<li>How many columns per sensor?</li>
+<li>Where are the labels located?</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="file-format">File Format</h1>
+<ul>
+<li>Generally text input format</li>
+<li>If not text, may need a custom input format</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="single-or-multiple-files">Single or Multiple Files?</h1>
+<ul>
+<li>Timeseries readings in a single file<ul>
+<li>&#x201C;each line is a CSV set of readings from a single sensor&#x201D;</li>
+<li>&#x201C;each line is a sentence&#x201D;</li>
+</ul>
+</li>
+<li>Timeseries readings in multiple files<ul>
+<li>&#x201C;each file represents readings from a single sensor&#x201D;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="columns-per-sensor">Columns per Sensor</h1>
+<ul>
+<li>How many different types of readings are being taken per source?<ul>
+<li>Example of single: &#x201C;voltage&#x201D;<ul>
+<li>1 column</li>
+</ul>
+</li>
+<li>Example of multiple: &#x201C;voltage&#x201D; and &#x201C;temperature&#x201D;<ul>
+<li>2 columns</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="preparing-input-data-tensors">Preparing Input Data: Tensors</h1>
+<p><img src="../resources/datavec_processing_pipelines.png" alt="alt text"></p>
+<ul>
+<li>Input was 3D Tensor (3d Matrix)<ul>
+<li>Mini-batch as first dimension</li>
+<li>Feature Columns as second dimension</li>
+<li>Timesteps as third dimension</li>
+</ul>
+</li>
+<li>Goal: produce a DataSet object<ul>
+<li>Containing vectorized input data</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="a-single-training-example">A Single Training Example</h1>
+<p>A single training example gets the added dimension of timesteps per column</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>albumin</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>alp</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>alt</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>ast</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<p>TimeSteps</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>....</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>albumin</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.5</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>alp</td>
+<td>0.0</td>
+<td>0.1</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.2</td>
+<td>...</td>
+</tr>
+<tr>
+<td>alt</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.9</td>
+<td>0.0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>ast</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.4</td>
+<td>...</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="creating-rnn-datasets">Creating RNN DataSets</h1>
+<ul>
+<li>D = new DataSet(input, labels, mask, mask2)</li>
+<li>Input<ul>
+<li>INDArray input  = Nd4j.zeros(new int[]{ miniBatchSize, INPUTColumnCount, timesteps });</li>
+</ul>
+</li>
+<li>Labels<ul>
+<li>INDArray labels = Nd4j.zeros(new int[]{ miniBatchSize, OUTPUTColumnCount, timesteps });</li>
+</ul>
+</li>
+<li>Mask<ul>
+<li>Nd4j.zeros(new int[]{ miniBatchSize, timesteps });</li>
+</ul>
+</li>
+<li>Mask2<ul>
+<li>(Same as mask)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="masking">Masking</h1>
+<ul>
+<li>Masks used for training data and labels<ul>
+<li>We set the mask timestep value to 1.0 for every timestep containing training data</li>
+<li>We set the mask timestep value to 0.0 for all other timesteps</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="high-level-code-building-datasets">High-Level Code: Building DataSets</h1>
+<ul>
+<li>Typically we want to loop across the timesteps in the outer loop</li>
+<li>For each timestep<ul>
+<li>Set the relevant columns to the values</li>
+<li>INDArray.setScalar( col, timestep, value )</li>
+</ul>
+</li>
+<li>This will loop through input vectorized data<ul>
+<li>Merge it into a row in a timestep</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="building-tensors-with-ndarrays">Building Tensors with NDArrays</h1>
+<ul>
+<li>When setting values for a single record<ul>
+<li>INDArray.putScalar( vectorColumn, timestepIndex, value )</li>
+</ul>
+</li>
+<li>When setting values for a record in a mini-batch<ul>
+<li>INDArray.putScalar( miniBatchIndex, vectorColumn, timestepIndex, value )</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h3 id="building-sequential-tensor-input-for">Building Sequential Tensor input for</h3>
+<h1 id="local-training">Local Training</h1>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="goal-dataset-from-local-raw-data">Goal: DataSet from Local Raw Data</h1>
+<ul>
+<li>Need to be able to load the raw data<ul>
+<li>Read the file format</li>
+<li>Match up labels to features</li>
+<li>Perform any normalization during vectorization</li>
+</ul>
+</li>
+<li>If the input file matches a record reader<ul>
+<li>We can leverage that code to build our NDArrays and DataSets</li>
+</ul>
+</li>
+<li>If not, we need to write custom code<ul>
+<li>to build the DataSet objects</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="local-code-example">Local Code Example</h1>
+<pre><code>//Note that we have 450 training files for features: train/features/0.csv through train/features/449.csv
+SequenceRecordReader trainFeatures = new CSVSequenceRecordReader();
+trainFeatures.initialize(new NumberedFileInputSplit(featuresDirTrain.getAbsolutePath() + &quot;/%d.csv&quot;, 0, 449));
+SequenceRecordReader trainLabels = new CSVSequenceRecordReader();
+trainLabels.initialize(new NumberedFileInputSplit(labelsDirTrain.getAbsolutePath() + &quot;/%d.csv&quot;, 0, 449));
+
+int miniBatchSize = 10;
+int numLabelClasses = 6;
+DataSetIterator trainData = new SequenceRecordReaderDataSetIterator(trainFeatures, trainLabels, miniBatchSize, numLabelClasses,
+    false, SequenceRecordReaderDataSetIterator.AlignmentMode.ALIGN_END);
+
+//Normalize the training data
+DataNormalization normalizer = new NormalizerStandardize();
+normalizer.fit(trainData);              //Collect training data statistics
+trainData.reset();
+
+//Use previously collected statistics to normalize on-the-fly. Each DataSet returned by &apos;trainData&apos; iterator will be normalized
+trainData.setPreProcessor(normalizer);
+</code></pre><hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="high-level-pattern">High-Level Pattern</h1>
+<ul>
+<li>Load data from File:<ul>
+<li><b>SequenceRecordReader</b> subclass</li>
+</ul>
+</li>
+<li>Dealing with file format:<ul>
+<li><b>InputSplit</b> subclass</li>
+</ul>
+</li>
+<li>We handle raw sequence data to DataSet (tensor) conversion with:<ul>
+<li><b>SequenceRecordReaderDataSetIterator</b></li>
+<li>Also works with <b>DataNormalization</b> object</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h3 id="building-tensor-input-for">Building Tensor Input for</h3>
+<h1 id="spark-training">Spark Training</h1>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="representing-timeseries-with-spark">Representing Timeseries with Spark</h1>
+<ul>
+<li>First goal: Load data from Disk<ul>
+<li>RDD<list<writable>&gt; <ul>
+<li>can&apos;t represent sequence data... </li>
+</ul>
+</list<writable></li>
+<li>RDD<list<list<writable>&gt;&gt; <ul>
+<li>Allows us to represent collections of timeseries</li>
+</ul>
+</list<list<writable></li>
+</ul>
+</li>
+<li>Second Goal: convert to DataSet<ul>
+<li>RDD<list<list<writable>&gt;&gt; becomes<ul>
+<li>RDD<dataset></dataset></li>
+</ul>
+</list<list<writable></li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="high-level-pattern-spark">High-Level Pattern: Spark</h1>
+<ul>
+<li>Load data from File:<ul>
+<li>Use the spark context to load the raw data into RDDs</li>
+<li>Have to consider loading data from a single file vs multiple files in choosing methods</li>
+<li>Produces a RDD<string> or RDD<string, string=""></string,></string></li>
+</ul>
+</li>
+<li>Dealing with file format:<ul>
+<li>Assuming HDFS as storage<ul>
+<li>Use Hadoop input formats with Spark</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>We handle raw sequence data to DataSet (tensor) conversion with:<ul>
+<li>Custom class:<ul>
+<li>implements Function<string, dataset=""></string,></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="load-data-from-hdfs">Load Data From HDFS</h1>
+<ul>
+<li>Use Input formats from Hadoop<ul>
+<li>CSV Files: TextInputFormat (default)</li>
+</ul>
+</li>
+<li>Loading from a single file<ul>
+<li>JavaRDD<string> trainingRecordCSVLines = sc.textFile( pathData );</string></li>
+</ul>
+</li>
+<li>Loading Data from multiple files<ul>
+<li>JavaPairRDD<string, string=""> linesTR = sc.wholeTextFiles( &#x2026; )</string,></li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="writing-custom-timeseries-to-dataset-converter">Writing Custom Timeseries to DataSet Converter</h1>
+<ul>
+<li>Implements method:<ul>
+<li>public DataSet call(String s) throws Exception {</li>
+</ul>
+</li>
+<li>Creates 2D dataset for Features (NDArray)<ul>
+<li>Columns x timesteps</li>
+<li>(Input)</li>
+</ul>
+</li>
+<li>Create labels NDArray<ul>
+<li>(Output)</li>
+</ul>
+</li>
+<li>Map both NDArrays together in a DataSet object<ul>
+<li>{ Input -&gt; Output }</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="custom-converter-code-example">Custom Converter Code Example</h1>
+<pre><code>@Override
+public DataSet call(String s) throws Exception {
+
+    recordReader.initialize(new StringSplit(s));
+    List&lt;Writable&gt; lw = recordReader.next();
+
+    int inputColumnCount = 1;
+    int outputColumnCount = this.numOutComes;
+    int maxTimestepLength = lw.size() - 1;
+
+    INDArray input  = Nd4j.zeros(new int[]{ 1, inputColumnCount, maxTimestepLength });
+    INDArray labels = Nd4j.zeros(new int[]{ 1, outputColumnCount, maxTimestepLength });
+    INDArray mask   = Nd4j.zeros(new int[]{ 1, maxTimestepLength });
+    INDArray mask2 = Nd4j.zeros(new int[]{ 1, maxTimestepLength });
+
+    int csvIndex = 0;
+
+    // TODO: probably should account for a label index other that index 0...
+    for ( int timestepIndex = 0; timestepIndex &lt; maxTimestepLength; timestepIndex++ ) {
+
+        // set the features
+        input.putScalar( new int[]{ 0, 0, timestepIndex }, lw.get( csvIndex + 1 ).toDouble() );
+
+        // set the mask
+        mask.putScalar(new int[]{ 0, timestepIndex }, 1.0);
+
+        // set the label for every timestep at the class column
+        labels.putScalar(new int[]{ 0, lw.get( 0 ).toInt() - 1, timestepIndex }, 1.0);
+
+        csvIndex++;
+
+
+    }
+
+
+    Nd4j.copy(mask, mask2);
+
+    return new DataSet(input,labels, mask, mask2);
+}
+</code></pre><hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="code-converting-rdd">Code: Converting RDD<l<l<w>&gt;&gt;</l<l<w></h1>
+<pre><code>// convert raw data into sequence
+JavaRDD&lt;List&lt;List&lt;Writable&gt;&gt;&gt; timeseries_ETLd = executor.executeToSequence(parsed, tp);
+
+&#x2026;
+
+// data cleanup transform (optional)
+JavaRDD&lt;List&lt;List&lt;Writable&gt;&gt;&gt; vectorizedTimeseriesResult = executor.executeSequenceToSequence(timeseries_ETLd, tpVectorize);
+
+...
+
+// now convert to DataSet for modeling
+JavaRDD&lt;DataSet&gt; timeseriesDataSet = vectorizedTimeseriesResult.map( 
+new DataVecSequenceDataSetFunction( 0, 2, false, null, null ) );
+</code></pre><hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="spark-timeseries-normalization">Spark Timeseries Normalization</h1>
+<ul>
+<li>NormalizerStandardize and NormalizerMinMaxScaler handle time series<ul>
+<li>e.g., mean/stdev etc are over all time steps, not independent for each, etc</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="rnn-model-architecture-training-and-evaluation">Rnn Model Architecture, training, and evaluation</h1>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="common-rnn-model-architecture">Common RNN Model Architecture</h1>
+<pre><code>MultiLayerConfiguration conf = new NeuralNetConfiguration.Builder()
+                .seed(123)
+                .optimizationAlgo(OptimizationAlgorithm.STOCHASTIC_GRADIENT_DESCENT).iterations(1)
+                .weightInit(WeightInit.XAVIER)
+                .updater(Updater.NESTEROVS).momentum(0.9)
+                .learningRate(0.005)
+                .gradientNormalization(GradientNormalization.ClipElementWiseAbsoluteValue)
+                .gradientNormalizationThreshold(0.5)
+                .list()
+                .layer(0, new GravesLSTM.Builder().activation(&quot;tanh&quot;).nIn(1).nOut(10).build())
+                .layer(1, new RnnOutputLayer.Builder(LossFunctions.LossFunction.MCXENT)
+                        .activation(&quot;softmax&quot;).nIn(10).nOut(numLabelClasses).build())
+                .pretrain(false).backprop(true).build();
+
+        MultiLayerNetwork net = new MultiLayerNetwork(conf);
+        net.init();
+</code></pre><hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="model-training-and-evaluation">Model Training and Evaluation</h1>
+<pre><code>int nEpochs = 40;
+String str = &quot;Test set evaluation at epoch %d: Accuracy = %.2f, F1 = %.2f&quot;;
+for (int i = 0; i &lt; nEpochs; i++) {
+    net.fit(trainData);
+    Evaluation evaluation = net.evaluate(testData);
+    log.info(String.format(str, i, evaluation.accuracy(), evaluation.f1()));
+    testData.reset();
+    trainData.reset();
+}
+log.info(&quot;----- Example Complete -----&quot;);
+</code></pre><hr>
+<div style="page-break-after: always;"></div>
+
+
+
+
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Building RNN Applications">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Building RNN Applications","level":"1.7.1","depth":2,"previous":{"title":"Building RNN Applications","level":"1.7","depth":1,"path":"buildingRNN_applications/README.md","ref":"buildingRNN_applications/README.md","articles":[{"title":"Building RNN Applications","level":"1.7.1","depth":2,"path":"buildingRNN_applications/01.md","ref":"buildingRNN_applications/01.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"buildingRNN_applications/01.md","mtime":"2016-12-09T07:07:47.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-14T21:06:58.315Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
