@@ -1,0 +1,193 @@
+# Lab: Using a FeedForward Network as Classifier
+
+* Abalone data
+* Challenge predict age
+
+------------------
+<div style="page-break-after: always;"></div>
+
+# Data Source
+
+* University of California at Irvine
+* Large collection of DataSets
+  * http://archive.ics.uci.edu/ml/datasets.html
+  
+------------------
+<div style="page-break-after: always;"></div>
+
+# What is an Abalone
+
+![alt text](../resources/White_abalone_Haliotis_sorenseni.jpg)
+
+By The original uploader was Geographer at English Wikipedia - Transferred from en.wikipedia to Commons., CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4384795
+
+
+------------------
+<div style="page-break-after: always;"></div>
+
+# More about Abalone
+
+* Tasty Seafood
+* High harvest demand needs to be managed
+* Populations are studied
+* Therefore we have a dataset
+
+
+------------------
+<div style="page-break-after: always;"></div>
+
+# Dataset Details
+
+* Total Records 4177
+  * Not a lot of data
+  * Question: How much Data do I need? 
+  * Answer: More, is always better
+* Data structure
+
+
+------------------
+<div style="page-break-after: always;"></div>
+
+# DataSet Details
+
+* Sex / nominal / -- / M, F, and I (infant) 
+* Length / continuous / mm / Longest shell measurement 
+* Diameter	/ continuous / mm / perpendicular to length 
+* Height / continuous / mm / with meat in shell 
+* Whole weight / continuous / grams / whole abalone 
+* Shucked weight / continuous	/ grams / weight of meat 
+* Viscera weight / continuous / grams / gut weight (after bleeding) 
+* Shell weight / continuous / grams / after being dried 
+* Rings / integer / -- / +1.5 gives the age in years 
+
+
+------------------
+<div style="page-break-after: always;"></div>
+
+
+# Specifics
+
+* DataSet has number of rings, not age
+* Rings +1.5 gives age
+* More straighttforwad to predict rings, extrapolate age
+
+------------------
+<div style="page-break-after: always;"></div>
+
+# Loading our data
+
+* Gender M/F/I, first column, needs to be converted to numeric
+* Last column is our label, number of rings
+* All other columns doubles
+
+
+------------------
+<div style="page-break-after: always;"></div>
+
+# Data considerations
+
+* Better performance when values normalized/scaled between 0 and 1
+  * Are our values normalized?
+  * Run then through datavec to get statistics
+  * Also convert string to categorical
+
+
+------------------
+<div style="page-break-after: always;"></div>
+
+# AbaloneDataAnalysis.java
+
+* See Solutions Directory
+* DataVec transform requires Spark
+  * Can be local
+  
+  
+------------------
+<div style="page-break-after: always;"></div> 
+
+# Define a Schema that matches the data
+
+```
+Schema schema = new Schema.Builder()
+    .addColumnCategorical("Sex")
+    .addColumnsDouble("Length", "Diameter", "Height", "Whole weight","Shucked weight","Viscera weight","Shell weight")
+    .addColumnInteger("Rings")
+    .build();
+
+```
+------------------
+<div style="page-break-after: always;"></div>
+
+# Configure Spark
+
+```
+SparkConf conf = new SparkConf();
+    conf.setMaster("local[*]");
+    conf.setAppName("Abalone Data");
+    JavaSparkContext sc = new JavaSparkContext(conf);
+```
+
+------------------
+<div style="page-break-after: always;"></div>
+
+
+# Read the data into Spark RDD
+
+```
+String file = new ClassPathResource("abalone/abalone.data").getFile().getAbsolutePath();
+JavaRDD<String> stringData = sc.textFile(file);
+
+//We first need to parse this comma-delimited (CSV) format; we can do this using CSVRecordReader:
+RecordReader rr = new CSVRecordReader();
+JavaRDD<List<Writable>> parsedInputData = stringData.map(new StringToWritablesFunction(rr));
+```
+------------------
+<div style="page-break-after: always;"></div>
+
+# Analyze the data
+
+```
+int maxHistogramBuckets = 10;
+DataAnalysis dataAnalysis = AnalyzeSpark.analyze(schema, parsedInputData, maxHistogramBuckets);
+
+System.out.println(dataAnalysis);
+		
+```		
+
+***Note the output is buried in a forest of spark log messages but it is there***
+
+------------------
+<div style="page-break-after: always;"></div>
+
+# Data Analysis Output
+
+* idx   name                  type           analysis
+* 0     "Sex"                 Categorical    CategoricalAnalysis(CategoryCounts={M=1528, I=1342, F=1307})
+* 1     "Length"              Double         DoubleAnalysis(min=0.075,max=0.815,mean=0.5239920995930093)
+* 2     "Diameter"            Double         DoubleAnalysis(min=0.055,max=0.65,mean=0.4078812544888678)
+* 3     "Height"              Double         DoubleAnalysis(min=0.0,max=1.13,mean=0.13951639932966212)
+* 4     "Whole weight"        Double         DoubleAnalysis(min=0.002,max=2.8255,mean=0.8287421594445781)
+* 5     "Shucked weight"      Double         DoubleAnalysis(min=0.001,max=1.488,mean=0.35936748862820217)
+* 6     "Viscera weight"      Double         DoubleAnalysis(min=5.0E-4,max=0.76,mean=0.18059360785252573)
+* 7     "Shell weight"        Double         DoubleAnalysis(min=0.0015,max=1.005,mean=0.23883085946851784)
+* 8     "Rings"               Integer        IntegerAnalysis(min=1,max=29,mean=9.933684462532918)
+
+* Data seems to be normalized, ready to go
+* It it needed Normalized or scaled DataVec has tools for that
+
+------------------
+<div style="page-break-after: always;"></div>
+
+# Transform Categorical String to Integer
+
+* AbaloneDataTransform.java, in solutions folder
+  * Transforms Gender to 0,1,2
+* Transformed data in
+
+```
+abelone_numeric.csv
+```
+------------------
+<div style="page-break-after: always;"></div>
+
+

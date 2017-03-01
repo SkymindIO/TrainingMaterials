@@ -1,34 +1,67 @@
 # Summary
 
-* [Chapter 1: Introduction](Introduction/01.md)
-
-* [Chapter 2: Simplest Network Lab Intro](Simplest_network_Lab_intro/01.md)
-
-* [Chapter 3: Introduction to machine learning](Introduction_to_machine_learning/01.md)
+* [Welcome to the Course](Introduction/01.md)
 
 
-
-* [Chapter 4: DL4J Overview](DL4J_overview/01.md)
-
-
-* [Chapter 5: Intro to DataVec Lab](Lab_Intro_DataVec/01.md)
+* [What is DeepLearning?](What_is_deep_learning/01.md)
 
 
-* [Chapter 6: DeepLearning_Intro](DeepLearning_Intro/01.md)
+* [Neural Network Demonstration](Simplest_network_Lab_intro/01.md)
 
 
-* [Chapter 6.5: DeepLearning_Intro](Optimization_algorithms/01.md)
+* [Types of Neural Networks](Neural_Network_Types/01.md)
 
 
-* [Chapter 7: Introduction to Recurrent Neural Networks](Intro_to_Recurrent_Neural_Networks/01.md)
+* [DeepLearning4J](DL4J_overview/README.md)
+  * [DeepLearning4J Overview](DL4J_overview/DeepLearning4J.md)
+  * [DataVec](DL4J_overview/DataVec.md)
+  * [DataVec Lab](DL4J_overview/DataVecLab.md)
+  * [ND4J and libnd4j](DL4J_overview/ND4J.md)
+  * [DeepLearning4J](DL4J_overview/DeepLearning4J.md)
+   
 
-* [Chapter 8: Recurrent Neural Networks and Time Series](Recurrent_Neural_Networks/01.md)
-	
-
-* [Chapter 9: ETL and Vectorization](ETL_Vectorization/01.md)
+* [FeedForward Neural Networks Explained](Neural_networks_explained/01.md)
 
 
-* [Chapter 10: Data Ingest Case Study: Text](Data_Ingest_Case_Study_Text/01.md)
+* [Abalone Lab ](Abalone_intro/01.md)
+
+
+* [Modeling Sequences](Modeling_sequences/01.md)
+
+
+* [Data Ingest Case Study: Text](Data_Ingest_Case_Study_Text/01.md)
+
+
+
+
+* [Introduction to Recurrent Neural Networks](Intro_to_Recurrent_Neural_Networks/01.md)
+
+
+<!--
+* [Recurrent Neural Networks and Time Series](Recurrent_Neural_Networks/01.md)
+-->	
+
+* [LSTM intro REALLY SHORT COMBINE ](LSTM/01.md)
+
+
+*  [LSTM Character Generation of Weather Forecast Lab](Weather_Forecast_lab/01.md)
+
+
+* [ETL and Vectorization For UCI lab if I do it](ETL_Vectorization/01.md)
+
+
+
+* [Appendix](Appendix/01.md)
+
+
+<!-- Josh's content  Good activation functions, choosing a network -->
+* [DeepLearning Introduction need better title](DeepLearning_Intro/01.md)
+
+
+<!-- Stuff from Hinton on SGD -->
+* [Optimization Algorithms](Optimization_algorithms/01.md)
+
+
 
 <!--
 * [Chapter 1](Introduction/README.md)
