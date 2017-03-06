@@ -1,17 +1,17 @@
 # DataVec
 
-* Neural Nets ingest numeric arrays
-* Datavec helps you get from your_data => Numeric Array
+* Neural networks process numeric arrays
+* Datavec helps you get from your_data => numeric array
 
 -------------------
 <div style="page-break-after: always;"></div>
 
 # Data Sources
 
-* log files
-* text documents
-* tabular data
-* images and video
+* Log files
+* Text documents
+* Tabular data
+* Images and video
 * and more !!
 
 -------------------
@@ -19,13 +19,13 @@
 
 # Goal
 
-* Convert each data type into a collection of numerical values in a MultiDimensional Array
+* Build a user freindly comprehensive toolkit for data pilelines into Neural Netowrks
 
 
 -------------------
 <div style="page-break-after: always;"></div>
 
-# More Features
+# DataVec Features
 
 * Transformation
 * Scaling
@@ -41,7 +41,7 @@
 * RecordReaders
   * Read files or input, convert to List of Writables
 * Normalizers
-  * Standardize, scale or Nomralize the data
+  * Standardize, scale or normalize the data
 * Transform Process
   * Join datasets, replace strings with numerics, extract labels
 
@@ -56,9 +56,9 @@
 <div style="page-break-after: always;"></div>
 
 
-# Image Basics
+# DataVec Image Basics
 
-* Images are arrays of pixel values.
+* Images are arrays of pixel values
 
 
 ![alt text](../resources/big44.png)
@@ -66,7 +66,7 @@
 -------------------
 <div style="page-break-after: always;"></div>
 
-# White box black square image as INDArray
+# Code Example: Load above image as INDArray
 
 ```
         INDArray imagematrix = loader.asMatrix(image);
@@ -85,7 +85,7 @@
 -------------------
 <div style="page-break-after: always;"></div>
 
-# Scale values between 0 and 1
+# Code Example: Scale values between 0 and 1
 
 ```
     DataNormalization scaler = new ImagePreProcessingScaler(0,1);
@@ -104,7 +104,7 @@
 -------------------
 <div style="page-break-after: always;"></div>
 
-# Manipulating images with DataVec
+# Manipulating Images with DataVec
 
 * Scale images to same dimensions with RecordReader
 
@@ -125,7 +125,7 @@ INDArray output = model.output(image);   \\ get model prediction for image
 
 # Image Data Set Augmentation
 
-* Create "larger" training set with OpenCV tools
+* Create "larger" training set with OpenCV/dataVec tools
 	* Transform
 	* Crop
 	* Skew
@@ -141,11 +141,17 @@ INDArray output = model.output(image);   \\ get model prediction for image
 -------------------
 <div style="page-break-after: always;"></div>
 
-# Image Transform
+# Available Record Readers
 
-* Grab the table from this page
-https://deeplearning4j.org/etl-userguide
-* Scale Pixel Values
+* Table of available record readers:
+  * https://deeplearning4j.org/etl-userguide
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Code Example: Image Transform
+
+* Scale pixel values
 
 ```
 DataNormalization scaler = new ImagePreProcessingScaler(0,1);
@@ -161,22 +167,23 @@ dataIter.setPreProcessor(scaler);
 * ImagePreProcessingScaler
   * min max scaling default 0 + - 1
 * NormalizerMinMaxScaler
-  * ?
+  * Scale values observed min -> 0, observed max -> 1 
 * NormalizerStandardize
   * moving column wise variance and mean
-  * no need to pre-process ?
+  * no need to pre-process
 
 -------------------
 <div style="page-break-after: always;"></div>
 
 # Image Transforms with JavaCV, OpenCV, ffmpeg
 
+* Libraries included
+
+
 -------------------
 <div style="page-break-after: always;"></div>
 
-# Image pipeline to pre-trained model
-
-ETL_single_image.png
+# Image pipeline Single Image to Pre-Trained Model
 
 ![alt text](../resources/ETL_single_image.png)
 
@@ -184,9 +191,8 @@ ETL_single_image.png
 <div style="page-break-after: always;"></div>
 
 
-# DataVec Example
+# Code Example: CSV Data to INDArray
 
-* CSV => NDArray
 ```
 public class CSVExample {
 
@@ -221,7 +227,7 @@ public class CSVExample {
 	* Builds an Iterator over the list of records
 * DataSet allData = iterator.next();
 	* Builds a DataSet
-
+	* INDArray of Features, INDArray of Labels
 
 
 -------------------
@@ -230,13 +236,13 @@ public class CSVExample {
 # Frequently Used DataVec classes
 
 * CSVRecordReader
-	* CSV Text Data
+	* CSV text data
 * ImageRecordReader
-	* Convert Image to numeric array representing pixel values
+	* Convert image to numeric array representing pixel values
 *  JacksonRecordReader
 	* Parses JSON records
 * ParentPathLabelGenerator
-	* Builds labels based on Directory Path
+	* Builds labels based on directory path
 * Transform, Transform Process Builder, TransformProcess
 	* Conversion tools
 

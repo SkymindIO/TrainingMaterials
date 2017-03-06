@@ -1,6 +1,6 @@
 # ND4J
 
-* Provides Scientific Computing Libraries
+* Provides scientific computing libraries
 * Main features
 	* Versatile n-dimensional array object
 	* Multiplatform functionality including GPUs
@@ -13,10 +13,11 @@
 
 # ND4J and DeepLearning
 
-* Neural Nets work with Numerical Arrays
 * Classes frequently Used
 	* DataSet
+	  * Container for INDArrays of Features/Labels
 	* DataSetIterator
+	 * Build DataSet from RecordReader
 
 -------------------
 <div style="page-break-after: always;"></div>

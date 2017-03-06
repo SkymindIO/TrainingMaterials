@@ -26,12 +26,7 @@
 * [Abalone Lab ](Abalone_intro/01.md)
 
 
-* [Modeling Sequences](Modeling_sequences/01.md)
-
-
 * [Data Ingest Case Study: Text](Data_Ingest_Case_Study_Text/01.md)
-
-
 
 
 * [Introduction to Recurrent Neural Networks](Intro_to_Recurrent_Neural_Networks/01.md)
@@ -41,26 +36,34 @@
 * [Recurrent Neural Networks and Time Series](Recurrent_Neural_Networks/01.md)
 -->	
 
-* [LSTM intro REALLY SHORT COMBINE ](LSTM/01.md)
+
+* [LSTM Character Generation of Weather Forecast Lab](Weather_Forecast_lab/01.md)
 
 
-*  [LSTM Character Generation of Weather Forecast Lab](Weather_Forecast_lab/01.md)
+* [Saving and Loading trained Models](Saving_Models/01.md)
 
+
+* [Lab: Saving and Loading trained Models](Saving_Models/02.md)
+
+<!--
 
 * [ETL and Vectorization For UCI lab if I do it](ETL_Vectorization/01.md)
-
+-->
 
 
 * [Appendix](Appendix/01.md)
 
 
 <!-- Josh's content  Good activation functions, choosing a network -->
+<!--
 * [DeepLearning Introduction need better title](DeepLearning_Intro/01.md)
+-->
 
 
 <!-- Stuff from Hinton on SGD -->
+<!--
 * [Optimization Algorithms](Optimization_algorithms/01.md)
-
+-->
 
 
 <!--
