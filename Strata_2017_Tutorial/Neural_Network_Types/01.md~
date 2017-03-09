@@ -1,0 +1,153 @@
+# Types of Neural Networks
+
+* Inspiration for Neural Networks
+* FeedForward Neural Networks
+* Recurrent Neural Networks
+* Convolutional Neural Networks
+* Other
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+
+* __**&rArr;Inspiration for Neural Networks**__
+* FeedForward Neural Networks
+* Recurrent Neural Networks
+* Convolutional Neural Networks
+* Other
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+
+
+# Inspired by Biological Neurons
+
+* Interconnected computational units with output based on input combined with an activation function
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+
+# The main types
+
+* FeedForward Neural Networks (Multi Layer Perceptron)
+* Recurrent Neural Networks
+* Convolutional Neural Networks
+  
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+
+
+* Inspiration for Neural Networks
+* ***&rArr;FeedForward Neural Networks***
+* Recurrent Neural Networks
+* Convolutional Neural Networks
+* Other
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+
+# FeedForward Neural Network uses
+
+* Supervised Learning
+* Classification
+* Regression
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# FeedForward Neural Network data
+
+* Tabular Data
+* Image Data
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# FeedForward Neural Network output 
+
+* Flexible, range of values, one of a class probabilities. 
+
+* Limitation, one input maps to one output
+
+
+
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+
+* Inspiration for Neural Networks
+* FeedForward Neural Networks
+* ***&rArr;Recurrent Neural Networks***
+* Convolutional Neural Networks
+* Other
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Recurrent Neural Networks
+
+* In this class when we talk about RNN's we are typically talking about LSTM's
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Recurrent Neural Networks Uses
+
+
+* Sequence or Time Series Data
+* 
+
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Recurrent Neural Networks Input and Output
+
+* One to Many
+  * Image to words for caption
+* Many to Many
+  * French word Sequence to English word sequence
+* Many to one
+  * Speaker identification given voice sample
+  
+  
+-------------------
+<div style="page-break-after: always;"></div>
+  
+* Inspiration for Neural Networks
+* FeedForward Neural Networks
+* Recurrent Neural Networks
+* ***&rArr;Convolutional Neural Networks***
+* Other
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Convolutional Neural Network
+
+
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+
+* Inspiration for Neural Networks
+* FeedForward Neural Networks
+* Recurrent Neural Networks
+* Convolutional Neural Networks
+* ***&rArr;Other***
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Other Useful Neural Network Types
+
+* VAE
+* RBM
+* Word Vectors
