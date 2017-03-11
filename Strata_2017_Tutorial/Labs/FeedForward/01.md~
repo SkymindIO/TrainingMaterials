@@ -1,0 +1,96 @@
+# Building a Feed Forward Neural Net With DeepLEarning4J
+
+-----------------
+<div style="page-break-after: always;"></div>
+
+# What is a Feed Forward Neural Network
+
+* A Neural network with X numbers of fully connected Layers 
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Feed Forward Neural Net:
+
+![alt text](../resources/two_layer.png)
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Lab Step 1: 
+
+Open Intellij and navigate to the Labs project. 
+
+src/main/java/ai.skymind.training/labs
+
+
+# Lab Step 2:
+
+
+
+
+# Feed Forward Neural Net: Uses
+
+* Bullets provide by Dave..
+* Dave was here
+  * More from Dave 
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Recurrent Neural Net: Design
+
+* I could use a good picture
+* Don't go too deep we only have 3 hours
+
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Recurrent Neural Net: Uses
+
+* Sequence or Time Series Data
+* One to many
+* Many to Many
+* Many to one
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Convolutional Neural Net: Design
+
+* I could use a good picture
+* Don't go too deep we only have 3 hours
+
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Convolutional  Neural Net: Uses
+
+* Image Classification
+* ? 
+* ? 
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+
+
+
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+
+
+<!-- 
+
+![alt text](../resources/venn.png)
+
+
+
+---------
+<div style="page-break-after: always;"></div>
+
+-->
