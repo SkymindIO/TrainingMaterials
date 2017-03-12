@@ -5,6 +5,8 @@
 
 * [Building a FeedForward Network in DeepLearning4J](Feedforward/01.md)
 
+* [Keras Model Import](KerasModelImport/01.md)
+
 <!--
 * [Building Block of Deep Learning](DeepLearningBuildingBlocks/01.md)
 
