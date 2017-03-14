@@ -20,7 +20,28 @@ Maven uses a pom.xml file to manage dependencies.
 
 If exploring the pom.xml file for the lab project note that there are two levels, training-parent/pom.xml and training-parent/training-labs/pom.xml
 
-2. Running and stopping code
+
+# Setting up your Virtual Enviroment
+
+1. Save the Strata_2017_Labs.ova file
+2. Import the Appliance into VirtualBox, VMware should work as well
+
+# Logging into your VM
+
+* Username Pass
+
+skymind:skymind
+
+* SSH
+ ssh -p 2222 skymind@localhost
+ 
+* Copying files with SCP
+scp -P 2222 skymind@localhost:/path/to/source /path/to/destination
+
+
+
+
+# Running and stopping code
 
 When editing or creating a java class you can run it at any time by hitting the green arrow next to your main class.
 
