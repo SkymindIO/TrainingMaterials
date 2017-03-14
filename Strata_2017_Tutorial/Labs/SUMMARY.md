@@ -11,6 +11,12 @@
 * [Building a Convolutional Neural Network](Convolution/01.md)
 
 
+* [Using an RNN for Sequence Classification](SequenceClassification/01.md)
+
+
+
+
+
 <!--
 * [Building Block of Deep Learning](DeepLearningBuildingBlocks/01.md)
 
