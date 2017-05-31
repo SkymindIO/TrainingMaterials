@@ -1,0 +1,116 @@
+# WHAT IS DEEP LEARNING?
+
+The relationship between Deep Learning and Machine Learning
+
+* Machine Learning
+* Data Science / Data Mining
+* Deep Learning
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Introduction to Machine Learning
+
+* --> Machine Learning
+* Data Science / Data Mining
+* Deep Learning
+
+
+-----------
+<div style="page-break-after: always;"></div>
+
+# Machine Learning
+
+-----------
+<div style="page-break-after: always;"></div>
+
+
+# What is Machine Learning?
+
+* Extracting Knowledge from raw data in the form of a model
+        * Decision trees
+        * Linear Models
+        * Neural Networks
+
+* Arthur Samuel quote
+  * "Field of study that gives computers the ability to learn without being explicitly programmed"
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# A Diagram
+
+![alt text](../resources/venn.png)
+
+
+
+
+
+---------
+<div style="page-break-after: always;"></div>
+
+# Data Science / Data Mining
+
+
+
+
+---------
+<div style="page-break-after: always;"></div>
+
+
+
+# Machine Learning Compared to Data Science/Mining
+* Data Mining
+    * The process of extracting information from the data
+    * Uses Machine Learning
+* Data Science
+        * Data Mining from the lens of a statistician
+        * Venn Diagrams
+        * A way to get a raise
+        * A more agreeable Actuary
+        * A statistician using a Mac
+
+----------
+<div style="page-break-after: always;"></div>
+
+# Deep Learning
+
+* Deep learning (also known as deep structured learning, hierarchical learning or deep machine learning) is a branch of machine learning based on a set of algorithms that attempt to model high level abstractions in data.
+
+source - wikipedia
+
+----------
+<div style="page-break-after: always;"></div>
+
+# Neural Networks
+
+* A computational approach patterned on the human brain and nervous system
+
+
+----------
+<div style="page-break-after: always;"></div>
+
+# Biological Neurons
+
+* Biological Neuron: An electrically excitable cell that processes and transmits information through electrical and chemical signals
+* Biological Neural Network: An interconnected group of Neurons
+
+----------
+<div style="page-break-after: always;"></div>
+
+# Role of Artificial Neural Network
+
+* Learns or Trains to perform tasks that traditional programming methods find rather challenging. Speech recognition, object recognition, computer vision, pattern recognition.
+
+----------
+<div style="page-break-after: always;"></div>
+
+# A Neural Network
+
+![network diagram](../resources/general_network.png)
+
+
+--------------
+<div style="page-break-after: always;"></div>
+
+

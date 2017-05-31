@@ -1,0 +1,102 @@
+# Loading Keras Models into DL4J
+
+
+-----------------
+<div style="page-break-after: always;"></div>
+
+# Keras Model Import 
+
+* New Feature since 0.7.1
+* Current DL4J Release 0.8.0
+  * Use 0.8.0 or above
+
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Using Model Import
+
+* Add this to your pom.xml
+
+```
+<dependency>
+      <groupId>org.deeplearning4j</groupId>
+      <artifactId>deeplearning4j-modelimport</artifactId>
+      <version>${dl4j.version}</version>
+    </dependency>
+```	
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Remember the 4 steps of Using a Neural Network
+
+1. Define a model
+2. Instantiate a model
+3. Train a model
+4. Use model for inference
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Steps in DeepLEarning4J
+
+1. MultiLayerNetwork or ComputationGraph Configuration
+2. MultiLayerNetwork or ComputationGraph built from config
+3. Model Fit
+4. Model.output
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Keras Model Import Features
+
+1. Import Configuration
+2. Import Comfiguration and Weights
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# ModelImport Features 
+
+* Load Configuration
+  * Train the model in DL4J
+* Load Model Configuration and Weights
+  * Use for inference
+  * Train further
+  * Transfer Learning
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Example: Just the configuration
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Example: Configuration and Weights for inference only
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Example: Configuration and Weights for Further Training
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Example: Configuration and Weights for further Training
+
+
+
+
+
+<!--
+# A Diagram
+
+![alt text](../resources/venn.png)
+
+
+
+---------
+<div style="page-break-after: always;"></div>
+-->
