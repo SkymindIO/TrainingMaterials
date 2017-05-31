@@ -1,0 +1,37 @@
+# Model Saving Lab Introduction
+
+!SLIDE
+
+# Main Classes Used
+
+* ModelSerializer
+  * Load and restore the model
+* NativeImageLoader
+
+!SLIDE
+
+# Inference vs Training
+
+* Native Image Loader in place of RecordReader
+* Scales image as it is read
+* Converts to INDArray
+
+!SLIDE
+
+# Matching Ingestion Pipeline
+
+* Apply same scaling
+* Apply same normalization
+* Normalizer may depend on statistics from Training Data
+* To save/restore Normalizer
+  * ModelSerializer.addNormalizerToModel
+  * ModelSerializer.restoreNormalizerFromFile
+
+!SLIDE
+
+# Model Save/Restore Lab
+
+* Please refer to your Lab Manual
+
+
+

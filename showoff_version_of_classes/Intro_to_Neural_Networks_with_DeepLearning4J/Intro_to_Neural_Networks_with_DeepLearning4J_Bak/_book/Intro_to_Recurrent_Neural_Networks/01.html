@@ -1,0 +1,1106 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Introduction to Recurrent Neural Networks · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../LSTM/01.html" />
+    
+    
+    <link rel="prev" href="../Data_Ingest_Case_Study_Text/01.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Introduction/01.html">
+            
+                <a href="../Introduction/01.html">
+            
+                    
+                    Welcome to the Course
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../What_is_deep_learning/01.html">
+            
+                <a href="../What_is_deep_learning/01.html">
+            
+                    
+                    What is DeepLearning?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../Simplest_network_Lab_intro/01.html">
+            
+                <a href="../Simplest_network_Lab_intro/01.html">
+            
+                    
+                    Neural Network Demonstration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../Neural_Network_Types/01.html">
+            
+                <a href="../Neural_Network_Types/01.html">
+            
+                    
+                    Types of Neural Networks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../DL4J_overview/">
+            
+                <a href="../DL4J_overview/">
+            
+                    
+                    DeepLearning4J
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../DL4J_overview/DeepLearning4J.html">
+            
+                <a href="../DL4J_overview/DeepLearning4J.html">
+            
+                    
+                    DeepLearning4J Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../DL4J_overview/DataVec.html">
+            
+                <a href="../DL4J_overview/DataVec.html">
+            
+                    
+                    DataVec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../DL4J_overview/DataVecLab.html">
+            
+                <a href="../DL4J_overview/DataVecLab.html">
+            
+                    
+                    DataVec Lab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="../DL4J_overview/ND4J.html">
+            
+                <a href="../DL4J_overview/ND4J.html">
+            
+                    
+                    ND4J and libnd4j
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.5" data-path="../DL4J_overview/DeepLearning4J.html">
+            
+                <a href="../DL4J_overview/DeepLearning4J.html">
+            
+                    
+                    DeepLearning4J
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../Neural_networks_explained/01.html">
+            
+                <a href="../Neural_networks_explained/01.html">
+            
+                    
+                    FeedForward Neural Networks Explained
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../Abalone_intro/01.html">
+            
+                <a href="../Abalone_intro/01.html">
+            
+                    
+                    Abalone Lab 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../Modeling_sequences/01.html">
+            
+                <a href="../Modeling_sequences/01.html">
+            
+                    
+                    Modeling Sequences
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../Data_Ingest_Case_Study_Text/01.html">
+            
+                <a href="../Data_Ingest_Case_Study_Text/01.html">
+            
+                    
+                    Data Ingest Case Study: Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter active" data-level="10.1" data-path="01.html">
+            
+                <a href="01.html">
+            
+                    
+                    Introduction to Recurrent Neural Networks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../LSTM/01.html">
+            
+                <a href="../LSTM/01.html">
+            
+                    
+                    LSTM intro REALLY SHORT COMBINE 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" data-path="../Weather_Forecast_lab/01.html">
+            
+                <a href="../Weather_Forecast_lab/01.html">
+            
+                    
+                    LSTM Character Generation of Weather Forecast Lab
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="13.1" data-path="../ETL_Vectorization/01.html">
+            
+                <a href="../ETL_Vectorization/01.html">
+            
+                    
+                    ETL and Vectorization For UCI lab if I do it
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="14.1" data-path="../Appendix/01.html">
+            
+                <a href="../Appendix/01.html">
+            
+                    
+                    Appendix
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="15.1" data-path="../DeepLearning_Intro/01.html">
+            
+                <a href="../DeepLearning_Intro/01.html">
+            
+                    
+                    DeepLearning Introduction need better title
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="16.1" data-path="../Optimization_algorithms/01.html">
+            
+                <a href="../Optimization_algorithms/01.html">
+            
+                    
+                    Optimization Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Introduction to Recurrent Neural Networks</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="introduction-to-recurrent-neural-networks">Introduction to Recurrent Neural Networks</h1>
+<h1 id="table-of-contents">Table of Contents</h1>
+<ul>
+<li>Overview</li>
+<li>Distributed hidden State </li>
+<li>How RNN&#x2019;s train </li>
+<li>LSTM tuning</li>
+<li>Time Series and RNN&#x2019;s</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+<ul>
+<li><strong>&#x21D2;</strong> Overview</li>
+<li>Distributed hidden State </li>
+<li>How RNN&#x2019;s train </li>
+<li>LSTM tuning</li>
+<li>Time Series and RNN&#x2019;s</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="what-is-a-recurrent-neural-network">What is a Recurrent Neural Network?</h1>
+<ul>
+<li>FeedForward Network with hidden state</li>
+<li>Hidden state with own internal dynamics</li>
+<li>Information can be stored in &quot;hidden state&quot; for a long time</li>
+</ul>
+<p><strong><em>In this section when we refer to RNN we mean Graves LSTM as defined here cite paper</em></strong></p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="recurrent-neural-networks-and-sequence-data">Recurrent Neural Networks and Sequence Data</h1>
+<ul>
+<li>Recurrent Neural Networks have the capacity to recognize dependencies in time series data</li>
+<li>Breaking a text corpus into a series of single characters allows the network to learn dependencies such as the most common letter after a &quot;Q&quot; is a &quot;U&quot;, when a quote has been opened it should eventually be closed.</li>
+<li>In the Lab you will train a neural network to write weather forecasts.</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+
+<h1 id="the-challenge-of-deep-feedforward-networks">The Challenge of Deep FeedForward Networks</h1>
+<ul>
+<li>Vanishing or Exploding Gradients with backprop training</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="another-challenge">Another Challenge</h1>
+<p>It should be noted that while feedforward networks map one input to one output, recurrent nets can map one to many, as above (one image to many words in a caption), many to many (translation), or many to one (classifying a voice).</p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<ul>
+<li>Overview</li>
+<li><strong>&#x21D2;</strong> Distributed hidden State </li>
+<li>How RNN&#x2019;s train </li>
+<li>LSTM tuning</li>
+<li>Time Series and RNN&#x2019;s</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="how-an-lstm-rnn-works">How an LSTM RNN works</h1>
+<ul>
+<li><p>LSTMs contain information outside the normal flow of the recurrent network</p>
+</li>
+<li><p>Network learns to store data there, read data from there, replace data in there</p>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="how-the-gates-function">How the gates function</h1>
+<p>they block or pass on information based on its strength and import, which they filter with their own sets of weights. </p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="how-the-gates-learn">How the gates learn</h1>
+<p>the cells learn when to allow data to enter, leave or be deleted through the iterative process of making guesses, backpropagating error, and adjusting weights via gradient descent</p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="going-deeper-perhaps-too-much-info-here">Going Deeper (perhaps too much info here)</h1>
+<p>Different sets of weights filter the input for input, output and forgetting. The forget gate is represented as a linear identity function, because if the gate is open, the current state of the memory cell is simply multiplied by one, to propagate forward one more time step.</p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="why-remember-">Why remember ?</h1>
+<p>Think of text as a series of characters. Things to remember, a quote has been opened, a paranthesis has been opened. </p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="why-forget-">Why Forget ?</h1>
+<p>Once a quote has been closed forget about it</p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="a-better-example">A better example</h1>
+<p>Credit card activity</p>
+<p>USA,USA,USA,Ireland,Ireland,Ireland,Russia,Ireland,Ireland,Russia</p>
+<p>VS</p>
+<p>USA,USA,USA,Ireland,Ireland,Ireland,Ireland,Ireland,Russia,Russia</p>
+<p>Stateful observance of noting assumed arrival and departure from location</p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+<h1 id="benefit-of-rnn">Benefit of RNN</h1>
+<ul>
+<li>Instead of pre-configured window of time steps</li>
+<li>Flexible state information for flexible length events</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+<h1 id="benefits-of-rnns">Benefits of RNN&apos;s</h1>
+<ul>
+<li>Distributed Hidden State</li>
+<li>Several different units can be active at the same time</li>
+<li>Can remember several different things</li>
+<li>Non-linear can update hidden state in complicated ways</li>
+<li>Hinton quote
+&quot;With enough neurons and enough time, a recurring neuron network can compute anything that can be computed by your computer.&quot; coursera course</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="more-benefits-what-can-rnns-model-what-behavior-can-they-exhibit">More Benefits What can RNN&apos;s model, what behavior can they exhibit</h1>
+<ul>
+<li>Oscillations, motor control, walking robot</li>
+<li>Settle to point attractors </li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="challenges-of-rnns">Challenges of RNN&apos;s</h1>
+<ul>
+<li>Complexity makes them hard to train</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<ul>
+<li>Overview</li>
+<li>Distributed hidden State </li>
+<li><strong>&#x21D2;</strong> How RNN&#x2019;s train </li>
+<li>LSTM tuning</li>
+<li>Time Series and RNN&#x2019;s</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="training">Training</h1>
+<ul>
+<li>Back Propogation Through time</li>
+<li>think of it as feed forward network with constrained weights. </li>
+</ul>
+<p>Think of RNN as discrete time steps and (see Hinton Coursera)</p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+
+
+<h1 id="training-goal-one-sequence-to-another-sequence">Training Goal, one sequence to another Sequence</h1>
+<ul>
+<li><p>When modeling Sequential data we often want to turn one sequence into another sequence</p>
+</li>
+<li><p>A phrase in english to a phrase in Spanish</p>
+</li>
+<li><p>Sequence of audio ad convert into word identitites</p>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="training-goal">Training Goal</h1>
+<ul>
+<li>Next timestep of current sequence</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+<h1 id="non-sequence-data-as-sequence-data">Non Sequence data as Sequence data</h1>
+<ul>
+<li>Pixels in an image , or Grid of pixels applied to next Grid</li>
+<li>works quite well, feels less natural</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="four-ways-to-train-an-rnn">Four ways to train an RNN</h1>
+<ul>
+<li><p>LSTM 
+Make the RNN out of little modules that are designed to remember values for a long time. </p>
+<ul>
+<li>Use Better Optimizer HEssian Free</li>
+</ul>
+<p>That can deal with very small gradients. 
+(Martens &amp; Sutskever 2011)</p>
+<ul>
+<li>Echo State Networks</li>
+</ul>
+<p>This sound cool, oscilators that reverberate for a while. </p>
+</li>
+</ul>
+<p>Not sure if this makes sense for this course</p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="lstm-in-depth">LSTM in depth</h1>
+<p>Consider the current state as short term memory, then we want to find a way to make this long term</p>
+<p>Add modules that allow information to be gated in, and information to be gated out when needed. </p>
+<p>In between information being gated in and gated out the gate is closed allowing it to remember the gated state. </p>
+<p>-&gt;Gate open-&gt;Information stored -&gt; Gate open information forgot-&gt;</p>
+<p>Repeat. </p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="lstm-in-depth">LSTM in depth</h1>
+<ul>
+<li>Very succesful recognizing handwriting</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="lstm-in-depth">LSTM in depth</h1>
+<ul>
+<li>Information gets into the cell whenever a logistic write gate is on</li>
+</ul>
+<p>The rest of the recurrent network determines the state of that write gate, and when the rest of the recurrent network wants information to be stored, it turns the write gate on, and whatever the current input from the rest of the net to the memory cell is, gets stored in the memory cell.</p>
+<p>-plagiarized Hinton-</p>
+<p>The information stays in the memory cell so long as its keep gate is on. So again, the rest of the system is determining the state of a logistic keep gate, and if it keeps it on, then the information will stay there.</p>
+<p>And finally, the information gets read from the memory cell so that it then goes off to the rest of the recurrent neural network and influences future states and it&apos;s read by turning on a read gate, Which again is a logistic unit controlled by the rest of the neural network. </p>
+<p>The memory cell actually stores an analog value, so we can think of it as a linear neuron that has an analog value and keeps writing that value to itself at each time step by a weight of one, so the information just stays there.</p>
+<p>Grab and create a version of his discussion about keep gates, Lecture 7 Final video. </p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="cursive-handwriting-recogntion">Cursive handwriting recogntion</h1>
+<p>Input is squence of pen coordinates as text is written</p>
+<p>Output is sequence of characters</p>
+<p>Graves &amp; Schmidhuber (2009)</p>
+<p>If timing of pen is not known, the sequence of small images as input works</p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="for-character-recognition">For Character Recognition</h1>
+<p>Ask what the net knows...
+words? Yes
+Days ? </p>
+<p>brackets, quotes, etc</p>
+<p>See Lecture 8 3 Hinton</p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="rnns-require-much-less-training-data-than-others-on-nlp-stuff">RNN&apos;s require much less training data than others on NLP stuff.</h1>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<ul>
+<li>Overview</li>
+<li>Distributed hidden State </li>
+<li>How RNN&#x2019;s train </li>
+<li><strong>&#x21D2;</strong> LSTM tuning</li>
+<li>Time Series and RNN&#x2019;s</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="lstm-hyperparameter-tuning">LSTM Hyperparameter Tuning</h1>
+<ul>
+<li><p>Watch out for overfitting, which happens when a neural network essentially &#x201C;memorizes&#x201D; the training data. Overfitting means you get great performance on training data, but the network&#x2019;s model is useless for out-of-sample prediction.</p>
+</li>
+<li><p>Regularization helps: regularization methods include l1, l2, and dropout among others.</p>
+</li>
+<li><p>The larger the network, the more powerful, but it&#x2019;s also easier to overfit. Don&#x2019;t want to try to learn a million parameters from 10,000 examples &#x2013; parameters &gt; examples = trouble.</p>
+</li>
+<li>More data is almost always better, because it helps fight overfitting.</li>
+<li>Train over multiple epochs (complete passes through the dataset).</li>
+<li>Evaluate test set performance at each epoch to know when to stop (early stopping).</li>
+<li>The learning rate is the single most important hyperparameter. Tune this using deeplearning4j-ui; see this graph</li>
+<li>In general, stacking layers can help.</li>
+<li>For LSTMs, use the softsign (not softmax) activation function over tanh (it&#x2019;s faster and less prone to saturation (~0 gradients)).</li>
+<li>Updaters: RMSProp, AdaGrad or momentum (Nesterovs) are usually good choices. AdaGrad also decays the learning rate, which can help sometimes.</li>
+<li>Finally, remember data normalization, MSE loss function + identity activation function for regression, Xavier weight initialization</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+
+<h1 id="recurrent-neural-networks">Recurrent neural networks</h1>
+<h1 id="move-this-up">MOVE THIS UP</h1>
+<ul>
+<li>Family of feedforward networks<ul>
+<li>Differ in how they send information over timesteps</li>
+</ul>
+</li>
+<li>Allows for modeling change in vectors over time<ul>
+<li>Multiple sets of vectors as inputs</li>
+<li>As opposed to a single input feature vector</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+<ul>
+<li>Overview</li>
+<li>Distributed hidden State </li>
+<li>Previous tools for Speech Recognition</li>
+<li>How RNN&#x2019;s train </li>
+<li>LSTM tuning</li>
+<li><strong>&#x21D2;</strong> Time Series and RNN&#x2019;s</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="timeseries-and-recurrent-networks">Timeseries and Recurrent Networks</h1>
+<ul>
+<li>When dealing with sequential or timeseries data<ul>
+<li>We prefer to apply Recurrent Networks</li>
+</ul>
+</li>
+<li>Allows us to plug in how the data changes over time<ul>
+<li>Patient data collected periodically</li>
+<li>State of power grid over time</li>
+<li>Sequence of actions by customer</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="rnn-architectures">RNN Architectures</h1>
+<p><img src="../resources/RNN_architectures.png" alt="alt text"></p>
+<p>Add Captions somehow, or rebuild image</p>
+<ul>
+<li>Standard supervised learning</li>
+<li>Image Captioning</li>
+<li>Sentiment Analysis</li>
+<li>Video Captioning, Natural Language Translation</li>
+<li>Part of Speech Tagging</li>
+<li>Generative Mode for text</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="example-physionet-raw-data">Example: PhysioNet Raw Data</h1>
+<ul>
+<li>Set-a<ul>
+<li>Directory of single files</li>
+<li>One file per patient</li>
+<li>48 hours of ICU data</li>
+</ul>
+</li>
+<li>Format<ul>
+<li>Header Line</li>
+<li>6 Descriptor Values at 00:00 </li>
+<li>Collected at Admission </li>
+<li>37 Irregularly sampled columns</li>
+<li>Over 48 hours</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="physionet-data">Physionet Data</h1>
+<p>Time,Parameter,Value
+00:00,RecordID,132601
+00:00,Age,74
+00:00,Gender,1
+00:00,Height,177.8
+00:00,ICUType,2
+00:00,Weight,75.9
+00:15,pH,7.39
+00:15,PaCO2,39
+00:15,PaO2,137
+00:56,pH,7.39
+00:56,PaCO2,37
+00:56,PaO2,222
+01:26,Urine,250
+01:26,Urine,635
+01:31,DiasABP,70
+01:31,FiO2,1
+01:31,HR,103
+01:31,MAP,94
+01:31,MechVent,1
+01:31,SysABP,154
+01:34,HCT,24.9
+01:34,Platelets,115
+01:34,WBC,16.4
+01:41,DiasABP,52
+01:41,HR,102
+01:41,MAP,65
+01:41,SysABP,95
+01:56,DiasABP,64
+01:56,GCS,3
+01:56,HR,104
+01:56,MAP,85
+01:56,SysABP,132
+&#x2026;</p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="preparing-input-data">Preparing Input Data</h1>
+<p><img src="../resources/preparing_input_data.png" alt="alt text"></p>
+<ul>
+<li>Input was 3D Tensor (3d Matrix)<ul>
+<li>Mini-batch as first dimension</li>
+<li>Feature Columns as second dimension</li>
+<li>Timesteps as third dimension</li>
+</ul>
+</li>
+<li>PhysioNet: Mini-batch size of 20, 43 columns, and 202 Timesteps<ul>
+<li>We have 173,720 values per Tensor input</li>
+</ul>
+</li>
+</ul>
+<p>TH- explain batch and minibatch in terms of training</p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="input-sequence">Input Sequence</h1>
+<ul>
+<li>A single training example gets the added dimension of timesteps per column</li>
+</ul>
+<p><img src="../resources/physionet_input_table.png" alt="alt text"></p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<p><img src="../resources/uneven_timesteps_and_masking.png" alt="alt text"></p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="recurrent-networks-for-classification">Recurrent Networks For Classification</h1>
+<ul>
+<li>This is the &#x201C;many-to-one&#x201D; setup<ul>
+<li>Traditionally we&#x2019;d do hand coded feature extraction on timeseries and encode into a vector<ul>
+<li>Losing the time aspect to the data</li>
+</ul>
+</li>
+<li>The &#x201C;many&#x201D;-part allows us to input a sequence without losing the time domain aspect</li>
+</ul>
+</li>
+<li>Input is a series of measurements aligned by timestep<ul>
+<li>0,1,0,0</li>
+<li>1,0,1,1</li>
+</ul>
+</li>
+<li>Output in this case is a classification<ul>
+<li>Example: &#x201C;Fraud vs Normal transaction&#x201D;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="sequence-classification-with-rnns">Sequence Classification with RNNs</h1>
+<ul>
+<li>Recurrent Neural Networks have the ability to <i>model change of input over time</i></li>
+<li>Older techniques (mostly) do not retain time domain<ul>
+<li>Hidden Markov Models do&#x2026;<ul>
+<li><i>but are more limited</i></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Key Takeaway: <ul>
+<li><font color="red">For working with Timeseries data, RNNs will be more accurate</font>
+
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Data_Ingest_Case_Study_Text/01.html" class="navigation navigation-prev " aria-label="Previous page: Data Ingest Case Study: Text">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../LSTM/01.html" class="navigation navigation-next " aria-label="Next page: LSTM intro REALLY SHORT COMBINE ">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Introduction to Recurrent Neural Networks","level":"10.1","depth":1,"next":{"title":"LSTM intro REALLY SHORT COMBINE ","level":"11.1","depth":1,"path":"LSTM/01.md","ref":"LSTM/01.md","articles":[]},"previous":{"title":"Data Ingest Case Study: Text","level":"9.1","depth":1,"path":"Data_Ingest_Case_Study_Text/01.md","ref":"Data_Ingest_Case_Study_Text/01.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Intro_to_Recurrent_Neural_Networks/01.md","mtime":"2017-03-01T22:41:51.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-02T02:11:34.219Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

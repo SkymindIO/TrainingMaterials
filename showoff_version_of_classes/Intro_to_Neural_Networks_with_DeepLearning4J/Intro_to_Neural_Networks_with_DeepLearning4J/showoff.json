@@ -1,0 +1,95 @@
+{
+"name": "DeepLearning: Building Neural Networks with DeepLearning4J",
+    "sections": {
+
+	"Welcome to the Course": [
+	    "Introduction/01.md"
+	],
+	
+	"What is DeepLearning?": [
+	    "What_is_deep_learning/01.md"
+	],
+
+	"Framing the Question":
+	["Framing_the_Question/01.md"],
+	
+	"Neural Network Demonstration":
+	["Simplest_network_Lab_intro/01.md"],
+
+
+	"Using the Training UI":
+	["TrainingUI/01.md"],
+
+	"Neural Network Internals":
+	["NNInternals/01.md",
+	 "NNInternals/Activation_Functions.md",
+	 "NNInternals/Backpropagation.md",
+	 "NNInternals/Loss_Functions.md",
+	 "NNInternals/Weight_Initialization.md",
+	 "NNInternals/Data_Normalization_Standardization.md"
+	],
+
+	"Tuning": [
+            "Tuning/01.md"
+        ],
+	
+	"Types of Neural Networks":
+	["Neural_Network_Types/01.md"],
+	
+	"DeepLearning4J Introduction": [
+	    "DL4J_overview/README.md",
+	    "DL4J_overview/DeepLearning4J.md",
+	    "DL4J_overview/DataVec.md",
+	    "DL4J_overview/DataVecLab.md",
+	    "DL4J_overview/ND4J.md"
+	
+	],
+
+	"FeedForward Neural Networks Explained":
+	["Neural_networks_explained/01.md"],
+
+
+	"Abalone Lab":
+	["Abalone_intro/01.md"],
+
+	"Data Ingest Case Study: Text":
+	["Data_Ingest_Case_Study_Text/01.md"],
+	
+	"Introduction to Recurrent Neural Networks":
+	["Intro_to_Recurrent_Neural_Networks/01.md"],
+
+	"LSTM Character Generation of Weather Forecast Lab":
+	["Weather_Forecast_lab/01.md"],
+	
+	"Convolutional Neural Networks":
+	["Convolutional_Neural_Networks/01.md"],
+
+	"Convolutional Neural Network Lab":
+	["Convolutional_Neural_Networks/Lab.md"],
+
+	"The Paths to Production": [
+            "Paths_to_production/01.md"
+        ],
+
+	"Saving Keras Models": [
+            "Saving_Keras_Models/01.md"
+        ],
+
+
+        "Importing Keras Models into DL4J": [
+            "Loading_Keras_Models_Into_DL4J/01.md"
+        ],
+	
+	"Saving and Loading trained Models":
+	["Saving_Models/01.md"],
+
+	"Lab: Saving and Loading trained Models":
+	["Saving_Models/02.md"],
+
+	"Appendix":
+	["Appendix/01.md"]
+
+	
+    }
+
+}

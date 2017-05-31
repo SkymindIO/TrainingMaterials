@@ -1,0 +1,44 @@
+{
+"name": "DeepLearning: Building Neural Networks with DeepLearning4J",
+    "sections": {
+
+	"Welcome": [
+	    "Introduction/01.md"
+	],
+	
+	"DeepLearning Overview": [
+	    "What_is_deep_learning/01.md"
+	],
+
+	"DeepLearning4J Overview": [
+	    "DL4J_overview/DeepLearning4J.md",
+	    "DL4J_overview/DataVec.md",
+	    "DL4J_overview/ND4J.md"
+	
+	],
+
+
+
+	"The Paths to Production": [
+	    "Paths_to_production/01.md"
+	],
+
+	"Some Examples": [
+	    "Some_examples/01.md"
+	],
+
+
+
+	"Types of Neural Networks":
+	["Neural_Network_Types/01.md"],
+	
+
+
+	"FeedForward Neural Networks Explained":
+	["Neural_networks_explained/01.md"]
+	
+
+	
+    }
+
+}

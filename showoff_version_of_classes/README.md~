@@ -1,0 +1,11 @@
+# A Showoff slide is delimited with 
+
+!SLIDE
+
+I need to change
+
+------
+<page break > 
+
+to slide, I will try sed
+

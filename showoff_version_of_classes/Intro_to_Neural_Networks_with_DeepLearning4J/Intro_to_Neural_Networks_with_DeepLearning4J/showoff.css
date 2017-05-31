@@ -1,0 +1,40 @@
+#preso,
+  .slide {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #preso, .slide.background-fit {
+      background-size: contain;
+  }
+
+  #footer {
+      background: #383838;
+      margin: 0;
+      padding: 2px;
+      width: 320px;
+      height: 20px;
+      margin-left:auto;
+      margin-right:auto;
+  }
+
+  .content {
+  color: black;
+  font-family: helvetica, arial;
+}
+h1, h2 {
+  color: rgb(79, 180, 226);
+  font-family: Georgia;
+}
+
+/*
+Put log as footer everywhere but centered slides
+When centered it is on top of text
+*/
+.content:not(.center)::after{
+  position: absolute;
+  left: 1px;
+  bottom: 1px;
+  content: url(resources/skymind_medium.png);
+}
+

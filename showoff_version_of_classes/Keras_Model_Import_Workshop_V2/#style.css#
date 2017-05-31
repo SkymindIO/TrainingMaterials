@@ -1,0 +1,5 @@
+#preso,
+.slide.background-fit {
+      background-size: contain;
+  }
+

@@ -1,0 +1,572 @@
+# FeedForward Neural Networks Explained
+
+
+* Overview
+* Key Terms
+* Uses of Feed Forward Neural Networks
+* Output
+* Training
+* Inference
+* Underfitting and Overfitting
+
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+* **&rArr;** Overview
+* Key Terms
+* Uses of Feed Forward Neural Networks
+* Output
+* Training
+* Inference
+* Underfitting and Overfitting
+
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+
+# FeedForward Neural Networks
+
+* Share many features with Convolutional and Recurrent Neural Networks
+* FeedForward Neural Nets are sometimes called MultiLayerPerceptrons
+* Perceptrons and Nueral Net theory was developed in the 1940s-1960's
+* Succesful use came with the rise of GPU's and larger training sets
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# A FeedForward Neural Network
+
+![network diagram](../resources/general_network.png)
+
+
+--------------
+<div style="page-break-after: always;"></div>
+
+
+# A Neural Network With Two Hidden Layers
+
+![network diagram](../resources/two_layer.png)
+
+--------------
+<div style="page-break-after: always;"></div>
+
+# Connections Between Nodes
+
+* Designed to be selective and trainable
+* Filter, aggregate, convert, amplify, ignore what they pass on to next Neuron
+* This transformation converts raw input into useful information
+* Input has trainable weight applied
+* Output determined by activation function
+
+
+--------------
+<div style="page-break-after: always;"></div>
+
+# Neural Network Diagram Explained
+
+## Consider Node J
+
+![network diagram](../resources/single_node_ins_outs.png)
+
+--------------
+<div style="page-break-after: always;"></div>
+
+# Single Node Diagram
+
+* Input
+  * Input is determined by the output of the input neurons * the weights applied to that output. 
+
+* Weights
+  * Assigned randomly* initially between 0-1
+  * Weight of 0, input is ignored
+  * Large weight input is amplified. 
+  * As the network trains weights are adjusted. 
+
+* Output
+	* Output is determined but it's input * weights, and the activation function. 
+	* Sigmoid Activation low input output 0 higher input output 1, in between S curve.
+ 	* ReLU low input 0 then linear after trigger. 
+
+
+--------------
+<div style="page-break-after: always;"></div>
+
+* Overview
+* **&rArr;** Key Terms
+* Uses of Feed Forward Neural Networks
+* Output
+* Training
+* Inference
+* Underfitting and Overfitting
+
+
+--------------
+<div style="page-break-after: always;"></div>
+
+
+# Key Terms
+
+* Activation Function
+  * A nonlinear A function that maps input on a nonlinear scale such as sigmoid or tanh. By definition, a nonlinear function’s output is not directly proportional to its input.
+* Loss Function
+  * How Error is Calculated
+* Weights  
+* BackProp
+
+--------------
+<div style="page-break-after: always;"></div>
+
+
+
+
+# Neural Net Terms
+
+* Weights
+Connection Weights. Weights on connections in a neural network are coefficients that
+scale (amplify or minimize) the input signal to a given neuron in the network.
+
+* Activation Function
+  * The sigmoid function. "Its best thought of as a “squashing function”, because it takes the input and squashes it to be between zero and one: Very negative values are squashed towards zero and positive values get squashed towards one. " Karpathy
+
+
+--------------
+<div style="page-break-after: always;"></div>
+
+
+* Overview
+* Key Terms
+* **&rArr;** Uses of Feed Forward Neural Networks
+* Output
+* Training
+* Inference
+* Underfitting and Overfitting
+
+
+--------------
+<div style="page-break-after: always;"></div>
+
+
+
+# Using Neural Networks
+
+## Framing the Questions
+
+
+* To build models we have to define
+	* What is our training data (“evidence”)?
+	* What kind of model (“hypothesis”) is appropriate for this data?
+	* What kind of answer (“inference”) would we like to get from the model?
+* These questions frame all machine learning workflows
+
+----------
+<div style="page-break-after: always;"></div>
+
+#  In neural networks we’re solving systems of (non-linear) equations of the form
+
+# <font color="red">A</font><font color="blue">x</font> = <font color="green">b</font>
+
+* <font color="red">A</font> matrix
+	* This is our set of input data converted into an array of vectors
+* <font color="blue">x</font> vector
+	* The parameter vector of weights representing our model
+* <font color="green">b</font> vector
+	* Vector of output values or labels matching the rows  in the A matrix
+
+
+----------
+<div style="page-break-after: always;"></div>
+
+#<font color="red">A</font><font color="blue">x</font> = <font color="green">b</font> Visually
+![alt text](../resources/vector_table.png)
+
+----------
+<div style="page-break-after: always;"></div>
+
+
+# Recall Simplest Network
+
+* <font color="red">A</font><font color="blue">x</font> = <font color="green">b</font>
+
+* What was A?
+* What was B?
+
+----------
+<div style="page-break-after: always;"></div>
+
+#Linear Algebra Terms
+
+* Scalars
+	- Elements in a vector
+	- In compsci synonymous with the term “variable”
+* Vectors
+	* For a positive integer n, a vector is an n-tuple, ordered (multi)set, or array of n numbers, called elements or scalars
+* Matricies
+	* Group of vectors that have the same dimension (number of columns)
+
+----------
+<div style="page-break-after: always;"></div>
+
+#Solving Systems of Equations
+* Two general Methods
+	* Direct method
+	* Iterative methods
+* Direct method
+	* Fixed set of computation gives answer
+	* Data fits in memory
+	* Ex: Gaussian Elimination, Normal Equations
+* Iterative methods
+	* Converges after a series of steps
+    * Stochastic Gradient Descent (SGD)
+
+----------
+<div style="page-break-after: always;"></div>
+
+* Overview
+* Key Terms
+* Uses of Feed Forward Neural Networks
+* **&rArr;** Output
+* Training
+* Inference
+* Underfitting and Overfitting
+
+
+
+
+----------
+<div style="page-break-after: always;"></div>
+
+# Supervised vs Unsupervised Learning
+
+* Supervised Learning
+  * We give the training process labels (“outputs”) for every training input data row
+  * Model learns to associate input data with output value
+* Unsupervised Learning
+  * No labels
+  * Model attempts to learn structure in the data
+* Neural Networks can be used for either supervised or unserpervised Learning
+
+----------
+<div style="page-break-after: always;"></div>
+
+# Clustering
+
+* Typically unsupervised learning
+	* “K-Means Clustering”
+* Example
+	* “cluster K groups of similar news articles together”
+
+----------
+<div style="page-break-after: always;"></div>
+
+# Supervised Learning "Framing the Question"
+
+* Determine
+	* Output desired (“question to be answered”)
+	* Input data to build model (“evidence”)
+	* Appropriate model (“hypothesis”)
+* Setup data in Ax = b form
+	* For linear models and neural networks
+* Then Optimize the x parameter vector
+
+----------
+<div style="page-break-after: always;"></div>
+
+# Quick Statistics Review: Probability
+* Probability
+	* We define probability of an event E as a number always between 0 and 1. 
+	* In this context the value 0 infers that the event E has no chance of occurring and the value 1 means that the event E is certain to occur. 
+* The Canonical Coin Example
+	* Fair coin flipped, looking for heads/tails (0.5 for each side)
+	* Probability of sample space is always 1.0
+	* P( Heads ) = 0.5 every time
+
+
+----------
+<div style="page-break-after: always;"></div>
+
+# Probability Distributions
+
+* A specification of the stochastic structure of random variables
+* In statistics we rely on making assumptions about how the data is distributed
+	* To make inferences about the data
+* We want a formula specifying how frequent values of observations in the distribution are
+	* And how values can be taken by the points in the distribution
+![alt text](../resources/3_line_graph.png)
+
+
+
+----------
+<div style="page-break-after: always;"></div>
+
+
+
+
+
+# Classification
+
+* A type of answer we can get from a model
+* Example:
+	* “Is this an image of a cat or a dog?”
+	* Binary classification
+	* Classes: { cat, dog }
+* Binary classification is where we have only 2 labels
+	* Example: { positive, negative }
+* Multi-Label Classification
+	* N number of labels
+
+
+----------
+<div style="page-break-after: always;"></div>
+
+
+
+# Regression
+
+
+* Where we seek a continuous value output from the model
+* Example: “predict the temperature for tomorrow”
+	* Output: 75F
+* Example: “predict price of house based on square footage”
+	* Output: $250,000.00
+
+----------
+<div style="page-break-after: always;"></div>
+
+
+
+* Overview
+* Key Terms
+* Uses of Feed Forward Neural Networks
+* Output
+* **&rArr;** Training
+* Inference
+* Underfitting and Overfitting
+
+
+
+
+----------
+<div style="page-break-after: always;"></div>
+
+# Training a Neural Net
+
+* Input Features passed in
+* Output generated
+* Error calculated
+* Weights adjusted via backprop to decrease error
+
+
+----------
+<div style="page-break-after: always;"></div>
+
+# Training a Neural Net
+
+* Inputs: Data you want to produce information from
+* Connection weights and biases govern the activity of the network
+* Learning algorithm changes weights and biases with each learning pass
+
+
+
+----------
+<div style="page-break-after: always;"></div>
+
+# Code sample to train a network
+
+```
+for ( int n = 0; n < nEpochs; n++) {
+            model.fit( #YourDataSetIterator# );
+        }
+```		
+
+----------
+<div style="page-break-after: always;"></div>
+
+
+# Fitting the Training Data
+![alt text](../resources/fit_to_line.png)
+
+----------
+<div style="page-break-after: always;"></div>
+
+# Optimization
+* Iteratively adjust the values of the x parameter vector
+	* Until we minimize the error in the model
+* Error = prediction – actual
+* Loss functions measure error
+	* simple/common loss function: 
+	* “mean squared error”
+* How do we make choices about the next iterative “step”?
+  * Where  “step” is how we change the x parameter vector
+
+
+----------
+<div style="page-break-after: always;"></div>
+
+# Convex Optimization
+![alt text](../resources/convex.png)
+
+----------
+<div style="page-break-after: always;"></div>
+
+#Gradient Descent
+* Optimization method where we consider parameter space as
+	* “hills of error”
+	* Bottom of the loss curve is the most “accurate” spot for our parameter vector
+* We start at one point on the curved error surface
+	* Then compute a next step based on local information
+* Typically we want to search in a downhill direction
+	* So we compute the gradient
+		* The derivative of the point in error-space
+		* Gives us the slope of the curve
+
+----------
+<div style="page-break-after: always;"></div>
+
+# Stochastic Gradient Descent
+* With basic Gradient Descent we look at every training instance before computing a “next step”
+* With SGD with compute a next step after every training instance
+	* Sometimes we’ll do a mini-batch of instances
+
+
+----------
+<div style="page-break-after: always;"></div>
+
+# SGD Visually Explained
+![alt text](../resources/gradient_descent.png)
+
+
+
+----------
+<div style="page-break-after: always;"></div>
+
+
+* Overview
+* Key Terms
+* Uses of Feed Forward Neural Networks
+* Output
+* Training
+* Inference
+* **&rArr;** Underfitting and Overfitting
+
+
+----------
+<div style="page-break-after: always;"></div>
+
+# Underfitting and Overfitting
+* Underfitting
+	* Our model does not learn the structure of the training data well enough
+	* Doesn’t perform on new data as well as it could
+* Overfitting
+  * Our model gives tremendous accuracy scores on training data
+  * However, our model performs poorly on test data and other new data
+
+![alt text](../resources/overfit.png)
+
+
+----------
+<div style="page-break-after: always;"></div>
+
+# Supervised vs Unsupervised Learning
+
+* OUT OF PLACE MOVE OR ADD TO TOC
+
+* Supervised Learning
+  * We give the training process labels (“outputs”) for every training input data row
+  * Model learns to associate input data with output value
+* Unsupervised Learning
+  * No labels
+  * Model attempts to learn structure in the data
+* Neural Networks can be used for either supervised or unserpervised Learning
+
+----------
+<div style="page-break-after: always;"></div>
+
+
+# Classification
+* OUT OF PLACE MOVE OR ADD TO TOC
+* A type of answer we can get from a model
+* Example:
+	* “Is this an image of a cat or a dog?”
+	* Binary classification
+	* Classes: { cat, dog }
+* Binary classification is where we have only 2 labels
+	* Example: { positive, negative }
+* Multi-Label Classification
+	* N number of labels
+
+
+----------
+<div style="page-break-after: always;"></div>
+
+
+
+# Regression
+
+* OUT OF PLACE MOVE OR ADD TO TOC
+* Where we seek a continuous value output from the model
+* Example: “predict the temperature for tomorrow”
+	* Output: 75F
+* Example: “predict price of house based on square footage”
+	* Output: $250,000.00
+
+----------
+<div style="page-break-after: always;"></div>
+
+# Clustering
+* OUT OF PLACE MOVE OR ADD TO TOC
+* Typically unsupervised learning
+	* “K-Means Clustering”
+* Example
+	* “cluster K groups of similar news articles together”
+
+----------
+<div style="page-break-after: always;"></div>
+
+# Logistic Regression
+* OUT OF PLACE MOVE OR ADD TO TOC
+* 3 parts to Logistic Regression Model
+	* Hypothesis (logistic function): ![alt text](../resources/equation.gif)
+		* Gives us a prediction based on the parameter vector x and the input data features
+	* Cost Function
+		* Example: “max likelihood estimation”
+		* Tells us how far off the prediction from the hypothesis is from the actual value
+	* Update Function
+		* Derivative of the cost function
+		* Tells us what direction / how much of step to take
+[ more notes, gradient, etc ]
+----------
+<div style="page-break-after: always;"></div>
+
+# Evaluation and The Confusion Matrix
+* OUT OF PLACE MOVE OR ADD TO TOC
+* Table representing
+	* Predictions vs Actual Data
+* We count these answers to get
+	* True Positives
+	*  False Positives
+	* True Negatives
+	* False Negatives
+* Allows us to evaluate the model beyond “average accurate” percent
+	* Can look at well a model can perform when it needs to be more than just “accurate a lot” 
+![alt text](../resources/truth_table.png)
+
+----------
+<div style="page-break-after: always;"></div>
+
+
+# Chapter Questions
+
+* Is all DeepLearning Machine Learning? 
+* Is all Machine Learning Deep Learning? 
+* Need more? Probably need to structure the chapter a little bit so it answers specific questions
+
+
+
+
+
+
+
+
+

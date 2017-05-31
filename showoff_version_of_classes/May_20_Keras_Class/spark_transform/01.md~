@@ -1,0 +1,260 @@
+!SLIDE transition=fade
+
+# DataVec: Spark Transform Process
+
+!SLIDE transition=fade
+
+# DataVec overview
+
+* Goal of DataVec
+* Data => INDArray
+
+
+!SLIDE transition=fade
+
+# DataVec Spark Based Operations
+
+* Joins
+* Column Transformations
+* Data Analysis
+
+!SLIDE transition=fade
+
+# Spark Analyze
+
+* Tool to gather statistics across a data set
+
+
+!SLIDE transition=fade
+
+# Spark Analyze Example
+
+* The Data: classic dataset of Iris flower characteristics
+
+		5.1,3.5,1.4,0.2,0
+		4.9,3.0,1.4,0.2,0
+		4.7,3.2,1.3,0.2,0
+		4.6,3.1,1.5,0.2,0
+		5.0,3.6,1.4,0.2,0
+		5.4,3.9,1.7,0.4,0
+
+!SLIDE transition=fade
+
+# Spark Analyze Example Continued...
+
+* Define a Schema
+
+		Schema schema = new Schema.Builder()
+        .addColumnsDouble("Sepal length", "Sepal width", 
+		"Petal length", "Petal width")
+        .addColumnInteger("Species")
+        .build();
+
+!SLIDE transition=fade
+
+# Spark Analyze Example Continued...
+
+* Create Spark Conf
+
+		SparkConf conf = new SparkConf();
+		conf.setMaster("local[*]");
+		conf.setAppName("DataVec Example");
+		JavaSparkContext sc = new JavaSparkContext(conf);
+
+!SLIDE transition=fade
+
+# Spark Analyze Example Continued...
+
+* Read Data
+
+		String directory = new ClassPathResource("IrisData/iris.txt")
+		.getFile().getParent(); 
+		//Normally just define your directory 
+		//like "file:/..." or "hdfs:/..."
+        JavaRDD<String> stringData = sc.textFile(directory);
+
+
+
+!SLIDE transition=fade
+
+# Spark Analyze Example Continued...
+
+* Parse Data		
+		
+		
+		//We first need to parse this comma-delimited (CSV) format; 
+		//we can do this using CSVRecordReader:
+        RecordReader rr = new CSVRecordReader();
+        JavaRDD<List<Writable>> parsedInputData = 
+		stringData.map(new StringToWritablesFunction(rr));
+
+
+
+!SLIDE transition=fade
+
+# Spark Analyze Example Continued...
+
+* Analyze Data
+
+
+        int maxHistogramBuckets = 10;
+        DataAnalysis dataAnalysis = 
+		AnalyzeSpark.analyze(schema, 
+		parsedInputData, maxHistogramBuckets);
+
+        System.out.println(dataAnalysis);
+
+
+!SLIDE transition=fade
+
+# Spark Analyze Output
+
+* min,max,mean,StDev,Variance,num0,
+* numNegative,numPositive,numMin,numMax,Total
+* See example IrisAnalysis.java
+
+
+
+!SLIDE transition=fade
+
+# Spark Analyze options
+
+* Per Column Analysis
+
+
+
+
+        //We can get statistics on a per-column basis:
+        DoubleAnalysis da = (DoubleAnalysis)dataAnalysis.getColumnAnalysis("Sepal length");
+        double minValue = da.getMin();
+        double maxValue = da.getMax();
+        double mean = da.getMean();
+
+
+
+
+
+
+!SLIDE transition=fade
+
+# Spark Analyze HTML output
+
+* To Generate HTML Output
+
+        HtmlAnalysis.createHtmlAnalysisFile(dataAnalysis, 
+		new File("DataVecIrisAnalysis.html"));
+
+        //To write to HDFS instead:
+        //String htmlAnalysisFileContents = 
+		//HtmlAnalysis.createHtmlAnalysisString(dataAnalysis);
+        //SparkUtils.writeStringToFile("hdfs://your/hdfs/path/here",
+		//htmlAnalysisFileContents,sc);
+
+
+!SLIDE
+
+# DataVec Spark Transform Process
+
+* Joining 
+* Transformation
+* Schema alteration
+
+
+!SLIDE
+
+# Video 
+
+
+* https://www.youtube.com/watch?v=MLEMw2NxjxE
+
+
+!SLIDE
+
+# Code Examples 
+
+
+* https://github.com/deeplearning4j/dl4j-examples/tree/master/datavec-examples
+* http://github.com/SkymindIO/screencasts/tree/master/datavec_spark_transform
+
+!SLIDE
+
+# Basic Example CSV Data
+
+* Storm Reports Data
+
+
+         
+         161006-1655,UNK,2 SE BARTLETT,LABETTE,KS,37.03,-95.19,
+         TRAINED SPOTTER REPORTS TORNADO ON THE GROUND. (ICT),TOR
+         
+		 //Fields are
+         //datetime,severity,location,county,state,lat,lon,comment,type
+         
+
+!SLIDE
+
+# Define Schema as read
+
+	Schema inputDataSchema = new Schema.Builder()
+    .addColumnsString("datetime","severity","location","county","state")
+    .addColumnsDouble("lat","lon")
+    .addColumnsString("comment")
+    .addColumnCategorical("type","TOR","WIND","HAIL")
+    .build();
+
+!SLIDE
+
+
+
+# Define Transform process
+
+	TransformProcess tp = new TransformProcess.Builder(inputDataSchema)
+    .removeColumns("datetime","severity","location","county","state","comment")
+    .categoricalToInteger("type")
+    .build();
+	// keep lat/lon convert type to 0,1,2
+	
+	
+!SLIDE
+
+# Create Spark Conf
+
+	SparkConf sparkConf = new SparkConf();
+    sparkConf.setMaster("local[*]");
+    sparkConf.setAppName("Storm Reports Record Reader Transform");
+    JavaSparkContext sc = new JavaSparkContext(sparkConf);
+	
+	
+!SLIDE
+
+# read the data file
+        
+		
+		JavaRDD<String> lines = sc.textFile(inputPath);
+        
+!SLIDE		
+		
+# Convert to Writable
+        
+		JavaRDD<List<Writable>> stormReports = lines.map(new StringToWritablesFunction(new CSVRecordReader()));
+        
+		
+!SLIDE
+
+# Run our transform process
+        
+	JavaRDD<List<Writable>> processed = SparkTransformExecutor.execute(stormReports,tp);
+        
+		
+!SLIDE
+
+# Convert Writable Back to String for Export
+
+	JavaRDD<String> toSave= processed.map(new WritablesToStringFunction(","));
+
+
+!SLIDE
+
+# Write to File
+
+		toSave.saveAsTextFile(outputPath);

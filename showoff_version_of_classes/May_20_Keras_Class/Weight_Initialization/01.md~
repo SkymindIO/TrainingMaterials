@@ -1,0 +1,44 @@
+!SLIDE center subsection
+
+# Weight Initialization
+
+!SLIDE
+
+# Weight Initialization: The Challenge
+
+* If the weights in a network start too small, then the signal shrinks as it passes through each layer until it’s too tiny to be useful.
+
+*If the weights in a network start too large, then the signal grows as it passes through each layer until it’s too massive to be useful.
+
+!SLIDE
+
+# Xavier Distribution
+
+0 mean and a specific variance
+
+Var(W)=1/nIn
+ 
+where W is the initialization distribution for the neuron in question, and ninnin is the number of neurons feeding into it. The distribution used is typically Gaussian or uniform.
+
+!SLIDE 
+
+# Benefits of Xavier
+
+Xavier initialization was one of the big enablers of the move away from per-layer generative pre-training.
+
+~~~SECTION:notes~~~
+
+
+
+~~~ENDSECTION~~~
+
+
+!SLIDE
+
+# Alternatives to Xavier
+
+* Relu 
+* Works well with CNN's and Relu activations
+
+
+

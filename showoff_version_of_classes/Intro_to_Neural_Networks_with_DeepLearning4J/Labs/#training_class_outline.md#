@@ -1,0 +1,99 @@
+# Deep Learning: Building Neural Networks using DeepLearning4J
+## Course Outline
+###Day 1
+Goals of Day 1 is to provide the background and introductions they need to understand the rest of the course. Day 1 is also for introductions and to get to know the needs of the students and if the course is on track to meet their needs. 
+
+Also in day 1 the goal is to mix the lecture with some hands on labs. I like to see a Lab before lunch on Day. 
+
+### Intro to Deep Learning
+
+Cover chapters 1-4 of the book in a half a day at most. 
+
+**note to Tom ** Grab Dave Kale's description of a NN from the video at Work Day where he succinclty describes a NN in short truncated mathematical terms. 
+
+Key Topics
+* Show they are used today, talk to your phone, image recognition, 
+* Then History ** keep it quick and snappy Hit them with some math so they know it is attainable, but that it is math
+* Inspired by physical Nuerons
+* Perceptron ** find something easy to grasp, probably perceptron
+* Chapter 2 steal from that.
+* Steal from Melanie Presentation nice overview
+
+### Lab 1 
+
+Setting up your environment and running a canned example. 
+
+In this Lab we will set up Intellij with all the needed dependencies to run dl4j. 
+
+### Lab postscript
+
+Show them the pieces, DL4j, ND4J, DataVec and discuss the roles of each
+
+** I predict day 1 Lunch to fall about here
+
+### Data Ingestion into your Neural Network using DataVec
+
+** The BASICS !!
+** DataVec is not sexy, Nueral Nets are, they need to know DataVec but I want to keep this first part basic, so nothing too complex, ingest data that is already numeric, already well formed. Something like MLPClassifierLinear from examples.
+
+### Lab: Data Ingestion using DataVec
+
+### Choosing the right network:
+
+Quick into to the choices and what fits for classification, Image Recognition etc. 
+
+### Columnar data and Multi Layer Perceptron
+
+### Lab Venus
+
+Take most of this chapter's inspiration from 
+the chapter "Modeling CSV Data with Multi-Layer Perceptron Networks"
+
+** I predict Day 1 to end around here
+
+### Recognizing Hand Written Digits with CNN's
+
+##### The DataVec needed to get this done
+
+Mnist Lenet
+
+### Lab Modeling Hand-Written Images with Convolutional
+Neural Networks
+
+** End of Day two
+
+### Constructing human sentences with RNNs
+
+#### The DataVec needed to get this done
+
+### Lab Shakespeare with LSTM
+
+** Show off LagerBot
+
+** Take inspiration from this chapter in the book "Modeling Sequence Data with Recurrent Neural Networks"
+
+** Day 3 lunch I am probably way off, not sure how long the DataVec piece of each section will take
+
+### Tuning Neural Networks
+
+Chapter 6 from the book. 
+
+Chapter 6 is not particularly lab focussed, extract the concepts from that chapter and build labs where they change the parameters and get more comfortable with tweaking the code.
+
+* Key Concepts:
+* Number of Layers
+* Parameter Count
+* Weight Initialization
+* Loss Function
+* Mini Batching Regularization
+
+** I predict Day 3 to end around here
+
+
+
+
+
+
+
+
+

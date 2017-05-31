@@ -1,0 +1,217 @@
+!SLIDE
+
+# Keras to DeepLearning4J Feature Comparison
+
+
+
+!SLIDE
+
+# The Steps of Defining and using a Neural Network
+
+1. Describe the model
+2. Build the model
+3. Train the model
+4. Use model for inference
+ 
+
+!SLIDE
+
+# Describe the model 
+
+* Keras
+
+
+		model = Sequential()
+		model.add(Dense(4, input_dim=4, activation='relu'))
+		model.add(Dense(3,activation='sigmoid'))
+
+
+* DL4J
+
+
+
+		MultiLayerConfiguration conf = new NeuralNetConfiguration.Builder()
+        .seed(seed)
+        .iterations(iterations)
+        .activation(Activation.TANH)
+        .weightInit(WeightInit.XAVIER)
+        .learningRate(0.1)
+        .regularization(true).l2(1e-4)
+        .list()
+        .layer(0, new DenseLayer.Builder().nIn(numInputs).nOut(3)
+            .build())
+            .layer(1, new DenseLayer.Builder().nIn(3).nOut(3)
+            .build())
+            .layer(2, new OutputLayer.Builder(LossFunctions.LossFunction.NEGATIVELOGLIKELIHOOD)
+                .activation(Activation.SOFTMAX)
+                .nIn(3).nOut(outputNum).build())
+            .backprop(true).pretrain(false)
+            .build();
+			
+
+!SLIDE
+
+# Build the model 
+
+* Keras
+
+
+		model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+
+
+* DL4J
+
+
+		MultiLayerNetwork model = new MultiLayerNetwork(conf);
+		model.init();
+		
+
+!SLIDE
+
+# Train the model 
+
+* Keras
+
+
+		model.fit(X, dummy_y, nb_epoch=200, batch_size=5)
+
+
+* DL4J
+
+
+		model.fit(trainingData);
+
+
+!SLIDE
+
+# Use the Model for Inference 
+
+
+* Keras
+
+
+		prediction = model.predict(numpy.array([[4.6,3.6,1.0,0.2]]));
+
+
+* DL4J
+
+
+		INDArray output = model.output(myArray);
+
+
+!SLIDE
+
+# Keras Strengths
+
+* Wide adoption of Python by a number of communities
+  * Data Science
+  * Research
+  * Academia
+  
+
+!SLIDE
+
+# Keras Strengths continued...
+
+* Python is replacing Java as the language taught in University
+* REPL enables Notebooks and easy sharing
+
+!SLIDE
+
+# DeepLearning4j Strengths
+
+* Java 
+  * Wide use in traditional enterprise organizations
+  * Stable and Secure
+* Core Libraries purpose built for Neural Networks
+  * DataVec for ETL
+  * Nd4J for NDArrays, tensors, matrices
+  * libnd4j for GPU/CPU native operations
+  
+
+
+!SLIDE
+
+# Comparisons Between DeepLearning4J and Keras
+
+* The Stack
+  * DL4J has purpose built full stack from ETL to Inference
+  * Keras leverages other libraries for core functionality
+
+
+!SLIDE
+
+# Statically Typed vs Dynamically Typed
+
+* Java
+  * Statically Typed
+* Python
+  * Dynamically typed
+* Statically  typed languages catch many errors at compile time rather than runtime
+
+!SLIDE
+
+# Distributed Training
+
+* DL4J in Java fits in well with Hadoop/Spark
+
+
+!SLIDE
+
+# Security
+
+* DL4j on Spark/Hadoop 
+
+!SLIDE
+
+# Header
+
+
+
+!SLIDE
+
+* Many similarities
+* Build Neural Networks
+* Build networks based on popular research or examples
+
+
+!SLIDE
+
+* Differences
+* Keras is built on top of other modules
+  * Tensorflow
+  * Theano
+  * SciPy, Numpy
+
+
+!SLIDE
+
+* Differences
+* DL4J team built almost all parts of the framework
+* ND4J custom built for INDArray operations to support Neural Networks
+* DataVec built to support data ingestion for Neural Networks
+* distributed Spark based functionality Built in
+
+
+
+!SLIDE
+
+
+
+!SLIDE
+
+* More differences
+* Support 
+
+
+!SLIDE
+
+keras is an interface to a lower level framework that implements autodiff whereas we're a higher level framework with our own ETL, visualization tools,tensor library, and integrations with various streaming frameworks implemented on the JVM
+tldr: keras is just "higher level math"
+
+Skymind can build models like a data scientist and vendor support a whole software stack like a company
+
+
+Add trained models and trainedmodelhelper
+
+

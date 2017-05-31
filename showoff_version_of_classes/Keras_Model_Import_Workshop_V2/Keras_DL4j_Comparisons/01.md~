@@ -1,0 +1,51 @@
+!SLIDE
+
+# Comparison of Keras and DL4J
+
+!SLIDE
+
+* Many similarities
+* Build Neural Networks
+* Build networks based on popular research or examples
+
+
+!SLIDE
+
+* Differences
+* Keras is built on top of other modules
+  * Tensorflow
+  * Theano
+  * SciPy, Numpy
+
+
+!SLIDE
+
+* Differences
+* DL4J team built almost all parts of the framework
+* ND4J custom built for INDArray operations to support Neural Networks
+* DataVec built to support data ingestion for Neural Networks
+* distributed Spark based functionality Built in
+
+
+
+!SLIDE
+
+
+
+!SLIDE
+
+* More differences
+* Support 
+
+
+!SLIDE
+
+keras is an interface to a lower level framework that implements autodiff whereas we're a higher level framework with our own ETL, visualization tools,tensor library, and integrations with various streaming frameworks implemented on the JVM
+tldr: keras is just "higher level math"
+
+Skymind can build models like a data scientist and vendor support a whole software stack like a company
+
+
+Add trained models and trainedmodelhelper
+
+

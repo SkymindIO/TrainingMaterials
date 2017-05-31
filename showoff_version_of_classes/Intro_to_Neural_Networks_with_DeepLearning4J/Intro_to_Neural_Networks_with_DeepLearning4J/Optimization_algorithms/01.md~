@@ -1,0 +1,37 @@
+# Introduction to Neural Networks with DeepLearning4J
+
+# Table of Contents
+
+1. Fundamentals of Machine Learning
+2. Something else
+
+<div style="page-break-after: always;"></div>
+
+----------------------
+# What is Machine Learning?
+* Extracting Knowledge from raw data in the form of a model
+	* Decision trees
+	* Linear Models
+	* Neural Networks
+
+* Arthur Samuel quote
+  * "Field of study that gives computers the ability to learn without being explicitly programmed"
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# A Diagram
+
+![alt text](../resources/venn.png)
+
+
+
+
+
+---------
+<div style="page-break-after: always;"></div>
+
+# Machine Learning Compared to Data Science/Mining
+
+---------
+<div style="page-break-after: always;"></div>

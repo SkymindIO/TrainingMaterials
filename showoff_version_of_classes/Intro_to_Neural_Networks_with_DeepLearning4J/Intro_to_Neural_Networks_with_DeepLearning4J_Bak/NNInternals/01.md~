@@ -1,0 +1,13 @@
+!SLIDE center subsection
+
+# Neural Network Internals
+
+This section describes key configuration details of Neural Networks
+
+!SLIDE
+
+* Activation Functions
+* BackPropagation
+* Loss Functions
+* Weight Initialization
+* Data Normalization and Standardization
