@@ -1,0 +1,85 @@
+# Simplest Neural Net Introduction
+
+# Table of Contents
+
+
+<div style="page-break-after: always;"></div>
+
+----------------------
+# Simplest Neural Network
+
+* What you need to know
+* Simple Sample Network
+* One input, one hidden layer with one neuron, one output
+* FeedForward Network
+
+
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Simplest Network
+
+
+![Simplest Network](../resources/SimplestNetwork1.png)
+
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# How is input handled ?
+
+Input to a Neural Network is always Numeric. Typically a MultiDimensional Array, in this case.. not so many dimensions. 
+
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+
+# How is output Generated ?
+
+# The Output Layer of a Neural Network can be configured for different purposes. 
+
+* One of x possible classes
+* True/False 
+* Range of Values
+* and more
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Settings important to all Neural Networks
+
+* Learning Rate
+  * Applies to whole Network
+  * If output is 10 and expected output is 1 how big of a step to take to correnct error
+* Activation Function
+  * Set per layer
+  * Sets the "trigger" on what output to emit
+  * More on these later
+* Loss Function
+  * Set on Output Layer
+  * How error is calculated
+  * More on this later
+* Updater
+  * Applies to whole Network
+  * How weights are updated
+
+# Simplest Network Setting
+
+* learningRate 0.005
+* updater Nesterovs variant of Stochastic Gradient Descent with Momentum
+* Output Activation Identity
+* Hidden Layer Activation TANH
+* Number of Epochs 500
+
+
+
+
+
+
+
+---------
+<div style="page-break-after: always;"></div>
+
+

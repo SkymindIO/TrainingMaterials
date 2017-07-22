@@ -1,0 +1,155 @@
+!SLIDE center subsection
+
+# What is Deep Learning
+
+This section describes the fields of Artificial Intelligence, Machine Learning and Deep Learning and how they are related.
+
+
+!SLIDE 
+
+# What is Deep Learning?
+
+The relationship between Deep Learning and Machine Learning
+
+* Machine Learning
+* Data Science / Data Mining
+* Deep Learning
+
+!SLIDE
+
+# Introduction to Machine Learning
+
+* **&rArr;** Machine Learning
+* Data Science / Data Mining
+* Deep Learning
+
+
+!SLIDE
+
+# Machine Learning
+
+!SLIDE
+
+
+# What is Machine Learning?
+
+* Extracting Knowledge from raw data in the form of a model
+  * Decision trees
+  * Linear Models
+  * Neural Networks
+
+* Arthur Samuel quote:
+  * "Field of study that gives computers the ability to learn without being explicitly programmed"
+
+!SLIDE
+
+# A Diagram
+
+![alt text](../resources/venn.png)
+
+
+~~~SECTION:notes~~~
+
+Add knowledge rep for AI, pattern detection for Machine Learning, and for Deep Learning add Representational Learning
+
+https://nudgr.io/blog/building-a-machine-learning-product-data-and-features/
+
+~~~ENDSECTION~~~
+
+# See Notes if I have time add pictures
+
+!SLIDE
+
+# Data Science / Data Mining
+
+* Machine Learning
+* **&rArr;** Data Science / Data Mining
+* Deep Learning
+
+
+!SLIDE
+
+
+
+# Machine Learning Compared to Data Science/Mining
+* Data Mining
+    * The process of extracting information from the data
+    * Uses Machine Learning
+* Data Science
+  * Data Mining from the lens of a statistician
+  * Venn Diagrams
+  * A way to get a raise
+  * A more agreeable Actuary
+  * A statistician using a Mac
+
+!SLIDE
+
+# Deep Learning
+
+* Machine Learning
+* Data Science / Data Mining
+* **&rArr;** Deep Learning
+
+!SLIDE
+
+# A Definition of Deep Learning
+
+* Deep learning (also known as deep structured learning, hierarchical learning or deep machine learning) is a branch of machine learning based on a set of algorithms that attempt to model high level abstractions in data.
+
+source - wikipedia
+
+!SLIDE
+
+# Neural Networks
+
+* A computational approach patterned on the human brain and nervous system
+
+!SLIDE
+
+# Comparison Between Neural Network  and Machine Learning
+
+* Machine Learning
+  * Hand Crafted Features
+  * SME is needed
+  * Must inject Context
+* Deep Learning/Neural Network
+  * Automatic Feature Engineering
+  * Learns Context
+
+
+
+!SLIDE
+
+# Biological Neurons
+
+* Biological Neuron: An electrically excitable cell that processes and transmits information through electrical and chemical signals
+* Biological Neural Network: An interconnected group of neurons
+
+~~~SECTION:notes~~~
+
+Add Picture
+
+~~~ENDSECTION~~~
+
+
+!SLIDE
+
+# Role of Artificial Neural Network
+
+
+## Learns or Trains to perform tasks that traditional programming methods find rather challenging.
+* Speech recognition 
+* object recognition 
+* computer vision 
+* pattern recognition.
+
+!SLIDE
+
+# A Neural Network
+
+<img src="../resources/general_network.png" height=480 width=480>
+
+
+
+
+
