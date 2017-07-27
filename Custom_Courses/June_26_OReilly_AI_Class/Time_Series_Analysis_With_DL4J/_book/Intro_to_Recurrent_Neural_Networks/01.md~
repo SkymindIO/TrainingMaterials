@@ -1,0 +1,123 @@
+# Introduction to Recurrent Neural Networks 
+
+# Table of Contents
+
+1. Fundamentals of Machine Learning
+2. Something else
+
+<div style="page-break-after: always;"></div>
+
+----------------------
+# What is a Recurrent Neural Network?
+
+* FeedForward Network with hidden state
+* Hidden state with own internal dynamics
+* Information can be stored in "hidden state" for a long time
+
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Benefit of RNN
+
+* Instead of pre-configured window of time steps
+* Flexible state information for flexible length events
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Hidden Markov models and speech recognition
+
+Use for speech recognition in the 70's not neural net
+
+Not sure I should mention them
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Benefits of RNN's
+
+* Distributed Hidden State
+* Several different units can be active at the same time
+* Can remember several different things
+* Non-linear can update hidden state in complicated ways
+* Hinton quote
+"With enough neurons and enough time, a recurring neuron network can compute anything that can be computed by your computer." coursera course
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# More Benefits What can RNN's model, what behavior can they exhibit
+
+* Oscillations, motor control, walking robot
+* Settle to point attractors 
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Challenges of RNN's
+
+* Comp;exity makes them hard to train
+
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Training
+
+* Back Propogation Through time
+* think of it as feed forward network with constrained weights. 
+
+Think of RNN as discrete time steps and (see Hinton Coursera)
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+
+
+
+# Training Goal, one sequence to another Sequence
+
+* When modeling Sequential data we often want to turn one sequence into another sequence
+
+* A phrase in english to a phrase in Spanish
+
+* Sequence of audio ad convert into word identitites
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Training Goal
+
+* Next timestep of current sequence
+
+---------
+<div style="page-break-after: always;"></div>
+
+
+# Non Sequence data as Sequence data
+
+* Pixels in an image , or Grid of pixels applied to next Grid
+* works quite well, feels less natural
+
+---------
+<div style="page-break-after: always;"></div
+
+
+
+
+# A Diagram
+
+![alt text](../resources/venn.png)
+
+
+
+
+
+---------
+<div style="page-break-after: always;"></div>
+
+# Machine Learning Compared to Data Science/Mining
+
+---------
+<div style="page-break-after: always;"></div>

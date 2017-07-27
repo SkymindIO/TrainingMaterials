@@ -1,0 +1,990 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ETL and Vectorization For UCI lab if I do it · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Appendix/01.html" />
+    
+    
+    <link rel="prev" href="../Weather_Forecast_lab/01.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Introduction/01.html">
+            
+                <a href="../Introduction/01.html">
+            
+                    
+                    Welcome to the Course
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../What_is_deep_learning/01.html">
+            
+                <a href="../What_is_deep_learning/01.html">
+            
+                    
+                    What is DeepLearning?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../Simplest_network_Lab_intro/01.html">
+            
+                <a href="../Simplest_network_Lab_intro/01.html">
+            
+                    
+                    Neural Network Demonstration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../Neural_Network_Types/01.html">
+            
+                <a href="../Neural_Network_Types/01.html">
+            
+                    
+                    Types of Neural Networks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../DL4J_overview/">
+            
+                <a href="../DL4J_overview/">
+            
+                    
+                    DeepLearning4J
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../DL4J_overview/DeepLearning4J.html">
+            
+                <a href="../DL4J_overview/DeepLearning4J.html">
+            
+                    
+                    DeepLearning4J Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../DL4J_overview/DataVec.html">
+            
+                <a href="../DL4J_overview/DataVec.html">
+            
+                    
+                    DataVec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../DL4J_overview/DataVecLab.html">
+            
+                <a href="../DL4J_overview/DataVecLab.html">
+            
+                    
+                    DataVec Lab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="../DL4J_overview/ND4J.html">
+            
+                <a href="../DL4J_overview/ND4J.html">
+            
+                    
+                    ND4J and libnd4j
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.5" data-path="../DL4J_overview/DeepLearning4J.html">
+            
+                <a href="../DL4J_overview/DeepLearning4J.html">
+            
+                    
+                    DeepLearning4J
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../Neural_networks_explained/01.html">
+            
+                <a href="../Neural_networks_explained/01.html">
+            
+                    
+                    FeedForward Neural Networks Explained
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../Abalone_intro/01.html">
+            
+                <a href="../Abalone_intro/01.html">
+            
+                    
+                    Abalone Lab 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../Modeling_sequences/01.html">
+            
+                <a href="../Modeling_sequences/01.html">
+            
+                    
+                    Modeling Sequences
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../Data_Ingest_Case_Study_Text/01.html">
+            
+                <a href="../Data_Ingest_Case_Study_Text/01.html">
+            
+                    
+                    Data Ingest Case Study: Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../Intro_to_Recurrent_Neural_Networks/01.html">
+            
+                <a href="../Intro_to_Recurrent_Neural_Networks/01.html">
+            
+                    
+                    Introduction to Recurrent Neural Networks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../LSTM/01.html">
+            
+                <a href="../LSTM/01.html">
+            
+                    
+                    LSTM intro REALLY SHORT COMBINE 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" data-path="../Weather_Forecast_lab/01.html">
+            
+                <a href="../Weather_Forecast_lab/01.html">
+            
+                    
+                    LSTM Character Generation of Weather Forecast Lab
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter active" data-level="13.1" data-path="01.html">
+            
+                <a href="01.html">
+            
+                    
+                    ETL and Vectorization For UCI lab if I do it
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="14.1" data-path="../Appendix/01.html">
+            
+                <a href="../Appendix/01.html">
+            
+                    
+                    Appendix
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="15.1" data-path="../DeepLearning_Intro/01.html">
+            
+                <a href="../DeepLearning_Intro/01.html">
+            
+                    
+                    DeepLearning Introduction need better title
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="16.1" data-path="../Optimization_algorithms/01.html">
+            
+                <a href="../Optimization_algorithms/01.html">
+            
+                    
+                    Optimization Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >ETL and Vectorization For UCI lab if I do it</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="etl-and-vectorization">ETL and Vectorization</h1>
+<h1 id="table-of-contents">Table of Contents</h1>
+<p>-- this chapter sets up datavec needed for UCI sequence data lab</p>
+<h2 id=""><div style="page-break-after: always;"></div></h2>
+<h1 id="concepts-in-etl-datavec">Concepts in ETL: DataVec</h1>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="what-is-etl">What is ETL?</h1>
+<ul>
+<li>Extract<ul>
+<li>Pull data from a source<pre><code>  * Logs
+  * Another Database
+</code></pre></li>
+</ul>
+</li>
+<li>Transform<ul>
+<li>Convert each column with a function</li>
+<li>Filter some columns out</li>
+</ul>
+</li>
+<li>Load<ul>
+<li>Create a new dataset / table</li>
+<li>Setup to be used by another application</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="what-is-vectorization">What is Vectorization?</h1>
+<ul>
+<li>Convert each column in a table/dataset into a floating point number</li>
+<li>Four Attribute Types<ul>
+<li>Nominal</li>
+<li>Ordinal</li>
+<li>Interval</li>
+<li>Ratio</li>
+</ul>
+</li>
+<li>Raw Text has many complications<ul>
+<li>Bag of Words / Counts</li>
+<li>TF-IDF</li>
+</ul>
+</li>
+<li>Sometimes we need to enumerate the options for the column<ul>
+<li>Option A -&gt; 0.0, Option B -&gt; 1.0, &#x2026;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="examples-of-raw-data-sources">Examples of Raw Data Sources</h1>
+<ul>
+<li>Raw text documents</li>
+<li>A file containing a text record per line</li>
+<li>Binary timeseries data in custom file format</li>
+<li>Pre-processed datasets with a mixture of numeric and string attributes</li>
+<li>Image Files</li>
+<li>Audio Files</li>
+<li>Video Files</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="what-is-datavec">What is DataVec?</h1>
+<ul>
+<li>Library for handling machine learning data / ETL <ul>
+<li>(Extract, Transform, Load)</li>
+</ul>
+</li>
+<li>Goal is to simplify the preparation and loading of raw data into a format ready for use for machine learning<ul>
+<li>Also provides vectorization functionality</li>
+</ul>
+</li>
+<li>DataVec includes functionality for loading <ul>
+<li>Tabular (CSV, etc)</li>
+<li>Image</li>
+<li>Time series</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="major-facets-of-datavec">Major Facets of DataVec</h1>
+<ul>
+<li>Mode of Execution<ul>
+<li>Local</li>
+<li>Spark</li>
+</ul>
+</li>
+<li>Type of Data<ul>
+<li>Tabular (&#x201C;database table&#x201D;)</li>
+<li>Sequential (&#x201C;Timeseries&#x201D;)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="datavec-abstractions">DataVec Abstractions</h1>
+<ul>
+<li>Writable<ul>
+<li>Interface representing a piece of data</li>
+<li>Example: DoubleWritable</li>
+</ul>
+</li>
+<li>RecordReader<ul>
+<li>Interface to provide mechanism to load data from raw file format</li>
+<li>Converts data to List<writable></writable></li>
+</ul>
+</li>
+<li>RecordReaderDataSetIterator<ul>
+<li>Conversion of List<writable> to DataSet</writable></li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="datavec-processing-pipelines">DataVec Processing Pipelines</h1>
+<p><img src="../resources/datavec_processing_pipelines.png" alt="alt text"></p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="datavec-handling-sequences">DataVec Handling Sequences</h1>
+<ul>
+<li>More complex data type<ul>
+<li>More complicated to store / load</li>
+</ul>
+</li>
+<li>Move from List<writable> (a vector)<ul>
+<li>To a series of vectors represented by:<ul>
+<li>List<list<writable></list<writable></li>
+</ul>
+</li>
+<li>Represents the input of a single sequence</li>
+</ul>
+</writable></li>
+<li>More complex input, but still trying to produce a DataSet<ul>
+<li>Input is now a Tensor!</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="datavec-sequence-processing-pipelines">DataVec Sequence Processing Pipelines</h1>
+<p><img src="../resources/datavec_sequence_pipelines.png" alt="alt text"></p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="sequences-and-local-datavec-pipelines">Sequences and Local datavec pipelines</h1>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="goal-dataset-from-local-raw-data">Goal: DataSet from Local Raw Data</h1>
+<ul>
+<li>Need to be able to load the raw sequence data<ul>
+<li>Read the file format</li>
+<li>Match up labels to features</li>
+<li>Perform any normalization during vectorization</li>
+</ul>
+</li>
+<li>If the input file matches a record reader<ul>
+<li>We can leverage that code to build our NDArrays and DataSets</li>
+</ul>
+</li>
+<li>If not, we need to write custom code<ul>
+<li>to build the DataSet objects</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="example-data-layout">Example Data Layout</h1>
+<ul>
+<li>Suitable for CSVSequenceRecordReader for sequence input<ul>
+<li>One timeseries per file</li>
+<li>Separate file for labels</li>
+</ul>
+</li>
+<li>Example<ul>
+<li>Features for series 0:<ul>
+<li>Train/features/0.csv</li>
+</ul>
+</li>
+<li>Label for series 0:<ul>
+<li>Train/labels/0.csv</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>This dataset is univariate (one column in CSV file)</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="high-level-pattern">High-Level Pattern</h1>
+<ul>
+<li>Load data from File:<ul>
+<li>CSVSequenceRecordReader</li>
+</ul>
+</li>
+<li>Dealing with file format:<ul>
+<li>NumberedFileInputSplit</li>
+</ul>
+</li>
+<li>We handle raw sequence data to DataSet (tensor) conversion with:<ul>
+<li>SequenceRecordReaderDataSetIterator</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="local-code-example">Local Code Example</h1>
+<pre><code>//Note that we have 450 training files for features: train/features/0.csv through train/features/449.csv
+SequenceRecordReader trainFeatures = new CSVSequenceRecordReader();
+trainFeatures.initialize(new NumberedFileInputSplit(featuresDirTrain.getAbsolutePath() + &quot;/%d.csv&quot;, 0, 449));
+SequenceRecordReader trainLabels = new CSVSequenceRecordReader();
+trainLabels.initialize(new NumberedFileInputSplit(labelsDirTrain.getAbsolutePath() + &quot;/%d.csv&quot;, 0, 449));
+
+int miniBatchSize = 10;
+int numLabelClasses = 6;
+DataSetIterator trainData = new SequenceRecordReaderDataSetIterator(trainFeatures, trainLabels, miniBatchSize, numLabelClasses,
+    false, SequenceRecordReaderDataSetIterator.AlignmentMode.ALIGN_END);
+
+//Normalize the training data
+DataNormalization normalizer = new NormalizerStandardize();
+normalizer.fit(trainData);              //Collect training data statistics
+trainData.reset();
+
+//Use previously collected statistics to normalize on-the-fly. Each DataSet returned by &apos;trainData&apos; iterator will be normalized
+trainData.setPreProcessor(normalizer);
+</code></pre><hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="reading-data-from-file">Reading Data From File</h1>
+<ul>
+<li>We need a record reader<ul>
+<li>Start with: SequenceRecordReader</li>
+<li>Initialize with a specific subclass of input split<ul>
+<li>This deals with the specific file format</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Supported data formats<ul>
+<li>CSVSequenceRecordReader<ul>
+<li>Reads CSV based data from CSV Text Files</li>
+</ul>
+</li>
+<li>CSVNLinesSequenceRecordReader<ul>
+<li>version of CSV sequence reader: each sequence is exactly N lines long, all in one file, one after the other</li>
+</ul>
+</li>
+<li>RegexSequenceRecordReader<ul>
+<li>Good for log data</li>
+</ul>
+</li>
+<li>CollectionSequenceRecordReader<ul>
+<li>Mainly for debugging/testing</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="dealing-w-file-formats">Dealing w File Formats</h1>
+<ul>
+<li>Supported File Formats<ul>
+<li>CSV Text Files<ul>
+<li>Numbered Files: NumberedFileInputSplit<ul>
+<li>Ex: numbered files in directory -&gt; NumberedFileInputSplit</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Notes<ul>
+<li>Any input split with URIs: FileSplit for example. Totally fine for &quot;one sequence per file&quot; cases<ul>
+<li>BUT: be careful of alignment for features and labels in separate files. Something like NumberedFileInputSplit is better for this</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="building-a-dataset-iterator">Building a DataSet Iterator</h1>
+<ul>
+<li>Why?<ul>
+<li>Need a place that takes raw data from possibly multiple files + label data and places it all in a single DataSet object</li>
+</ul>
+</li>
+<li>Base Class: <ul>
+<li>DataSetIterator</li>
+</ul>
+</li>
+<li>Sequence Specific Class:<ul>
+<li>SequenceRecordReaderDataSetIterator</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="handling-normalization">Handling Normalization</h1>
+<pre><code>DataSetIterator trainData = &#x2026;
+
+DataNormalization normalizer = new NormalizerStandardize();        
+
+// collect statistics
+normalizer.fit(trainData); 
+trainData.reset();
+
+// use statistics to vectorize data
+trainData.setPreProcessor(normalizer);
+</code></pre><hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="vectorization-techniques-for-normalization">Vectorization Techniques for Normalization</h1>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="techniques-of-normalization">Techniques of Normalization</h1>
+<ul>
+<li>When we normalize at the vector level <ul>
+<li>most of the time this ends up being a division of the vector by a norm (in this case, &#x201C;length&#x201D;) of the vector.</li>
+</ul>
+</li>
+<li>Standardize<ul>
+<li>ZMUV</li>
+</ul>
+</li>
+<li>Min-Max Scaling (&#x201C;feature scaling&#x201D;)</li>
+<li>Binarization</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="standardization">Standardization</h1>
+<ul>
+<li>When we &#x201C;standardize&#x201D; a vector we subtract a measure of location (minimum, maximum, median, etc) <ul>
+<li>and then divide by a measure of scale (variance, standard deviation, range, etc). </li>
+<li>Zero Mean, Unit Variance</li>
+</ul>
+</li>
+</ul>
+<h2 id="th--show-example-use-degrees-celsius-vs-farhenheit">TH- show example Use degrees celsius vs farhenheit</h2>
+<div style="page-break-after: always;"></div>
+
+<h1 id="binarization">Binarization</h1>
+<ul>
+<li>Use filter to produce a feature that includes a 1 or a 0 as its value</li>
+<li>We set threshold on filter function as the threshold</li>
+<li>Where do we use it?</li>
+<li>[ todo ]</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="want-to-know-more">Want to know more?</h1>
+<h2 id=""><img src="../resources/book.png" alt="alt text"></h2>
+<div style="page-break-after: always;"></div>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Weather_Forecast_lab/01.html" class="navigation navigation-prev " aria-label="Previous page: LSTM Character Generation of Weather Forecast Lab">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Appendix/01.html" class="navigation navigation-next " aria-label="Next page: Appendix">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ETL and Vectorization For UCI lab if I do it","level":"13.1","depth":1,"next":{"title":"Appendix","level":"14.1","depth":1,"path":"Appendix/01.md","ref":"Appendix/01.md","articles":[]},"previous":{"title":"LSTM Character Generation of Weather Forecast Lab","level":"12.1","depth":1,"path":"Weather_Forecast_lab/01.md","ref":"Weather_Forecast_lab/01.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ETL_Vectorization/01.md","mtime":"2017-02-07T05:50:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-02T02:11:34.219Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

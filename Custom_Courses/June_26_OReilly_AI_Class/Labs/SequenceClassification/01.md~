@@ -1,0 +1,133 @@
+# Sequence Classification Lab
+
+This Lab uses an LSTM Recurrent Neural Network to classify Sequence Data into 6 different classes. 
+
+# The classes are: 
+
+## Normal
+
+![alt text](../resources/sequencenormal.png)
+
+
+-----------------
+<div style="page-break-after: always;"></div>
+
+
+## Cyclic
+![alt text](../resources/sequencecyclic.png)
+
+
+-----------------
+<div style="page-break-after: always;"></div>
+
+## Increasing trend
+
+![alt text](../resources/sequenceuptrend.png)
+
+
+-----------------
+<div style="page-break-after: always;"></div>
+
+## Decreasing trend
+
+![alt text](../resources/sequencedown.png)
+
+
+-----------------
+<div style="page-break-after: always;"></div>
+
+## Upward shift
+
+![alt text](../resources/sequenceupshift.png)
+
+
+-----------------
+<div style="page-break-after: always;"></div>
+
+## Downward shift
+
+![alt text](../resources/sequencedownshift.png)
+
+
+-----------------
+<div style="page-break-after: always;"></div>
+
+# Lab Overview
+
+* UCIdata.java
+  * Utility class to download dataset
+  * DO NOT EDIT UCIdata.java
+* 
+
+
+* I have a picture
+
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Feed Forward Neural Net: Uses
+
+* Bullets provide by Dave..
+* Dave was here
+  * More from Dave 
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Recurrent Neural Net: Design
+
+* I could use a good picture
+* Don't go too deep we only have 3 hours
+
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Recurrent Neural Net: Uses
+
+* Sequence or Time Series Data
+* One to many
+* Many to Many
+* Many to one
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Convolutional Neural Net: Design
+
+* I could use a good picture
+* Don't go too deep we only have 3 hours
+
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+# Convolutional  Neural Net: Uses
+
+* Image Classification
+* ? 
+* ? 
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+
+
+
+
+-------------------
+<div style="page-break-after: always;"></div>
+
+
+
+<!-- 
+
+![alt text](../resources/venn.png)
+
+
+
+---------
+<div style="page-break-after: always;"></div>
+
+-->

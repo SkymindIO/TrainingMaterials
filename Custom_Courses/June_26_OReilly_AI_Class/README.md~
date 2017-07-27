@@ -1,0 +1,46 @@
+# Overview of process for building the materials and other details
+
+## Lab IntelliJ project
+
+Let's use this one. 
+
+https://github.com/tomthetrainer/class_labs
+
+As far as I know it has ALL the possible Labs I have ever written in it. 
+
+The structure is. 
+
+### Demos
+
+Stuff for the isntructor to demonstrate. Currently a simple network to show UI and basic hyper parameters, VGG16, and a spark transform with Datavec
+
+### Labs
+
+This is where the student works, stubbed out file with comments that match the isntructions from the Lab PDF
+
+### Solutions
+
+Complete working solutions
+
+# Building the content. 
+
+The Presentation(slides) are delivered with showoff from puppet labs. 
+
+You build MarkDown, Table of Contents is JSON, apply CSS as needed. The pages rendered are html so html tags can be used as well as Markdown. 
+
+# Presenting the content
+
+Switch to the directory "Time_Series_Analysis_With_DL4J"
+
+Run "showoff serve"
+
+This will launch a Sinatra Ruby web server with the content. 
+
+## Running the Presenter window. 
+
+http://localhost:9090/presenter
+
+Is the presenter window. You will see Nav Panel on left, Slide being server in center and Instructor notes below. 
+
+## Controlling a Slave Window
+
