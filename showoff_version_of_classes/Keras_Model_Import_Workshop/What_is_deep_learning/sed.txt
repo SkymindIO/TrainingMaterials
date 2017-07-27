@@ -1,1 +1,0 @@
-sed -e 's/^-*/!SLIDE/g' 01.md
