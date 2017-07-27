@@ -1,0 +1,5417 @@
+<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title></title>
+
+  
+
+  
+    
+      <link rel="stylesheet" href=".//css/showoff.css" type="text/css"/>
+    
+      <link rel="stylesheet" href=".//css/font-awesome-4.4.0/css/font-awesome.min.css" type="text/css"/>
+    
+      <link rel="stylesheet" href=".//css/onepage.css" type="text/css"/>
+    
+      <link rel="stylesheet" href=".//css/highlight/default.css" type="text/css"/>
+    
+
+    
+      <link rel="stylesheet" href=".//file/showoff.css" type="text/css"/>
+    
+
+    
+      <script type="text/javascript" src=".//js/jquery-2.1.4.min.js"></script>
+    
+      <script type="text/javascript" src=".//js/jquery-print.js"></script>
+    
+      <script type="text/javascript" src=".//js/showoff.js"></script>
+    
+      <script type="text/javascript" src=".//js/highlight.pack-9.2.0.js"></script>
+    
+    
+    
+
+  
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('pre.highlight code').each(function(i, block) {
+        try {
+          hljs.highlightBlock(block);
+        } catch(e) {
+          console.log('Syntax highlighting failed on ' + $(this).closest('div.slide').attr('id'));
+          console.log('Syntax highlighting failed for ' + $(this).attr('class'));
+          console.log(e);
+        }
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+<div id="slides" >
+  <div data-section="Welcome to the Course" data-title="01" id="Introduction_011" class="slide" data-transition="none">
+<div class="content " ref="Introduction/01:1">
+<h1 class="section_title">DeepLearning: Building Neural Networks with DeepLearning4J</h1>
+<h1>Welcome to the Course</h1>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Welcome to the Course" data-title="01" id="Introduction_012" class="slide" data-transition="none">
+<div class="content " ref="Introduction/01:2">
+<h1 class="section_title">DeepLearning: Building Neural Networks with DeepLearning4J</h1>
+<h1>This course is a Hands-ON 3 Day Course</h1>
+
+<ul>
+<li>Topics Covered
+
+<ul>
+<li>Machine Learning</li>
+<li>Deep Learning</li>
+<li>Building Neural Networks with DeepLearning4j</li>
+<li>ETL processes with DataVec</li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Welcome to the Course" data-title="01" id="Introduction_013" class="slide" data-transition="none">
+<div class="content " ref="Introduction/01:3">
+<h1 class="section_title">DeepLearning: Building Neural Networks with DeepLearning4J</h1>
+<h1>Schedule</h1>
+
+<ul>
+<li>9:00 AM Start</li>
+<li>12:00 PM -&gt; 1:00 PM Lunch</li>
+<li>Breaks 10 minutes each hour</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Welcome to the Course" data-title="01" id="Introduction_014" class="slide" data-transition="none">
+<div class="content " ref="Introduction/01:4">
+<h1 class="section_title">DeepLearning: Building Neural Networks with DeepLearning4J</h1>
+<h1>Labs</h1>
+
+<ul>
+<li>Java lab exercises using Intellij</li>
+<li>Separate Lab Document
+
+<ul>
+<li>Simplest Network Lab</li>
+<li>DataVec Lab</li>
+<li>FeedForward Network Lab</li>
+<li>Convolutional Neural Network Lab</li>
+<li>RNN/LSTM Lab</li>
+<li>Model Saving Lab</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Welcome to the Course" data-title="01" id="Introduction_015" class="slide" data-transition="none">
+<div class="content " ref="Introduction/01:5">
+<h1 class="section_title">DeepLearning: Building Neural Networks with DeepLearning4J</h1>
+<h1>Contents</h1>
+
+<ul>
+<li>Introduction</li>
+<li>What is Deep Learning</li>
+<li>Neural Network Demonstration</li>
+<li>Types of Neural Networks</li>
+<li>DeepLearning4J</li>
+<li>DeepLearning4J Overview
+
+<ul>
+<li>DataVec</li>
+<li>DataVec Lab</li>
+<li>ND4J and libnd4j</li>
+<li>DeepLearning4J</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Welcome to the Course" data-title="01" id="Introduction_016" class="slide" data-transition="none">
+<div class="content " ref="Introduction/01:6">
+<h1 class="section_title">DeepLearning: Building Neural Networks with DeepLearning4J</h1>
+<h1>Contents Continued...</h1>
+
+<ul>
+<li>FeedForward Neural Networks Explained</li>
+<li>Abalone Lab</li>
+<li>Review of the Training Web UI</li>
+<li>Convolutional Neural Networks</li>
+<li>Convolutional Network Lab</li>
+<li>Modeling Sequences</li>
+<li>Data Ingest Case Study: Text</li>
+<li>Introduction to Recurrent Neural Networks</li>
+<li>LSTM Character Generation of Weather Forecast Lab</li>
+<li>Saving and Loading trained Models</li>
+<li>Lab: Saving and Loading trained Models</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Welcome to the Course" data-title="01" id="Introduction_017" class="slide" data-transition="none">
+<div class="content " ref="Introduction/01:7">
+<h1 class="section_title">DeepLearning: Building Neural Networks with DeepLearning4J</h1>
+<h1>Introductions</h1>
+
+<ul>
+<li>Intro to Skymind</li>
+<li>Instructor Intro</li>
+<li>Student Intro</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Welcome to the Course" data-title="01" id="Introduction_018" class="slide" data-transition="none">
+<div class="content " ref="Introduction/01:8">
+<h1 class="section_title">DeepLearning: Building Neural Networks with DeepLearning4J</h1>
+<h1>Skymind</h1>
+
+<ul>
+<li>Developer of DeepLearning4J</li>
+<li>Services
+
+<ul>
+<li>Support</li>
+<li>Training</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Welcome to the Course" data-title="01" id="Introduction_019" class="slide" data-transition="none">
+<div class="content " ref="Introduction/01:9">
+<h1 class="section_title">DeepLearning: Building Neural Networks with DeepLearning4J</h1>
+<h1>Introductions</h1>
+
+<ul>
+<li>Why are you here?</li>
+<li>What do you want to learn?</li>
+<li>What sections interest you? </li>
+<li>What is your background?</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="What is DeepLearning?" data-title="01" id="What_is_deep_learning_011" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="What_is_deep_learning/01:1">
+<h1 class="section_title">What is Deep Learning</h1>
+<h1>What is Deep Learning</h1>
+
+<p>This section describes the fields of Artificial Intelligence, Machine Learning and Deep Learning and how they are related.</p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="What is DeepLearning?" data-title="01" id="What_is_deep_learning_012" class="slide" data-transition="none">
+<div class="content " ref="What_is_deep_learning/01:2">
+<h1 class="section_title">What is Deep Learning</h1>
+<h1>What is Deep Learning?</h1>
+
+<p>The relationship between Deep Learning and Machine Learning</p>
+
+<ul>
+<li>Machine Learning</li>
+<li>Data Science / Data Mining</li>
+<li>Deep Learning</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="What is DeepLearning?" data-title="01" id="What_is_deep_learning_013" class="slide" data-transition="none">
+<div class="content " ref="What_is_deep_learning/01:3">
+<h1 class="section_title">What is Deep Learning</h1>
+<h1>Introduction to Machine Learning</h1>
+
+<ul>
+<li>
+<strong>⇒</strong> Machine Learning</li>
+<li>Data Science / Data Mining</li>
+<li>Deep Learning</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="What is DeepLearning?" data-title="01" id="What_is_deep_learning_014" class="slide" data-transition="none">
+<div class="content " ref="What_is_deep_learning/01:4">
+<h1 class="section_title">What is Deep Learning</h1>
+<h1>Machine Learning</h1>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="What is DeepLearning?" data-title="01" id="What_is_deep_learning_015" class="slide" data-transition="none">
+<div class="content " ref="What_is_deep_learning/01:5">
+<h1 class="section_title">What is Deep Learning</h1>
+<h1>What is Machine Learning?</h1>
+
+<ul>
+<li>
+<p>Extracting Knowledge from raw data in the form of a model</p>
+
+<ul>
+<li>Decision trees</li>
+<li>Linear Models</li>
+<li>Neural Networks</li>
+</ul>
+</li>
+<li>
+<p>Arthur Samuel quote:</p>
+
+<ul>
+<li>"Field of study that gives computers the ability to learn without being explicitly programmed"</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="What is DeepLearning?" data-title="01" id="What_is_deep_learning_016" class="slide" data-transition="none">
+<div class="content " ref="What_is_deep_learning/01:6">
+<h1 class="section_title">What is Deep Learning</h1>
+<h1>A Diagram</h1>
+
+<p><img src="./file//resources/venn.png" alt="alt text"></p>
+
+
+
+<h1>See Notes if I have time add pictures</h1>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="What is DeepLearning?" data-title="01" id="What_is_deep_learning_017" class="slide" data-transition="none">
+<div class="content " ref="What_is_deep_learning/01:7">
+<h1 class="section_title">What is Deep Learning</h1>
+<h1>Data Science / Data Mining</h1>
+
+<ul>
+<li>Machine Learning</li>
+<li>
+<strong>⇒</strong> Data Science / Data Mining</li>
+<li>Deep Learning</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="What is DeepLearning?" data-title="01" id="What_is_deep_learning_018" class="slide" data-transition="none">
+<div class="content " ref="What_is_deep_learning/01:8">
+<h1 class="section_title">What is Deep Learning</h1>
+<h1>Machine Learning Compared to Data Science/Mining</h1>
+
+<ul>
+<li>Data Mining
+
+<ul>
+<li>The process of extracting information from the data</li>
+<li>Uses Machine Learning</li>
+</ul>
+</li>
+<li>Data Science
+
+<ul>
+<li>Data Mining from the lens of a statistician</li>
+<li>Venn Diagrams</li>
+<li>A way to get a raise</li>
+<li>A more agreeable Actuary</li>
+<li>A statistician using a Mac</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="What is DeepLearning?" data-title="01" id="What_is_deep_learning_019" class="slide" data-transition="none">
+<div class="content " ref="What_is_deep_learning/01:9">
+<h1 class="section_title">What is Deep Learning</h1>
+<h1>Deep Learning</h1>
+
+<ul>
+<li>Machine Learning</li>
+<li>Data Science / Data Mining</li>
+<li>
+<strong>⇒</strong> Deep Learning</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="What is DeepLearning?" data-title="01" id="What_is_deep_learning_0110" class="slide" data-transition="none">
+<div class="content " ref="What_is_deep_learning/01:10">
+<h1 class="section_title">What is Deep Learning</h1>
+<h1>A Definition of Deep Learning</h1>
+
+<ul>
+<li>Deep learning (also known as deep structured learning, hierarchical learning or deep machine learning) is a branch of machine learning based on a set of algorithms that attempt to model high level abstractions in data.</li>
+</ul>
+
+<p>source - wikipedia</p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="What is DeepLearning?" data-title="01" id="What_is_deep_learning_0111" class="slide" data-transition="none">
+<div class="content " ref="What_is_deep_learning/01:11">
+<h1 class="section_title">What is Deep Learning</h1>
+<h1>Neural Networks</h1>
+
+<ul>
+<li>A computational approach patterned on the human brain and nervous system</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="What is DeepLearning?" data-title="01" id="What_is_deep_learning_0112" class="slide" data-transition="none">
+<div class="content " ref="What_is_deep_learning/01:12">
+<h1 class="section_title">What is Deep Learning</h1>
+<h1>Comparison Between Neural Network  and Machine Learning</h1>
+
+<ul>
+<li>Machine Learning
+
+<ul>
+<li>Hand Crafted Features</li>
+<li>SME is needed</li>
+<li>Must inject Context</li>
+</ul>
+</li>
+<li>Deep Learning/Neural Network
+
+<ul>
+<li>Automatic Feature Engineering</li>
+<li>Learns Context</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="What is DeepLearning?" data-title="01" id="What_is_deep_learning_0113" class="slide" data-transition="none">
+<div class="content " ref="What_is_deep_learning/01:13">
+<h1 class="section_title">What is Deep Learning</h1>
+<h1>Biological Neurons</h1>
+
+<ul>
+<li>Biological Neuron: An electrically excitable cell that processes and transmits information through electrical and chemical signals</li>
+<li>Biological Neural Network: An interconnected group of neurons</li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="What is DeepLearning?" data-title="01" id="What_is_deep_learning_0114" class="slide" data-transition="none">
+<div class="content " ref="What_is_deep_learning/01:14">
+<h1 class="section_title">What is Deep Learning</h1>
+<h1>Role of Artificial Neural Network</h1>
+
+<h2>Learns or Trains to perform tasks that traditional programming methods find rather challenging.</h2>
+
+<ul>
+<li>Speech recognition </li>
+<li>object recognition </li>
+<li>computer vision </li>
+<li>pattern recognition.</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="What is DeepLearning?" data-title="01" id="What_is_deep_learning_0115" class="slide" data-transition="none">
+<div class="content " ref="What_is_deep_learning/01:15">
+<h1 class="section_title">What is Deep Learning</h1>
+<h1>Supervised vs Unsupervised Learning</h1>
+
+<ul>
+<li>Supervised learning
+
+<ul>
+<li>We give the training process labels (“outputs”) for every training input data row</li>
+<li>Model learns to associate input data with output value</li>
+</ul>
+</li>
+<li>Unsupervised learning
+
+<ul>
+<li>No labels</li>
+<li>Model attempts to learn structure in the data</li>
+</ul>
+</li>
+<li>Neural Networks can be used for either supervised or unsupervised learning</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="What is DeepLearning?" data-title="01" id="What_is_deep_learning_0116" class="slide" data-transition="none">
+<div class="content " ref="What_is_deep_learning/01:16">
+<h1 class="section_title">What is Deep Learning</h1>
+<h1>Clustering</h1>
+
+<ul>
+<li>Typically unsupervised learning
+
+<ul>
+<li>“K-Means Clustering”</li>
+</ul>
+</li>
+<li>Example
+
+<ul>
+<li>“cluster K groups of similar news articles together”</li>
+</ul>
+</li>
+<li>ND4J supports this, but it is not  a NN</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="What is DeepLearning?" data-title="01" id="What_is_deep_learning_0117" class="slide" data-transition="none">
+<div class="content " ref="What_is_deep_learning/01:17">
+<h1 class="section_title">What is Deep Learning</h1>
+<h1>A Neural Network</h1>
+
+<p><img src="./file//resources/general_network.png" height="480" width="480"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Framing the Question" data-title="01" id="Framing_the_Question_011" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="Framing_the_Question/01:1">
+<h1 class="section_title">Framing the Question</h1>
+<h1>Framing the Question</h1>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Framing the Question" data-title="01" id="Framing_the_Question_012" class="slide" data-transition="none">
+<div class="content " ref="Framing_the_Question/01:2">
+<h1 class="section_title">Framing the Question</h1>
+<h1>Using Neural Networks</h1>
+
+<h2>Framing the Questions</h2>
+
+<ul>
+<li>To build models we have to define
+
+<ul>
+<li>What is our training data (“evidence”)?</li>
+<li>What kind of model (“hypothesis”) is appropriate for this data?</li>
+<li>What kind of answer (“inference”) would we like to get from the model?</li>
+</ul>
+</li>
+<li>These questions frame all machine learning workflows</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Framing the Question" data-title="01" id="Framing_the_Question_013" class="slide" data-transition="none">
+<div class="content " ref="Framing_the_Question/01:3">
+<h1 class="section_title">Framing the Question</h1>
+<h1>In neural networks we’re solving systems of (non-linear) equations of the form</h1>
+
+<h2>
+<font color="red">A</font><font color="blue">x</font> = <font color="green">b</font>
+</h2>
+
+<ul>
+<li>
+<font color="red">A</font> matrix
+
+<ul>
+<li>This is our set of input data converted into an array of vectors</li>
+</ul>
+</li>
+<li>
+<font color="blue">x</font> vector
+
+<ul>
+<li>The parameter vector of weights representing our model</li>
+</ul>
+</li>
+<li>
+<font color="green">b</font> vector
+
+<ul>
+<li>Vector of output values or labels matching the rows  in the A matrix</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Framing the Question" data-title="01" id="Framing_the_Question_014" class="slide" data-transition="none">
+<div class="content " ref="Framing_the_Question/01:4">
+<h1 class="section_title">Framing the Question</h1>
+<h1>
+<font color="red">A</font><font color="blue">x</font> = <font color="green">b</font> Visually</h1>
+
+<p><img src="./file//resources/vector_table.png" alt="alt text"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Framing the Question" data-title="01" id="Framing_the_Question_015" class="slide" data-transition="none">
+<div class="content " ref="Framing_the_Question/01:5">
+<h1 class="section_title">Framing the Question</h1>
+<h1>Linear Algebra Terms</h1>
+
+<ul>
+<li>Scalars
+
+<ul>
+<li>Elements in a vector</li>
+<li>In compsci synonymous with the term “variable”</li>
+</ul>
+</li>
+<li>Vectors
+
+<ul>
+<li>For a positive integer n, a vector is an n-tuple, ordered (multi)set, or array of n numbers, called elements or scalars</li>
+</ul>
+</li>
+<li>Matricies
+
+<ul>
+<li>Group of vectors that have the same dimension (number of columns)</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Framing the Question" data-title="01" id="Framing_the_Question_016" class="slide" data-transition="none">
+<div class="content " ref="Framing_the_Question/01:6">
+<h1 class="section_title">Framing the Question</h1>
+<h1>Solving Systems of Equations</h1>
+
+<ul>
+<li>Two general methods
+
+<ul>
+<li>Direct method</li>
+<li>Iterative methods</li>
+</ul>
+</li>
+<li>Direct method
+
+<ul>
+<li>Fixed set of computation gives answer</li>
+<li>Data fits in memory</li>
+<li>Ex: Gaussian Elimination, Normal Equations</li>
+</ul>
+</li>
+<li>Iterative methods
+
+<ul>
+<li>Converges after a series of steps</li>
+<li>Stochastic Gradient Descent (SGD)</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Framing the Question" data-title="01" id="Framing_the_Question_017" class="slide" data-transition="none">
+<div class="content " ref="Framing_the_Question/01:7">
+<h1 class="section_title">Framing the Question</h1>
+<h1>Neural Networks Use an Iterative Method to Solve a System of Equations</h1>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Framing the Question" data-title="01" id="Framing_the_Question_018" class="slide" data-transition="none">
+<div class="content " ref="Framing_the_Question/01:8">
+<h1 class="section_title">Framing the Question</h1>
+<h1>Training a Neural Net</h1>
+
+<ul>
+<li>Inputs: Data you want to produce information from</li>
+<li>Connection weights and biases govern the activity of the network</li>
+<li>Learning algorithm changes weights and biases with each learning pass</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Framing the Question" data-title="01" id="Framing_the_Question_019" class="slide" data-transition="none">
+<div class="content " ref="Framing_the_Question/01:9">
+<h1 class="section_title">Framing the Question</h1>
+<h1>Fitting the Training Data</h1>
+
+<p><img src="./file//resources/fit_to_line.png" alt="alt text"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Framing the Question" data-title="01" id="Framing_the_Question_0110" class="slide" data-transition="none">
+<div class="content " ref="Framing_the_Question/01:10">
+<h1 class="section_title">Framing the Question</h1>
+<h1>Optimization</h1>
+
+<ul>
+<li>Iteratively adjust the values of the x parameter vector
+
+<ul>
+<li>Until we minimize the error in the model</li>
+</ul>
+</li>
+<li>Error = prediction – actual</li>
+<li>Loss functions measure error
+
+<ul>
+<li>simple/common loss function: </li>
+<li>“mean squared error”</li>
+</ul>
+</li>
+<li>How do we make choices about the next iterative “step”?
+
+<ul>
+<li>Where  “step” is how we change the x parameter vector</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Framing the Question" data-title="01" id="Framing_the_Question_0111" class="slide" data-transition="none">
+<div class="content " ref="Framing_the_Question/01:11">
+<h1 class="section_title">Framing the Question</h1>
+<h1>Convex Optimization</h1>
+
+<p><img src="./file//resources/convex.png" alt="alt text"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Framing the Question" data-title="01" id="Framing_the_Question_0112" class="slide" data-transition="none">
+<div class="content " ref="Framing_the_Question/01:12">
+<h1 class="section_title">Framing the Question</h1>
+<h1>Gradient Descent</h1>
+
+<ul>
+<li>Optimization method where we consider parameter space as
+
+<ul>
+<li>“hills of error”</li>
+<li>Bottom of the loss curve is the most “accurate” spot for our parameter vector</li>
+</ul>
+</li>
+<li>We start at one point on the curved error surface
+
+<ul>
+<li>Then compute a next step based on local information</li>
+</ul>
+</li>
+<li>Typically we want to search in a downhill direction
+
+<ul>
+<li>So we compute the gradient
+
+<ul>
+<li>The derivative of the point in error-space</li>
+<li>Gives us the slope of the curve</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Framing the Question" data-title="01" id="Framing_the_Question_0113" class="slide" data-transition="none">
+<div class="content " ref="Framing_the_Question/01:13">
+<h1 class="section_title">Framing the Question</h1>
+<h1>Stochastic Gradient Descent</h1>
+
+<ul>
+<li>With basic Gradient Descent we look at every training instance before computing a “next step”</li>
+<li>With SGD with compute a next step after every training instance
+
+<ul>
+<li>Sometimes we’ll do a mini-batch of instances</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Framing the Question" data-title="01" id="Framing_the_Question_0114" class="slide" data-transition="none">
+<div class="content " ref="Framing_the_Question/01:14">
+<h1 class="section_title">Framing the Question</h1>
+<h1>SGD Visually Explained</h1>
+
+<p><img src="./file//resources/gradient_descent.png" alt="alt text"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Demonstration" data-title="01" id="Simplest_network_Lab_intro_011" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="Simplest_network_Lab_intro/01:1">
+<h1 class="section_title">Simple Neural Network Introduction</h1>
+<h1>Simple Neural Network Introduction</h1>
+
+<p>This Section introduces Neural Networks starting with a very basic example</p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Demonstration" data-title="01" id="Simplest_network_Lab_intro_012" class="slide" data-transition="none">
+<div class="content " ref="Simplest_network_Lab_intro/01:2">
+<h1 class="section_title">Simple Neural Network Introduction</h1>
+<h1>Simple Neural Network</h1>
+
+<ul>
+<li>Simple Network Details</li>
+<li>Simple Network Lab</li>
+<li>Important Network Settings</li>
+<li>VGG-16 Demo</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Demonstration" data-title="01" id="Simplest_network_Lab_intro_013" class="slide" data-transition="none">
+<div class="content " ref="Simplest_network_Lab_intro/01:3">
+<h1 class="section_title">Simple Neural Network Introduction</h1>
+<h1>Simple Network</h1>
+
+<h2>The Goal: Input=0.5 Output=0.8</h2>
+
+<p><img src="./file//resources/SimplestNetwork1.png" alt="Simple Network"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Demonstration" data-title="01" id="Simplest_network_Lab_intro_014" class="slide" data-transition="none">
+<div class="content " ref="Simplest_network_Lab_intro/01:4">
+<h1 class="section_title">Simple Neural Network Introduction</h1>
+<h1>The Design:</h1>
+
+<ul>
+<li>Apply Random weights, plus activation function per neuron =&gt; output</li>
+</ul>
+
+<p><img src="./file//resources/SimplestNetwork2.png" alt="Simple Network"></p>
+
+<ul>
+<li>Test output: does -0.23 = 0.8 ?</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Demonstration" data-title="01" id="Simplest_network_Lab_intro_015" class="slide" data-transition="none">
+<div class="content " ref="Simplest_network_Lab_intro/01:5">
+<h1 class="section_title">Simple Neural Network Introduction</h1>
+<h1>Calculate error</h1>
+
+<ul>
+<li>backpropagate to adjust weights</li>
+<li>repeat</li>
+</ul>
+
+<p><img src="./file//resources/SimplestNetwork2withbackprop.png" alt="Simple Network"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Demonstration" data-title="01" id="Simplest_network_Lab_intro_016" class="slide" data-transition="none">
+<div class="content " ref="Simplest_network_Lab_intro/01:6">
+<h1 class="section_title">Simple Neural Network Introduction</h1>
+<h1>Output Layer of a Neural Network Can be Configured for Different Purposes:</h1>
+
+<ul>
+<li>MultiNomial</li>
+<li>Binary</li>
+<li>Continuous</li>
+<li>More...</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Demonstration" data-title="01" id="Simplest_network_Lab_intro_017" class="slide" data-transition="none">
+<div class="content " ref="Simplest_network_Lab_intro/01:7">
+<h1 class="section_title">Simple Neural Network Introduction</h1>
+<h1>Simple Network Settings</h1>
+
+<p>Simple Network  has Settings that will become familiar as they are used in all Neural Networks</p>
+
+<ul>
+<li>LearningRate</li>
+<li>Updater </li>
+<li>Output Activation </li>
+<li>Hidden Layer Activation </li>
+<li>Number of Epochs </li>
+<li>Loss Function</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Demonstration" data-title="01" id="Simplest_network_Lab_intro_018" class="slide" data-transition="none">
+<div class="content " ref="Simplest_network_Lab_intro/01:8">
+<h1 class="section_title">Simple Neural Network Introduction</h1>
+<h1>Extrapolate from Simple Network</h1>
+
+<ul>
+<li>Simple Network took one value in and one value out and trained the network to learn the correct value </li>
+<li>More complex data same process</li>
+<li>Input can be images, row data, documents</li>
+<li>Output can be T/F, range of values, labels of a class</li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Demonstration" data-title="01" id="Simplest_network_Lab_intro_019" class="slide" data-transition="none">
+<div class="content " ref="Simplest_network_Lab_intro/01:9">
+<h1 class="section_title">Simple Neural Network Introduction</h1>
+<h1>Simple Network Lab</h1>
+
+<ul>
+<li>See your Lab Manual</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Demonstration" data-title="01" id="Simplest_network_Lab_intro_0110" class="slide" data-transition="none">
+<div class="content " ref="Simplest_network_Lab_intro/01:10">
+<h1 class="section_title">Simple Neural Network Introduction</h1>
+<h1>VGG-16 Demo</h1>
+
+<ul>
+<li> Instructor demonstration of a more complex Neural Network</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Demonstration" data-title="01" id="Simplest_network_Lab_intro_0111" class="slide" data-transition="none">
+<div class="content " ref="Simplest_network_Lab_intro/01:11">
+<h1 class="section_title">Simple Neural Network Introduction</h1>
+<h1>Questions</h1>
+
+<p>Why do we do deep learning? </p>
+
+<p>Which requires Expert Feature Engineering? </p>
+
+<p>A. Deep Learning B.Machine Learning</p>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Using the Training UI" data-title="01" id="TrainingUI_011" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="TrainingUI/01:1">
+<h1 class="section_title">DeepLearning4J Training UI</h1>
+<h1>DeepLearning4J Training UI</h1>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Using the Training UI" data-title="01" id="TrainingUI_012" class="slide" data-transition="none">
+<div class="content " ref="TrainingUI/01:2">
+<h1 class="section_title">DeepLearning4J Training UI</h1>
+<h1>Visualizing Network Training with the Deeplearning4j Training UI</h1>
+
+<ul>
+<li>Browser Based</li>
+<li>Real Time</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Using the Training UI" data-title="01" id="TrainingUI_013" class="slide" data-transition="none">
+<div class="content " ref="TrainingUI/01:3">
+<h1 class="section_title">DeepLearning4J Training UI</h1>
+<h1>Using the Training UI</h1>
+
+<ul>
+<li>Add Dependency to Pom.xml</li>
+<li>Add code to your class</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Using the Training UI" data-title="01" id="TrainingUI_014" class="slide" data-transition="none">
+<div class="content " ref="TrainingUI/01:4">
+<h1 class="section_title">DeepLearning4J Training UI</h1>
+<h1>Maven and pom.xml</h1>
+
+<ul>
+<li>Maven is a dependency management and build tool</li>
+<li>Maven Configuration stored in pom.xml</li>
+<li>Maven Repository stored locally in ~/.m2</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Using the Training UI" data-title="01" id="TrainingUI_015" class="slide" data-transition="none">
+<div class="content " ref="TrainingUI/01:5">
+<h1 class="section_title">DeepLearning4J Training UI</h1>
+<h1>pom.xml</h1>
+
+<pre><code>&lt;dependency&gt;
+    &lt;groupId&gt;org.deeplearning4j&lt;/groupId&gt;
+    &lt;artifactId&gt;deeplearning4j-ui_2.10&lt;/artifactId&gt;
+    &lt;version&gt;${dl4j.version}&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Using the Training UI" data-title="01" id="TrainingUI_016" class="slide" data-transition="none">
+<div class="content " ref="TrainingUI/01:6">
+<h1 class="section_title">DeepLearning4J Training UI</h1>
+<h1>Code for UI</h1>
+
+<pre><code>//Initialize the user interface backend
+UIServer uiServer = UIServer.getInstance();
+
+
+//Configure where the network information 
+//(gradients, score vs. time etc) is to be stored. 
+//Here: store in memory.
+StatsStorage statsStorage = new InMemoryStatsStorage();         
+//Alternative: new FileStatsStorage(File), for saving and loading later
+
+//Attach the StatsStorage instance to the UI: 
+//this allows the contents of the StatsStorage to be visualized
+uiServer.attach(statsStorage);
+
+//Then add the StatsListener 
+//to collect this information from the network, as it trains
+net.setListeners(new StatsListener(statsStorage));
+</code></pre>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Using the Training UI" data-title="01" id="TrainingUI_017" class="slide" data-transition="none">
+<div class="content " ref="TrainingUI/01:7">
+<h1 class="section_title">DeepLearning4J Training UI</h1>
+<h1>Viewing the UI</h1>
+
+<ul>
+<li><a href="http://localhost:9000/train">http://localhost:9000/train</a></li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Using the Training UI" data-title="01" id="TrainingUI_018" class="slide" data-transition="none">
+<div class="content " ref="TrainingUI/01:8">
+<h1 class="section_title">DeepLearning4J Training UI</h1>
+<h1>Configuring the UI</h1>
+
+<ul>
+<li>System Property org.deeplearning4j.ui.port </li>
+<li>
+<p>Switch Port</p>
+
+<pre><code>-Dorg.deeplearning4j.ui.port=9001
+</code></pre>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Using the Training UI" data-title="01" id="TrainingUI_019" class="slide" data-transition="none">
+<div class="content " ref="TrainingUI/01:9">
+<h1 class="section_title">DeepLearning4J Training UI</h1>
+<h1>UI execution</h1>
+
+<ul>
+<li>Information is collected and routed to the UI when you call the fit method on your network.</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Using the Training UI" data-title="01" id="TrainingUI_0110" class="slide" data-transition="none">
+<div class="content " ref="TrainingUI/01:10">
+<h1 class="section_title">DeepLearning4J Training UI</h1>
+<h1>Code Example</h1>
+
+<p><a href="https://github.com/deeplearning4j/dl4j-examples/blob/master/dl4j-examples/src/main/java/org/deeplearning4j/examples/userInterface/UIExample.java">https://github.com/deeplearning4j/dl4j-examples/blob/master/dl4j-examples/src/main/java/org/deeplearning4j/examples/userInterface/UIExample.java</a></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Using the Training UI" data-title="01" id="TrainingUI_0111" class="slide" data-transition="none">
+<div class="content " ref="TrainingUI/01:11">
+<h1 class="section_title">DeepLearning4J Training UI</h1>
+<h1>Overview Page</h1>
+
+<p><img src="./file//../resources/DL4J_UI_01.png"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Using the Training UI" data-title="01" id="TrainingUI_0112" class="slide" data-transition="none">
+<div class="content " ref="TrainingUI/01:12">
+<h1 class="section_title">DeepLearning4J Training UI</h1>
+<h1>Using the Overview Page</h1>
+
+<ul>
+<li>Top left: score vs iteration chart - this is the value of the loss function on the current minibatch</li>
+<li>Top right: model and training information</li>
+<li>Bottom left: Ratio of parameters to updates (by layer) for all network weights vs. iteration</li>
+<li>Bottom right: Standard deviations (vs. time) of: activations, gradients and updates</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Using the Training UI" data-title="01" id="TrainingUI_0113" class="slide" data-transition="none">
+<div class="content " ref="TrainingUI/01:13">
+<h1 class="section_title">DeepLearning4J Training UI</h1>
+<h1>Model Page</h1>
+
+<p><img src="./file//../resources/DL4J_UI_02.png"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Using the Training UI" data-title="01" id="TrainingUI_0114" class="slide" data-transition="none">
+<div class="content " ref="TrainingUI/01:14">
+<h1 class="section_title">DeepLearning4J Training UI</h1>
+<h1>Model Page</h1>
+
+<ul>
+<li>On the right, the following charts are available, after selecting a layer:
+
+<ul>
+<li>Table of layer information</li>
+<li>Update to parameter ratio for this layer, as per the overview page. The components of this ratio (the parameter and update mean magnitudes) are also available via tabs.</li>
+<li>Layer activations (mean and mean +/- 2 standard deviations) over time</li>
+<li>Histograms of parameters and updates, for each parameter type</li>
+<li>Learning rate vs. time (note this will be flat, unless learning rate schedules are used)</li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Using the Training UI" data-title="01" id="TrainingUI_0115" class="slide" data-transition="none">
+<div class="content " ref="TrainingUI/01:15">
+<h1 class="section_title">DeepLearning4J Training UI</h1>
+<h1>Deeplearning4J UI and Spark Training</h1>
+
+<ul>
+<li>Conflict with Spark Dependencies</li>
+<li>Solution
+
+<ul>
+<li>Collect and save the relevant stats, to be visualized (offline) at a later point</li>
+<li>Run the UI in a separate server, and Use the remote UI functionality to upload the data from the Spark master to your UI instance</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Using the Training UI" data-title="01" id="TrainingUI_0116" class="slide" data-transition="none">
+<div class="content " ref="TrainingUI/01:16">
+<h1 class="section_title">DeepLearning4J Training UI</h1>
+<h1>Offline Use</h1>
+
+<ul>
+<li>
+<p>Collecting Stats</p>
+
+<p>SparkDl4jMultiLayer sparkNet = new SparkDl4jMultiLayer(sc, conf, tm);</p>
+
+<p>StatsStorage ss = new FileStatsStorage(new File("myNetworkTrainingStats.dl4j"));
+sparkNet.setListeners(ss, Collections.singletonList(new StatsListener(null)));</p>
+</li>
+<li>
+<p>Load for Later use</p>
+
+<p>StatsStorage statsStorage = new FileStatsStorage(statsFile);<br>
+//If file already exists: load the data from it
+UIServer uiServer = UIServer.getInstance();
+uiServer.attach(statsStorage);</p>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Using the Training UI" data-title="01" id="TrainingUI_0117" class="slide" data-transition="none">
+<div class="content " ref="TrainingUI/01:17">
+<h1 class="section_title">DeepLearning4J Training UI</h1>
+<h1>Remote UI</h1>
+
+<ul>
+<li>
+<p>In JVM running the UI:</p>
+
+<p>UIServer uiServer = UIServer.getInstance();
+uiServer.enableRemoteListener();<br>
+//Necessary: remote support is not enabled by default</p>
+</li>
+<li>
+<p>In the Spark Training instance:</p>
+
+<p>SparkDl4jMultiLayer sparkNet = new SparkDl4jMultiLayer(sc, conf, tm);
+StatsStorageRouter remoteUIRouter = 
+new RemoteUIStatsStorageRouter("<a href="http://UI_MACHINE_IP:9000%22">http://UI_MACHINE_IP:9000"</a>);
+sparkNet.setListeners(remoteUIRouter, 
+Collections.singletonList(new StatsListener(null)));</p>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Using the Training UI" data-title="01" id="TrainingUI_0118" class="slide" data-transition="none">
+<div class="content " ref="TrainingUI/01:18">
+<h1 class="section_title">DeepLearning4J Training UI</h1>
+<h1>Using UI to Tune Your Network</h1>
+
+<ul>
+<li>Score vs. Iteration</li>
+<li>Goal: Decrease</li>
+<li>If Increasing
+
+<ul>
+<li>Reduce Learning Rate</li>
+<li>Incorrect Normalization?</li>
+</ul>
+</li>
+<li>Slow decrease or Flat?
+
+<ul>
+<li>Learning Rate to Low</li>
+<li>Optimization Challenges, try or adjust adaptive updater</li>
+<li>Nesterovs (momentum), RMSProp or Adagrad</li>
+</ul>
+</li>
+<li>Rough or Abnormal Graph
+
+<ul>
+<li>Verify Data is shuffled</li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="01" id="NNInternals_011" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="NNInternals/01:1">
+<h1 class="section_title">Neural Network Internals</h1>
+<h1>Neural Network Internals</h1>
+
+<p>This section describes key configuration details of Neural Networks</p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="01" id="NNInternals_012" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/01:2">
+<h1 class="section_title">Neural Network Internals</h1>
+<h1>Neural Network Key Concepts</h1>
+
+<ul>
+<li>Activation Functions</li>
+<li>BackPropagation</li>
+<li>Loss Functions</li>
+<li>Weight Initialization</li>
+<li>Data Normalization and Standardization</li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Activation_Functions" id="NNInternals_Activation_Functions1" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="NNInternals/Activation_Functions:1">
+<h1 class="section_title">Activation Functions</h1>
+<h1>Activation Functions</h1>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Activation_Functions" id="NNInternals_Activation_Functions2" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Activation_Functions:2">
+<h1 class="section_title">Activation Functions</h1>
+<h1>What is an Activation Function</h1>
+
+<ul>
+<li>Determines output of Neuron Based on Inputs</li>
+<li>Non-Linear Transform function at each node</li>
+<li>Defined per layer</li>
+<li>Allow neural networks to make complex boundary decisions for features at various levels of abstraction.</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Activation_Functions" id="NNInternals_Activation_Functions3" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Activation_Functions:3">
+<h1 class="section_title">Activation Functions</h1>
+<h1>Activation Function</h1>
+
+<ul>
+<li>Hidden Layer</li>
+<li>Controls what is sent to connected Neurons</li>
+<li>Output Layer</li>
+<li>Determines Output Value
+
+<ul>
+<li>Regression</li>
+<li>Classification</li>
+<li>Etc</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Activation_Functions" id="NNInternals_Activation_Functions4" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Activation_Functions:4">
+<h1 class="section_title">Activation Functions</h1>
+<h1>Common Activation Functions</h1>
+
+<ul>
+<li>ReLU
+
+<ul>
+<li>Recent Breakthrough</li>
+<li>Good Default</li>
+</ul>
+</li>
+<li>Sigmoid
+
+<ul>
+<li>Had been Standard</li>
+<li>S curve Range 0 to 1</li>
+</ul>
+</li>
+<li>TanH
+
+<ul>
+<li>S curve Range -1 to 1</li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Activation_Functions" id="NNInternals_Activation_Functions5" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Activation_Functions:5">
+<h1 class="section_title">Activation Functions</h1>
+<h1>Activation Functions</h1>
+
+<p><img src="./file//resources/Activation-func.png" alt="img"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Activation_Functions" id="NNInternals_Activation_Functions6" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Activation_Functions:6">
+<h1 class="section_title">Activation Functions</h1>
+<h1>Output Layer Activation</h1>
+
+<ul>
+<li>Special Case</li>
+<li>Goal of hidden Layer activation is to squash intermediate values</li>
+<li>Goal of output Layer is to answer our question
+
+<ul>
+<li>Classification = softmax</li>
+<li>regression = identity</li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Activation_Functions" id="NNInternals_Activation_Functions7" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Activation_Functions:7">
+<h1 class="section_title">Activation Functions</h1>
+<h1>Output Layer Guidelines</h1>
+
+<ul>
+<li>Classification 
+
+<ul>
+<li>softmax activation</li>
+<li>Negative Log Likelihood for loss Function </li>
+<li>Multi Class Cross Entropy</li>
+</ul>
+</li>
+<li>Softmax
+
+<ul>
+<li>Probability Distribution over classes</li>
+<li>Outputs sum to 1.0</li>
+</ul>
+</li>
+<li>Regression
+
+<ul>
+<li>Identity Activation</li>
+<li>MSE(Mean Squared Error) Loss Function</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Activation_Functions" id="NNInternals_Activation_Functions8" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Activation_Functions:8">
+<h1 class="section_title">Activation Functions</h1>
+<h1>Quick Statistics Review: Probability</h1>
+
+<ul>
+<li>Probability
+
+<ul>
+<li>We define probability of an event E as a number always between 0 and 1</li>
+<li>In this context the value 0 infers that the event E has no chance of occurring and the value 1 means that the event E is certain to occur</li>
+</ul>
+</li>
+<li>The Canonical Coin Example
+
+<ul>
+<li>Fair coin flipped, looking for heads/tails (0.5 for each side)</li>
+<li>Probability of sample space is always 1.0</li>
+<li>P( Heads ) = 0.5 every time</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Activation_Functions" id="NNInternals_Activation_Functions9" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Activation_Functions:9">
+<h1 class="section_title">Activation Functions</h1>
+<h1>Classification</h1>
+
+<ul>
+<li>A type of answer we can get from a model</li>
+<li>Example:
+
+<ul>
+<li>“Is this an image of a cat or a dog?”</li>
+<li>Binary classification</li>
+<li>Classes: { cat, dog }</li>
+</ul>
+</li>
+<li>Binary classification is where we have only 2 labels
+
+<ul>
+<li>Example: { positive, negative }</li>
+</ul>
+</li>
+<li>Multi-Label Classification
+
+<ul>
+<li>N number of labels</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Activation_Functions" id="NNInternals_Activation_Functions10" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Activation_Functions:10">
+<h1 class="section_title">Activation Functions</h1>
+<h1>Regression</h1>
+
+<ul>
+<li>Where we seek a continuous value output from the model</li>
+<li>Example: “predict the temperature for tomorrow”
+
+<ul>
+<li>Output: 75F</li>
+</ul>
+</li>
+<li>Example: “predict price of house based on square footage”
+
+<ul>
+<li>Output: $250,000.00</li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Backpropagation" id="NNInternals_Backpropagation1" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="NNInternals/Backpropagation:1">
+<h1 class="section_title">Back Propagation and Updaters/optimizers</h1>
+<h1>Back Propagation and Updaters/optimizers</h1>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Backpropagation" id="NNInternals_Backpropagation2" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Backpropagation:2">
+<h1 class="section_title">Back Propagation and Updaters/optimizers</h1>
+<h1>What is BackPropagation</h1>
+
+<ul>
+<li>The process of updating the weights of a Neural Network to reduce error</li>
+<li>The Forward Pass generates an output</li>
+<li>The Loss Function calculates the error</li>
+<li>Gradient Descent is used to minimize the error</li>
+<li>Steps are repeated and network continues to improve</li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Backpropagation" id="NNInternals_Backpropagation3" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Backpropagation:3">
+<h1 class="section_title">Back Propagation and Updaters/optimizers</h1>
+<h1>Gradient Descent in Weight Space</h1>
+
+<p><img src="./file//../resources/convex.png"></p>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Backpropagation" id="NNInternals_Backpropagation4" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Backpropagation:4">
+<h1 class="section_title">Back Propagation and Updaters/optimizers</h1>
+<h1>Adapting to Changing Error</h1>
+
+<ul>
+<li>Initially error will be large</li>
+<li>Output more or less random</li>
+<li>Two approaches
+
+<ul>
+<li>Dynamic Learning Rate(Anneal the Learning Rate)</li>
+<li>Use Adaptive Optimizer</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Backpropagation" id="NNInternals_Backpropagation5" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Backpropagation:5">
+<h1 class="section_title">Back Propagation and Updaters/optimizers</h1>
+<h1>Adaptive Optimizers / Dynamic Learning Rate a Simplified View</h1>
+
+<ul>
+<li>Initially you want the network to train quickly
+
+<ul>
+<li>Error is large</li>
+<li>Take Large Steps</li>
+</ul>
+</li>
+<li>As Error decreases
+
+<ul>
+<li>Smaller steps are better</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Backpropagation" id="NNInternals_Backpropagation6" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Backpropagation:6">
+<h1 class="section_title">Back Propagation and Updaters/optimizers</h1>
+<h1>Updater Animation</h1>
+
+<ul>
+<li>Thanks to Alec Radford</li>
+</ul>
+
+<p><img src="./file//resources/updater_animation.gif"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Backpropagation" id="NNInternals_Backpropagation7" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Backpropagation:7">
+<h1 class="section_title">Back Propagation and Updaters/optimizers</h1>
+<h1>Updater Animation</h1>
+
+<ul>
+<li>Thanks to Alec Radford</li>
+</ul>
+
+<p><img src="./file//resources/updater_animation2.gif"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Loss_Functions" id="NNInternals_Loss_Functions1" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="NNInternals/Loss_Functions:1">
+<h1 class="section_title">Loss Functions</h1>
+<h1>Loss Functions</h1>
+
+<p>Loss functions quantify how close a given neural network is to the ideal it is training
+towards.</p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Loss_Functions" id="NNInternals_Loss_Functions2" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Loss_Functions:2">
+<h1 class="section_title">Loss Functions</h1>
+<h1>The three important functions at work in machine learning optimization:</h1>
+
+<ul>
+<li>parameters
+
+<ul>
+<li>transform input to help determine the classifications a network infers</li>
+</ul>
+</li>
+<li>loss function
+
+<ul>
+<li>gauges correctness of output</li>
+</ul>
+</li>
+<li>optimization function
+
+<ul>
+<li>guides it toward the points of least error.</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Loss_Functions" id="NNInternals_Loss_Functions3" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Loss_Functions:3">
+<h1 class="section_title">Loss Functions</h1>
+<h1>Available Loss Functions</h1>
+
+<ul>
+<li>For Regression
+
+<ul>
+<li>MSE(Mean Squared Error)</li>
+<li>Mean Absolute Error(MAE)</li>
+<li>Mean Squared Log Error (MSLE)</li>
+<li>Mean Absolute Percentage Error(MAPE)</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Loss_Functions" id="NNInternals_Loss_Functions4" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Loss_Functions:4">
+<h1 class="section_title">Loss Functions</h1>
+<h1>Regression Loss Function Common Usage</h1>
+
+<ul>
+<li>MSLE and MAPE handle large ranges, 
+
+<ul>
+<li>common practice to normalize input to suitable range and use MSE or MAE</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Loss_Functions" id="NNInternals_Loss_Functions5" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Loss_Functions:5">
+<h1 class="section_title">Loss Functions</h1>
+<h1>Loss Functions for Classification</h1>
+
+<ul>
+<li>Hinge Loss (SVM)
+
+<ul>
+<li>Hard Classification 0,1 a -1,1 classifier</li>
+</ul>
+</li>
+<li>Logistic Loss (logistic regression)
+
+<ul>
+<li>Probabilities per class<br>
+</li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Loss_Functions" id="NNInternals_Loss_Functions6" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Loss_Functions:6">
+<h1 class="section_title">Loss Functions</h1>
+<h1>Negative Log Likelihood</h1>
+
+<ul>
+<li>Likelihood 
+
+<ul>
+<li>between 0 and 1</li>
+</ul>
+</li>
+<li>Log likelihood
+
+<ul>
+<li>between negative infinity and 0</li>
+</ul>
+</li>
+<li>Negative log Likelihood
+
+<ul>
+<li>between 0 and infinity</li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Weight_Initialization" id="NNInternals_Weight_Initialization1" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="NNInternals/Weight_Initialization:1">
+<h1 class="section_title">Weight Initialization</h1>
+<h1>Weight Initialization</h1>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Weight_Initialization" id="NNInternals_Weight_Initialization2" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Weight_Initialization:2">
+<h1 class="section_title">Weight Initialization</h1>
+<h1>Why not initialize all weights to zero?</h1>
+
+<ul>
+<li>Nodes would never diverge
+
+<ul>
+<li>All would learn the same thing</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Weight_Initialization" id="NNInternals_Weight_Initialization3" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Weight_Initialization:3">
+<h1 class="section_title">Weight Initialization</h1>
+<h1>Solution</h1>
+
+<ul>
+<li>Randomize weights</li>
+<li>Mean 0 + some randomized distribution</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Weight_Initialization" id="NNInternals_Weight_Initialization4" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Weight_Initialization:4">
+<h1 class="section_title">Weight Initialization</h1>
+<h1>Probability Distributions</h1>
+
+<ul>
+<li>A specification of the stochastic structure of random variables</li>
+<li>In statistics we rely on making assumptions about how the data is distributed
+
+<ul>
+<li>To make inferences about the data</li>
+</ul>
+</li>
+<li>We want a formula specifying how frequent values of observations in the distribution are
+
+<ul>
+<li>And how values can be taken by the points in the distribution
+<img src="./file//resources/3_line_graph.png" alt="alt text">
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Weight_Initialization" id="NNInternals_Weight_Initialization5" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Weight_Initialization:5">
+<h1 class="section_title">Weight Initialization</h1>
+<h1>Weight Initialization: The Challenge</h1>
+
+<ul>
+<li>Weights too small
+
+<ul>
+<li>Signal shrinks as it passes through layers</li>
+<li>Becomes too small to be useful</li>
+<li>Vanishing Gradient Problem</li>
+</ul>
+</li>
+<li>Weights too large
+
+<ul>
+<li>Signal Grows as it passes through Layers</li>
+<li>Becomes to large to be useful</li>
+<li>Exploding Gradient Problem</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Weight_Initialization" id="NNInternals_Weight_Initialization6" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Weight_Initialization:6">
+<h1 class="section_title">Weight Initialization</h1>
+<h1>USeful Weight Distribution Techniques</h1>
+
+<ul>
+<li>Truncated Normal</li>
+<li>Xavier</li>
+<li>Relu</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Weight_Initialization" id="NNInternals_Weight_Initialization7" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Weight_Initialization:7">
+<h1 class="section_title">Weight Initialization</h1>
+<h1>Xavier Distribution</h1>
+
+<ul>
+<li>Most Common</li>
+<li>0 mean and a specific variance
+
+<ul>
+<li>Var(W)=1/nIn</li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Weight_Initialization" id="NNInternals_Weight_Initialization8" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Weight_Initialization:8">
+<h1 class="section_title">Weight Initialization</h1>
+<h1>Benefits of Xavier</h1>
+
+<ul>
+<li>Xavier Enabled Full Network Training vs per-Layer Pre-Training</li>
+<li>Big Breakthrough</li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Weight_Initialization" id="NNInternals_Weight_Initialization9" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Weight_Initialization:9">
+<h1 class="section_title">Weight Initialization</h1>
+<h1>Relu</h1>
+
+<ul>
+<li>Relu </li>
+<li>Works well with CNN's and Relu activations</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Data_Normalization_Standardization" id="NNInternals_Data_Normalization_Standardization1" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="NNInternals/Data_Normalization_Standardization:1">
+<h1 class="section_title">Data Normalization and Standardization</h1>
+<h1>Data Normalization and Standardization</h1>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Data_Normalization_Standardization" id="NNInternals_Data_Normalization_Standardization2" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Data_Normalization_Standardization:2">
+<h1 class="section_title">Data Normalization and Standardization</h1>
+<h1>Why Normalize</h1>
+
+<ul>
+<li>Avoid large weights dominating</li>
+<li>In Traditional ML
+
+<ul>
+<li>Linear Regression, Logistic Regression</li>
+<li>Must Normalize</li>
+<li>Tree Based can cope with large range</li>
+</ul>
+</li>
+<li>Same reasons as weight initialization</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Data_Normalization_Standardization" id="NNInternals_Data_Normalization_Standardization3" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Data_Normalization_Standardization:3">
+<h1 class="section_title">Data Normalization and Standardization</h1>
+<h1>Normalization</h1>
+
+<ul>
+<li>Convert to range of values 0-1
+
+<ul>
+<li>Max Value becomes 1</li>
+<li>Min Value becomes 0</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Neural Network Internals" data-title="Data_Normalization_Standardization" id="NNInternals_Data_Normalization_Standardization4" class="slide" data-transition="none">
+<div class="content " ref="NNInternals/Data_Normalization_Standardization:4">
+<h1 class="section_title">Data Normalization and Standardization</h1>
+<h1>Standardization</h1>
+
+<ul>
+<li>More Common</li>
+<li>Convert Values to 
+
+<ul>
+<li>mean 0</li>
+<li>Standard Deviation of 1</li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Tuning" data-title="01" id="Tuning_011" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="Tuning/01:1">
+<h1 class="section_title">Tuning Neural Networks</h1>
+<h1>Tuning Neural Networks</h1>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Tuning" data-title="01" id="Tuning_012" class="slide" data-transition="none">
+<div class="content " ref="Tuning/01:2">
+<h1 class="section_title">Tuning Neural Networks</h1>
+<h1>Hyper-Parameters that may need tuning</h1>
+
+<ul>
+<li>Learning Rate</li>
+<li>Batch Size</li>
+<li>Updater</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Tuning" data-title="01" id="Tuning_013" class="slide" data-transition="none">
+<div class="content " ref="Tuning/01:3">
+<h1 class="section_title">Tuning Neural Networks</h1>
+<h1>Learning Rate Guidelines</h1>
+
+<ul>
+<li>0.1 to 0.000001</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Tuning" data-title="01" id="Tuning_014" class="slide" data-transition="none">
+<div class="content " ref="Tuning/01:4">
+<h1 class="section_title">Tuning Neural Networks</h1>
+<h1>Learning Rate</h1>
+
+<ul>
+<li>Adaptive Learning Rate</li>
+<li>Adjust optimizer based on previous updates
+
+<ul>
+<li>Nesterovs Momentum</li>
+<li>Adagrad, Adadelta, Adam,RMSPRop</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Tuning" data-title="01" id="Tuning_015" class="slide" data-transition="none">
+<div class="content " ref="Tuning/01:5">
+<h1 class="section_title">Tuning Neural Networks</h1>
+<h1>Learning Rate Schedules</h1>
+
+<ul>
+<li>Tune Learning Rate as Learning Progresses</li>
+<li>Based on Schedule or other metrics</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Tuning" data-title="01" id="Tuning_016" class="slide" data-transition="none">
+<div class="content " ref="Tuning/01:6">
+<h1 class="section_title">Tuning Neural Networks</h1>
+<h1>Early Stopping</h1>
+
+<ul>
+<li>Stop Training once overfitting is detected</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Tuning" data-title="01" id="Tuning_017" class="slide" data-transition="none">
+<div class="content " ref="Tuning/01:7">
+<h1 class="section_title">Tuning Neural Networks</h1>
+<h1>Avoiding Overfitting</h1>
+
+<ul>
+<li>What is Overfitting
+
+<ul>
+<li>Scores well on test</li>
+<li>Scores poorly on unseen examples</li>
+</ul>
+</li>
+<li>Has "memorized" training data</li>
+<li>Fails to generalize</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Tuning" data-title="01" id="Tuning_018" class="slide" data-transition="none">
+<div class="content " ref="Tuning/01:8">
+<h1 class="section_title">Tuning Neural Networks</h1>
+<h1>Regularization</h1>
+
+<ul>
+<li>l1 and l2 Regularization
+
+<ul>
+<li>penalizes large network weights </li>
+<li>avoids weights becoming too large</li>
+</ul>
+</li>
+<li>Risks
+
+<ul>
+<li>Coefficients to high</li>
+<li>Network stops learning</li>
+</ul>
+</li>
+<li>Common values for l2 regularization
+
+<ul>
+<li>1e-3 to 1e-6.</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Tuning" data-title="01" id="Tuning_019" class="slide" data-transition="none">
+<div class="content " ref="Tuning/01:9">
+<h1 class="section_title">Tuning Neural Networks</h1>
+<h1>Dropout</h1>
+
+<ul>
+<li>Set probability that a Neuron will be de-activated, set activation to 0</li>
+<li>Forces Network to learn different redundant representations</li>
+<li>Commonly used dropout rate of 0.5.</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Tuning" data-title="01" id="Tuning_0110" class="slide" data-transition="none">
+<div class="content " ref="Tuning/01:10">
+<h1 class="section_title">Tuning Neural Networks</h1>
+<h1>Dropout</h1>
+
+<p><img src="./file//resources/dropout.png"></p>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Types of Neural Networks" data-title="01" id="Neural_Network_Types_011" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="Neural_Network_Types/01:1">
+<h1 class="section_title">Types of Neural Networks</h1>
+<h1>Types of Neural Networks</h1>
+
+<p>This section introduces the various types of Neural Networks</p>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Types of Neural Networks" data-title="01" id="Neural_Network_Types_012" class="slide" data-transition="none">
+<div class="content " ref="Neural_Network_Types/01:2">
+<h1 class="section_title">Types of Neural Networks</h1>
+<ul>
+<li>
+<strong>⇒</strong> Inspiration for Neural Networks</li>
+<li>FeedForward Neural Networks</li>
+<li>Recurrent Neural Networks</li>
+<li>Convolutional Neural Networks</li>
+<li>Other</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Types of Neural Networks" data-title="01" id="Neural_Network_Types_013" class="slide" data-transition="none">
+<div class="content " ref="Neural_Network_Types/01:3">
+<h1 class="section_title">Types of Neural Networks</h1>
+<h1>Inspired by Biological Neurons</h1>
+
+<ul>
+<li>Interconnected computational units with output based on input combined with an activation function</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Types of Neural Networks" data-title="01" id="Neural_Network_Types_014" class="slide" data-transition="none">
+<div class="content " ref="Neural_Network_Types/01:4">
+<h1 class="section_title">Types of Neural Networks</h1>
+<h1>The Main Types of Neural Networks</h1>
+
+<ul>
+<li>FeedForward Neural Networks (Multi Layer Perceptron)</li>
+<li>Recurrent Neural Networks</li>
+<li>Convolutional Neural Networks</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Types of Neural Networks" data-title="01" id="Neural_Network_Types_015" class="slide" data-transition="none">
+<div class="content " ref="Neural_Network_Types/01:5">
+<h1 class="section_title">Types of Neural Networks</h1>
+<ul>
+<li>Inspiration for Neural Networks</li>
+<li>
+<strong>⇒</strong> FeedForward Neural Networks</li>
+<li>Recurrent Neural Networks</li>
+<li>Convolutional Neural Networks</li>
+<li>Other</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Types of Neural Networks" data-title="01" id="Neural_Network_Types_016" class="slide" data-transition="none">
+<div class="content " ref="Neural_Network_Types/01:6">
+<h1 class="section_title">Types of Neural Networks</h1>
+<h1>FeedForward Neural Network Uses</h1>
+
+<ul>
+<li>Supervised Learning</li>
+<li>Classification</li>
+<li>Regression</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Types of Neural Networks" data-title="01" id="Neural_Network_Types_017" class="slide" data-transition="none">
+<div class="content " ref="Neural_Network_Types/01:7">
+<h1 class="section_title">Types of Neural Networks</h1>
+<h1>FeedForward Neural Network Data</h1>
+
+<ul>
+<li>Tabular data</li>
+<li>Image data</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Types of Neural Networks" data-title="01" id="Neural_Network_Types_018" class="slide" data-transition="none">
+<div class="content " ref="Neural_Network_Types/01:8">
+<h1 class="section_title">Types of Neural Networks</h1>
+<h1>FeedForward Neural Network Output</h1>
+
+<ul>
+<li><p>Flexible, range of values, one of a class probabilities</p></li>
+<li><p>Limitation, one input maps to one output</p></li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Types of Neural Networks" data-title="01" id="Neural_Network_Types_019" class="slide" data-transition="none">
+<div class="content " ref="Neural_Network_Types/01:9">
+<h1 class="section_title">Types of Neural Networks</h1>
+<ul>
+<li>Inspiration for Neural Networks</li>
+<li>FeedForward Neural Networks</li>
+<li>
+<strong>⇒</strong> Recurrent Neural Networks</li>
+<li>Convolutional Neural Networks</li>
+<li>Other</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Types of Neural Networks" data-title="01" id="Neural_Network_Types_0110" class="slide" data-transition="none">
+<div class="content " ref="Neural_Network_Types/01:10">
+<h1 class="section_title">Types of Neural Networks</h1>
+<h1>Recurrent Neural Networks</h1>
+
+<ul>
+<li>In this class when we talk about RNNs we are typically talking about LSTMs</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Types of Neural Networks" data-title="01" id="Neural_Network_Types_0111" class="slide" data-transition="none">
+<div class="content " ref="Neural_Network_Types/01:11">
+<h1 class="section_title">Types of Neural Networks</h1>
+<h1>Recurrent Neural Networks Uses</h1>
+
+<ul>
+<li>Sequence or Time Series Data</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Types of Neural Networks" data-title="01" id="Neural_Network_Types_0112" class="slide" data-transition="none">
+<div class="content " ref="Neural_Network_Types/01:12">
+<h1 class="section_title">Types of Neural Networks</h1>
+<h1>Recurrent Neural Networks Input and Output</h1>
+
+<ul>
+<li>One to Many
+
+<ul>
+<li>Image to words for caption</li>
+</ul>
+</li>
+<li>Many to Many
+
+<ul>
+<li>French word sequence to English word sequence</li>
+</ul>
+</li>
+<li>Many to one
+
+<ul>
+<li>Speaker identification given voice sample</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Types of Neural Networks" data-title="01" id="Neural_Network_Types_0113" class="slide" data-transition="none">
+<div class="content " ref="Neural_Network_Types/01:13">
+<h1 class="section_title">Types of Neural Networks</h1>
+<ul>
+<li>Inspiration for Neural Networks</li>
+<li>FeedForward Neural Networks</li>
+<li>Recurrent Neural Networks</li>
+<li>
+<strong>⇒</strong> Convolutional Neural Networks**</li>
+<li>Other</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Types of Neural Networks" data-title="01" id="Neural_Network_Types_0114" class="slide" data-transition="none">
+<div class="content " ref="Neural_Network_Types/01:14">
+<h1 class="section_title">Types of Neural Networks</h1>
+<h1>Convolutional Neural Network</h1>
+
+<ul>
+<li>Inspired by the visual cortex</li>
+<li>Useful for image recognition</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Types of Neural Networks" data-title="01" id="Neural_Network_Types_0115" class="slide" data-transition="none">
+<div class="content " ref="Neural_Network_Types/01:15">
+<h1 class="section_title">Types of Neural Networks</h1>
+<h1>How Convolutional Neural Networks differ from other Networks</h1>
+
+<ul>
+<li>Image data analyzed as 4D NDArrays (tensors)</li>
+<li>For a 10*10 image, a series of 3*3, or 5*5 subsets are analyzed</li>
+</ul>
+
+<!-- * Need more on Convnets -->
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Types of Neural Networks" data-title="01" id="Neural_Network_Types_0116" class="slide" data-transition="none">
+<div class="content " ref="Neural_Network_Types/01:16">
+<h1 class="section_title">Types of Neural Networks</h1>
+<ul>
+<li>Inspiration for Neural Networks</li>
+<li>FeedForward Neural Networks</li>
+<li>Recurrent Neural Networks</li>
+<li>Convolutional Neural Networks</li>
+<li>
+<strong>⇒</strong> Other</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Types of Neural Networks" data-title="01" id="Neural_Network_Types_0117" class="slide" data-transition="none">
+<div class="content " ref="Neural_Network_Types/01:17">
+<h1 class="section_title">Types of Neural Networks</h1>
+<h1>Other Useful Neural Network Types</h1>
+
+<p><strong>Not covered in this course</strong></p>
+
+<ul>
+<li>Variational Autoencoders</li>
+<li>Restricted Boltzman Machines</li>
+<li>more....</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Types of Neural Networks" data-title="01" id="Neural_Network_Types_0118" class="slide" data-transition="none">
+<div class="content " ref="Neural_Network_Types/01:18">
+<h1 class="section_title">Types of Neural Networks</h1>
+<h1>Variational Autoencoders</h1>
+
+<ul>
+<li>Unsupervised learning of features</li>
+<li>Input -&gt; Neural Net -&gt; rebuild input</li>
+<li>Reduction in dataset dimensionality</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Types of Neural Networks" data-title="01" id="Neural_Network_Types_0119" class="slide" data-transition="none">
+<div class="content " ref="Neural_Network_Types/01:19">
+<h1 class="section_title">Types of Neural Networks</h1>
+<h1>Restricted Boltzmann Machines</h1>
+
+<ul>
+<li>Feature extraction and dimensionality reduction</li>
+<li>Model probability</li>
+<li>Useful for the pre-training phase in other large Deep Networks</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="README" id="DL4J_overview_README" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="DL4J_overview/README">
+<h1 class="section_title">DeepLearning4J</h1>
+<h1>DeepLearning4J</h1>
+
+<ul>
+<li>DL4J overview</li>
+<li>DataVec</li>
+<li>ND4J and LibND4J</li>
+<li>DeepLearning4j</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DeepLearning4J" id="DL4J_overview_DeepLearning4J1" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="DL4J_overview/DeepLearning4J:1">
+<h1 class="section_title">DeepLearning4J Overview</h1>
+<h1>DeepLearning4J Overview</h1>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DeepLearning4J" id="DL4J_overview_DeepLearning4J2" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DeepLearning4J:2">
+<h1 class="section_title">DeepLearning4J Overview</h1>
+<h1>Goals of the DeepLearning4J project</h1>
+
+<ul>
+<li>Provide a Toolkit for using DeepLearning on the JVM
+
+<ul>
+<li>Enterprise users</li>
+<li>Security</li>
+<li>Flexibility</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DeepLearning4J" id="DL4J_overview_DeepLearning4J3" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DeepLearning4J:3">
+<h1 class="section_title">DeepLearning4J Overview</h1>
+<h1>DeepLearning4J sub-projects</h1>
+
+<ul>
+<li>DataVec
+
+<ul>
+<li>Tools for ETL</li>
+</ul>
+</li>
+<li>ND4J
+
+<ul>
+<li>NUmeric Arrays</li>
+<li>NumPY for the JVM</li>
+</ul>
+</li>
+<li>libnd4j
+
+<ul>
+<li>Native Libraries for GPUs/CPUs</li>
+</ul>
+</li>
+<li>DeepLearning4J
+
+<ul>
+<li>Tools to train Neural Networks</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DeepLearning4J" id="DL4J_overview_DeepLearning4J4" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DeepLearning4J:4">
+<h1 class="section_title">DeepLearning4J Overview</h1>
+<h1>Why Java?</h1>
+
+<p><img src="./file//resources/tiobe.png" alt="alt text"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVec" id="DL4J_overview_DataVec1" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="DL4J_overview/DataVec:1">
+<h1 class="section_title">DataVec</h1>
+<h1>DataVec</h1>
+
+<ul>
+<li>Neural networks process numeric arrays</li>
+<li>Datavec helps you get from your_data =&gt; numeric array</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVec" id="DL4J_overview_DataVec2" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DataVec:2">
+<h1 class="section_title">DataVec</h1>
+<h1>Data Sources</h1>
+
+<ul>
+<li>Log files</li>
+<li>Text documents</li>
+<li>Tabular data</li>
+<li>Images and video</li>
+<li>and more !!</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVec" id="DL4J_overview_DataVec3" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DataVec:3">
+<h1 class="section_title">DataVec</h1>
+<h1>Goal</h1>
+
+<ul>
+<li>Build a user freindly comprehensive toolkit for data pilelines into Neural Netowrks</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVec" id="DL4J_overview_DataVec4" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DataVec:4">
+<h1 class="section_title">DataVec</h1>
+<h1>DataVec Features</h1>
+
+<ul>
+<li>Transformation</li>
+<li>Scaling</li>
+<li>Shuffling</li>
+<li>Joining</li>
+<li>Splitting Test and Train</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVec" id="DL4J_overview_DataVec5" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DataVec:5">
+<h1 class="section_title">DataVec</h1>
+<h1>Commonly Used Features</h1>
+
+<ul>
+<li>RecordReaders
+
+<ul>
+<li>Read files or input, convert to List of Writables</li>
+</ul>
+</li>
+<li>Normalizers
+
+<ul>
+<li>Standardize, scale or normalize the data</li>
+</ul>
+</li>
+<li>Transform Process
+
+<ul>
+<li>Join datasets, replace strings with numerics, extract labels</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVec" id="DL4J_overview_DataVec6" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DataVec:6">
+<h1 class="section_title">DataVec</h1>
+<h1>Diagram of available ETL paths</h1>
+
+<p><img src="./file//resources/ETL.png" alt="alt text"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVec" id="DL4J_overview_DataVec7" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DataVec:7">
+<h1 class="section_title">DataVec</h1>
+<h1>DataVec Image Basics</h1>
+
+<ul>
+<li>Images are arrays of pixel values</li>
+</ul>
+
+<p><img src="./file//resources/big44.png" align="center" height="480" width="480"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVec" id="DL4J_overview_DataVec8" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DataVec:8">
+<h1 class="section_title">DataVec</h1>
+<h1>Code Example: Load above image as INDArray</h1>
+
+<p><code>
+        INDArray imagematrix = loader.asMatrix(image);
+        System.out.println(imagematrix);
+</code></p>
+
+<h1>Output</h1>
+
+<p><code>
+[[[[255.00, 255.00, 255.00, 255.00],
+   [255.00, 0.00, 0.00, 255.00],
+   [255.00, 0.00, 0.00, 255.00],
+   [255.00, 255.00, 255.00, 255.00]]]]
+</code></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVec" id="DL4J_overview_DataVec9" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DataVec:9">
+<h1 class="section_title">DataVec</h1>
+<h1>Code Example: Scale values between 0 and 1</h1>
+
+<p><code>
+    DataNormalization scaler = new ImagePreProcessingScaler(0,1);
+    scaler.transform(imagematrix);
+</code></p>
+
+<h1>Output</h1>
+
+<p><code>
+[[[[1.00, 1.00, 1.00, 1.00],
+   [1.00, 0.00, 0.00, 1.00],
+   [1.00, 0.00, 0.00, 1.00],
+   [1.00, 1.00, 1.00, 1.00]]]]
+</code></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVec" id="DL4J_overview_DataVec10" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DataVec:10">
+<h1 class="section_title">DataVec</h1>
+<h1>Manipulating Images with DataVec</h1>
+
+<ul>
+<li>Scale images to same dimensions with RecordReader</li>
+<li>Used in pipeline for example in training</li>
+</ul>
+
+<p><code>
+ImageRecordReader recordReader = new ImageRecordReader(height,width,channels);
+</code></p>
+
+<ul>
+<li>Scale image to appropriate dimenstions with NativeImageLoader</li>
+<li>Used one-off for example in inference</li>
+</ul>
+
+<p><code>
+NativeImageLoader loader = new NativeImageLoader(height, width, channels); \ load and scale
+INDArray image = loader.asMatrix(file); \ create INDarray
+INDArray output = model.output(image);   \ get model prediction for image
+</code></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVec" id="DL4J_overview_DataVec11" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DataVec:11">
+<h1 class="section_title">DataVec</h1>
+<h1>Code Example: Image Transform</h1>
+
+<ul>
+<li>Scale pixel values</li>
+</ul>
+
+<p><code>
+DataNormalization scaler = new ImagePreProcessingScaler(0,1);
+scaler.fit(dataIter);
+dataIter.setPreProcessor(scaler);
+</code></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVec" id="DL4J_overview_DataVec12" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DataVec:12">
+<h1 class="section_title">DataVec</h1>
+<h1>Image Data Set Augmentation</h1>
+
+<ul>
+<li>Create "larger" training set with OpenCV/dataVec tools
+
+<ul>
+<li>Transform</li>
+<li>Crop</li>
+<li>Skew</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVec" id="DL4J_overview_DataVec13" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DataVec:13">
+<h1 class="section_title">DataVec</h1>
+<h1>Applying Labels</h1>
+
+<ul>
+<li>ParentPathLabelGenerator</li>
+<li>PathLabelGenerator</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVec" id="DL4J_overview_DataVec14" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DataVec:14">
+<h1 class="section_title">DataVec</h1>
+<h1>Available Record Readers</h1>
+
+<ul>
+<li>Table of available record readers:
+
+<ul>
+<li><a href="https://deeplearning4j.org/etl-userguide">https://deeplearning4j.org/etl-userguide</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVec" id="DL4J_overview_DataVec15" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DataVec:15">
+<h1 class="section_title">DataVec</h1>
+<h1>Available ND4J Pre-Processors</h1>
+
+<ul>
+<li>ImagePreProcessingScaler
+
+<ul>
+<li>min max scaling default 0 + - 1</li>
+</ul>
+</li>
+<li>NormalizerMinMaxScaler
+
+<ul>
+<li>Scale values observed min -&gt; 0, observed max -&gt; 1 </li>
+</ul>
+</li>
+<li>NormalizerStandardize
+
+<ul>
+<li>moving column wise variance and mean</li>
+<li>no need to pre-process</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVec" id="DL4J_overview_DataVec16" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DataVec:16">
+<h1 class="section_title">DataVec</h1>
+<h1>Image Transforms with JavaCV, OpenCV, ffmpeg</h1>
+
+<ul>
+<li>Libraries included</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVec" id="DL4J_overview_DataVec17" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DataVec:17">
+<h1 class="section_title">DataVec</h1>
+<h1>Make this first intro to this for inference, and clean order</h1>
+
+<h1>Image pipeline Single Image to Pre-Trained Model</h1>
+
+<p><img src="./file//resources/ETL_single_image.png" align="center" height="480" width="480"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVec" id="DL4J_overview_DataVec18" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DataVec:18">
+<h1 class="section_title">DataVec</h1>
+<h1>Code Example: CSV Data to INDArray</h1>
+
+<pre><code>public class CSVExample {
+private static Logger log = LoggerFactory.getLogger(CSVExample.class);
+public static void main(String[] args) throws  Exception {
+    //First: get the dataset using the record reader. 
+    //CSVRecordReader handles loading/parsing
+    int numLinesToSkip = 0;
+    String delimiter = ",";
+    RecordReader recordReader = 
+    new CSVRecordReader(numLinesToSkip,delimiter);
+    recordReader.initialize(new FileSplit
+    (new ClassPathResource("iris.txt").getFile()));
+</code></pre>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVec" id="DL4J_overview_DataVec19" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DataVec:19">
+<h1 class="section_title">DataVec</h1>
+<h1>Code Example: Continued....</h1>
+
+<pre><code>//Second: the RecordReaderDataSetIterator 
+    //handles conversion to 
+    //DataSet objects, ready for use in neural network
+    int labelIndex = 4;     
+    //5 values in each row of the iris.txt CSV: 
+    //4 input features followed by an integer label (class) index. 
+    //Labels are the 5th value (index 4) in each row
+    int numClasses = 3;     
+    //3 classes (types of iris flowers) in the iris data set. 
+    //Classes have integer values 0, 1 or 2
+    int batchSize = 150; 
+    //Iris data set: 150 examples total. 
+    //Loading all of them into one DataSet 
+    //(not recommended for large data sets)
+
+    DataSetIterator iterator = 
+    new RecordReaderDataSetIterator
+    (recordReader,batchSize,labelIndex,numClasses);
+    DataSet allData = iterator.next();
+</code></pre>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVec" id="DL4J_overview_DataVec20" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DataVec:20">
+<h1 class="section_title">DataVec</h1>
+<h1>DataVec Code Explained</h1>
+
+<ul>
+<li>RecordReader recordReader = new CSVRecordReader(numLinesToSkip,delimiter);
+
+<ul>
+<li>A RecordReader prepares a list of Writables</li>
+<li>A Writable is an efficient Serialization format</li>
+</ul>
+</li>
+<li>DataSetIterator iterator = new RecordReaderDataSetIterator
+
+<ul>
+<li>We are in DL4J know, with DataSetIterator</li>
+<li>Builds an Iterator over the list of records</li>
+</ul>
+</li>
+<li>DataSet allData = iterator.next();
+
+<ul>
+<li>Builds a DataSet</li>
+<li>INDArray of Features, INDArray of Labels</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVec" id="DL4J_overview_DataVec21" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/DataVec:21">
+<h1 class="section_title">DataVec</h1>
+<h1>Frequently Used DataVec classes</h1>
+
+<ul>
+<li>CSVRecordReader
+
+<ul>
+<li>CSV text data</li>
+</ul>
+</li>
+<li>ImageRecordReader
+
+<ul>
+<li>Convert image to numeric array representing pixel values</li>
+</ul>
+</li>
+<li> JacksonRecordReader
+
+<ul>
+<li>Parses JSON records</li>
+</ul>
+</li>
+<li>ParentPathLabelGenerator
+
+<ul>
+<li>Builds labels based on directory path</li>
+</ul>
+</li>
+<li>Transform, Transform Process Builder, TransformProcess
+
+<ul>
+<li>Conversion tools</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="DataVecLab" id="DL4J_overview_DataVecLab" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="DL4J_overview/DataVecLab">
+<h1 class="section_title">DataVec Lab</h1>
+<h1>DataVec Lab</h1>
+
+<h3>See the Lab Manual for the DataVec Lab</h3>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="ND4J" id="DL4J_overview_ND4J1" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="DL4J_overview/ND4J:1">
+<h1 class="section_title">ND4J</h1>
+<h1>ND4J</h1>
+
+<ul>
+<li>Provides scientific computing libraries</li>
+<li>Main features
+
+<ul>
+<li>Versatile n-dimensional array object</li>
+<li>Multiplatform functionality including GPUs</li>
+<li>Linear algebra and signal processing functions</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="ND4J" id="DL4J_overview_ND4J2" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/ND4J:2">
+<h1 class="section_title">ND4J</h1>
+<h1>ND4J and DeepLearning</h1>
+
+<ul>
+<li>Classes frequently Used
+
+<ul>
+<li>DataSet
+
+<ul>
+<li>Container for INDArrays of Features/Labels</li>
+</ul>
+</li>
+<li>DataSetIterator
+
+<ul>
+<li>Build DataSet from RecordReader</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="DeepLearning4J Introduction" data-title="ND4J" id="DL4J_overview_ND4J3" class="slide" data-transition="none">
+<div class="content " ref="DL4J_overview/ND4J:3">
+<h1 class="section_title">ND4J</h1>
+<h1>libND4J</h1>
+
+<ul>
+<li>The C++ engine that powers ND4J
+
+<ul>
+<li>Speed</li>
+<li>CPU and GPU support</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="FeedForward Neural Networks Explained" data-title="01" id="Neural_networks_explained_011" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="Neural_networks_explained/01:1">
+<h1 class="section_title">FeedForward Neural Networks Explained</h1>
+<h1>FeedForward Neural Networks Explained</h1>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="FeedForward Neural Networks Explained" data-title="01" id="Neural_networks_explained_012" class="slide" data-transition="none">
+<div class="content " ref="Neural_networks_explained/01:2">
+<h1 class="section_title">FeedForward Neural Networks Explained</h1>
+<h1>FeedForward Neural Networks</h1>
+
+<ul>
+<li>Share many features with Convolutional and Recurrent Neural Networks</li>
+<li>FeedForward neural networks ~ MultiLayerPerceptrons</li>
+<li>Developed in the 1940s-1960s</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="FeedForward Neural Networks Explained" data-title="01" id="Neural_networks_explained_013" class="slide" data-transition="none">
+<div class="content " ref="Neural_networks_explained/01:3">
+<h1 class="section_title">FeedForward Neural Networks Explained</h1>
+<h1>Why Deep Learning now</h1>
+
+<ul>
+<li>Successful use came with the rise of GPUs and larger training sets</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="FeedForward Neural Networks Explained" data-title="01" id="Neural_networks_explained_014" class="slide" data-transition="none">
+<div class="content " ref="Neural_networks_explained/01:4">
+<h1 class="section_title">FeedForward Neural Networks Explained</h1>
+<h1>A FeedForward Neural Network</h1>
+
+<p><img src="./file//resources/general_network.png" height="480" width="480"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="FeedForward Neural Networks Explained" data-title="01" id="Neural_networks_explained_015" class="slide" data-transition="none">
+<div class="content " ref="Neural_networks_explained/01:5">
+<h1 class="section_title">FeedForward Neural Networks Explained</h1>
+<h1>A Neural Network with Two Hidden Layers</h1>
+
+<p><img src="./file//resources/two_layer.png" alt="network diagram"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="FeedForward Neural Networks Explained" data-title="01" id="Neural_networks_explained_016" class="slide" data-transition="none">
+<div class="content " ref="Neural_networks_explained/01:6">
+<h1 class="section_title">FeedForward Neural Networks Explained</h1>
+<h1>Connections Between Nodes</h1>
+
+<ul>
+<li>Designed to be selective and trainable</li>
+<li>Filter, aggregate, convert, amplify, ignore what they pass on to next neuron</li>
+<li>This transformation converts raw input into useful information</li>
+<li>Input has trainable weight applied</li>
+<li>Output determined by activation function</li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="FeedForward Neural Networks Explained" data-title="01" id="Neural_networks_explained_017" class="slide" data-transition="none">
+<div class="content " ref="Neural_networks_explained/01:7">
+<h1 class="section_title">FeedForward Neural Networks Explained</h1>
+<h1>Neural Network Diagram Explained</h1>
+
+<ul>
+<li>Node J</li>
+</ul>
+
+<p><img src="./file//resources/single_node_ins_outs.png" alt="network diagram"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="FeedForward Neural Networks Explained" data-title="01" id="Neural_networks_explained_018" class="slide" data-transition="none">
+<div class="content " ref="Neural_networks_explained/01:8">
+<h1 class="section_title">FeedForward Neural Networks Explained</h1>
+<h1>Single Node Diagram Discussion</h1>
+
+<ul>
+<li>
+<p>Input</p>
+
+<ul>
+<li>Input is determined by the output of the input neurons * the weights applied to that output</li>
+</ul>
+</li>
+<li>
+<p>Weights</p>
+
+<ul>
+<li>Assigned randomly* initially between 0-1</li>
+<li>Weight of 0, input is ignored</li>
+<li>Large weight input is amplified </li>
+<li>As the network trains weights are adjusted</li>
+</ul>
+</li>
+<li>
+<p>Output</p>
+
+<ul>
+<li>Output is determined but it's input * weights, and the activation function. </li>
+<li>Sigmoid activation low input output 0 higher input output 1, in between S curve.</li>
+<li>ReLU low input 0 then linear after trigger. </li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="FeedForward Neural Networks Explained" data-title="01" id="Neural_networks_explained_019" class="slide" data-transition="none">
+<div class="content " ref="Neural_networks_explained/01:9">
+<h1 class="section_title">FeedForward Neural Networks Explained</h1>
+<h1>Key Terms</h1>
+
+<ul>
+<li>Activation Function
+
+<ul>
+<li>A nonlinear A function that maps input on a nonlinear scale such as sigmoid or tanh. By definition, a nonlinear function’s output is not directly proportional to its input</li>
+</ul>
+</li>
+<li>Loss Function
+
+<ul>
+<li>How error is calculated</li>
+</ul>
+</li>
+<li>Weights</li>
+<li>BackProp</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="FeedForward Neural Networks Explained" data-title="01" id="Neural_networks_explained_0110" class="slide" data-transition="none">
+<div class="content " ref="Neural_networks_explained/01:10">
+<h1 class="section_title">FeedForward Neural Networks Explained</h1>
+<h1>Neural Net Terms</h1>
+
+<ul>
+<li><p>Weights
+Connection Weights. Weights on connections in a neural network are coefficients that
+scale (amplify or minimize) the input signal to a given neuron in the network</p></li>
+<li>
+<p>Activation Function</p>
+
+<ul>
+<li>The sigmoid function. "Its best thought of as a <em>squashing function</em>, because it takes the input and squashes it to be between zero and one: Very negative values are squashed towards zero and positive values get squashed towards one." Karpathy</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="FeedForward Neural Networks Explained" data-title="01" id="Neural_networks_explained_0111" class="slide" data-transition="none">
+<div class="content " ref="Neural_networks_explained/01:11">
+<h1 class="section_title">FeedForward Neural Networks Explained</h1>
+<h1>Training a Neural Net</h1>
+
+<ul>
+<li>Inputs: Data you want to produce information from</li>
+<li>Connection weights and biases govern the activity of the network</li>
+<li>Learning algorithm changes weights and biases with each learning pass</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="FeedForward Neural Networks Explained" data-title="01" id="Neural_networks_explained_0112" class="slide" data-transition="none">
+<div class="content " ref="Neural_networks_explained/01:12">
+<h1 class="section_title">FeedForward Neural Networks Explained</h1>
+<h1>Underfitting and Overfitting</h1>
+
+<ul>
+<li>Underfitting
+
+<ul>
+<li>Our model does not learn the structure of the training data well enough</li>
+<li>Doesn’t perform on new data as well as it could</li>
+</ul>
+</li>
+<li>Overfitting
+
+<ul>
+<li>Our model gives tremendous accuracy scores on training data</li>
+<li>However, our model performs poorly on test data and other new data</li>
+</ul>
+</li>
+</ul>
+
+<p><img src="./file//resources/overfit.png" alt="alt text"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="FeedForward Neural Networks Explained" data-title="01" id="Neural_networks_explained_0113" class="slide" data-transition="none">
+<div class="content " ref="Neural_networks_explained/01:13">
+<h1 class="section_title">FeedForward Neural Networks Explained</h1>
+<h1>Logistic Regression</h1>
+
+<ul>
+<li>3 parts to Logistic Regression Model
+
+<ul>
+<li>Hypothesis (logistic function): <img src="./file//resources/equation.gif" alt="alt text">
+
+<ul>
+<li>Gives us a prediction based on the parameter vector x and the input data features</li>
+</ul>
+</li>
+<li>Cost Function
+
+<ul>
+<li>Example: “max likelihood estimation”</li>
+<li>Tells us how far off the prediction from the hypothesis is from the actual value</li>
+</ul>
+</li>
+<li>Update Function
+
+<ul>
+<li>Derivative of the cost function</li>
+<li>Tells us what direction / how much of step to take</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="FeedForward Neural Networks Explained" data-title="01" id="Neural_networks_explained_0114" class="slide" data-transition="none">
+<div class="content " ref="Neural_networks_explained/01:14">
+<h1 class="section_title">FeedForward Neural Networks Explained</h1>
+<h1>Evaluation and The Confusion Matrix</h1>
+
+<ul>
+<li>Table representing
+
+<ul>
+<li>Predictions vs Actual Data</li>
+</ul>
+</li>
+<li>We count these answers to get
+
+<ul>
+<li>True Positives</li>
+<li> False Positives</li>
+<li>True Negatives</li>
+<li>False Negatives</li>
+</ul>
+</li>
+<li>Allows us to evaluate the model beyond “average accurate” percent
+
+<ul>
+<li>Can look at well a model can perform when it needs to be more than just “accurate a lot” </li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="FeedForward Neural Networks Explained" data-title="01" id="Neural_networks_explained_0115" class="slide" data-transition="none">
+<div class="content " ref="Neural_networks_explained/01:15">
+<h1 class="section_title">FeedForward Neural Networks Explained</h1>
+<h1>Confusion Matrix</h1>
+
+<p><img src="./file//resources/truth_table.png" alt="alt text"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Abalone Lab" data-title="01" id="Abalone_intro_01" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="Abalone_intro/01">
+<h1 class="section_title">LAB: FeedForward Network to Determine Age of Shellfish based on Measurements</h1>
+<h1>LAB: FeedForward Network to Determine Age of Shellfish based on Measurements</h1>
+
+<h4>Please refer to your lab manual.</h4>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_011" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="Data_Ingest_Case_Study_Text/01:1">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Data Ingestion Case Study: Text</h1>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_012" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:2">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Table of Contents</h1>
+
+<ul>
+<li>PreProcessing and tokenization</li>
+<li>Bag of Words</li>
+<li>N-Grams</li>
+<li>Word2Vec</li>
+<li>Paragraph Vectors</li>
+<li>GloVE</li>
+<li>Words as Sequence of Characters</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_013" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:3">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Table of Contents</h1>
+
+<ul>
+<li>
+<strong>⇒</strong> PreProcessing and tokenization</li>
+<li>Bag of Words</li>
+<li>N-Grams</li>
+<li>Word2Vec</li>
+<li>Paragraph Vectors</li>
+<li>GloVE</li>
+<li>Words as Sequence of Characters</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_014" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:4">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>PreProcessing and Tokenization</h1>
+
+<ul>
+<li>Tokenizer
+
+<ul>
+<li>Splits stream of words into individual words
+
+<ul>
+<li>DefaultTokenizer</li>
+<li>NGramTokenizer </li>
+<li>PosUimaTokenizer</li>
+<li>UimaTokenizer</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>PreProcessors
+
+<ul>
+<li>LowCasePreProcessor</li>
+<li>StemmingPreprocessor</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_015" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:5">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Table of Contents</h1>
+
+<ul>
+<li>PreProcessing and tokenization</li>
+<li>
+<strong>⇒</strong> Bag of Words</li>
+<li>N-Grams</li>
+<li>Word2Vec</li>
+<li>Paragraph Vectors</li>
+<li>GloVE</li>
+<li>Words as Sequence of Characters</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_016" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:6">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Bag of Words</h1>
+
+<p>Corpus is represented as the bag(multiset) of its words. </p>
+
+<ul>
+<li>No Grammar</li>
+<li>No order</li>
+<li>Frequency only</li>
+</ul>
+
+<p>"Bob and Carol and Ted and Alice"</p>
+
+<p>Becomes the List
+["Bob","and","Carol","Ted","Alice"]</p>
+
+<p>Term frequency
+ [1,3,1,1,1]</p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_017" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:7">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Bag of Words Uses</h1>
+
+<ul>
+<li>TfIDF
+
+<ul>
+<li>Frequency of word/document compared to word/corpus of documents</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_018" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:8">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Bag of Words Example</h1>
+
+<ul>
+<li>Lab folder has example</li>
+<li>
+<p>Tokenizer to read files from directory and label with filename</p>
+
+<pre><code>TokenizerFactory tokenizerFactory = new DefaultTokenizerFactory();
+LabelAwareIterator iterator = new FilenamesLabelAwareIterator
+.Builder()
+        .addSourceFolder(new ClassPathResource("bow").getFile())
+        .useAbsolutePathAsLabel(false)
+        .build();
+</code></pre>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_019" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:9">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Bag of Words Example .....</h1>
+
+<ul>
+<li>
+<p>Code to show contents of iterator</p>
+
+<pre><code>while(iterator.hasNext()){
+    LabelledDocument doc = iterator.nextDocument();
+    System.out.println(doc.getContent());
+    System.out.println(doc.getLabels().get(0));
+}
+
+iterator.reset();
+</code></pre>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0110" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:10">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Bag of Words Example .....</h1>
+
+<pre><code>BagOfWordsVectorizer vectorizer = new BagOfWordsVectorizer.Builder()
+            .setMinWordFrequency(1)
+            .setStopWords(new ArrayList&lt;String&gt;())
+            .setTokenizerFactory(tokenizerFactory)
+            .setIterator(iterator)
+            .build();
+vectorizer.fit();
+</code></pre>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0111" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:11">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Bag of Words Example .....</h1>
+
+<ul>
+<li>
+<p>Code to explore the contents of the Bag of Words</p>
+
+<pre><code>log.info(vectorizer.getVocabCache().tokens().toString());
+System.out.println(vectorizer.getVocabCache().totalNumberOfDocs());
+System.out.println(vectorizer.getVocabCache().docAppearedIn("two."));
+System.out.println(vectorizer.getVocabCache().docAppearedIn("one."));
+System.out.println(vectorizer.getVocabCache().docAppearedIn("world"));
+</code></pre>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0112" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:12">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Table of Contents</h1>
+
+<ul>
+<li>PreProcessing and tokenization</li>
+<li>Bag of Words</li>
+<li>
+<strong>⇒</strong> N-Grams</li>
+<li>Word2Vec</li>
+<li>Paragraph Vectors</li>
+<li>GloVE</li>
+<li>Words as Sequence of Characters</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0113" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:13">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>NGrams</h1>
+
+<ul>
+<li>Contiguous sequence of n items from a sequence of text</li>
+<li>Example text <strong><em>"It is the year 2016"</em></strong>
+
+<ul>
+<li>Extracted Bi-grams </li>
+<li>"It is" </li>
+<li>"is the" </li>
+<li>"the year" </li>
+<li>"year 2016"</li>
+<li>Extracted Tri-grams </li>
+<li>"It is the" </li>
+<li>"is the year" </li>
+<li>"the year 2016"</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0114" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:14">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>NGram uses</h1>
+
+<ul>
+<li>Provide more context than Bag of Words</li>
+<li>Used in some neural networks for speech recognition to narrow the scope of prediction
+
+<ul>
+<li>RNN predicts next word out of top x percent of trigram for previous 2 word predictions</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0115" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:15">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Code Example: NGrams in DL4J</h1>
+
+<pre><code>public static void main(String[] args) throws Exception{
+    String toTokenize = "To boldly go where no one has gone before.";
+    TokenizerFactory factory = 
+    new NGramTokenizerFactory(new DefaultTokenizerFactory(), 1, 2);
+
+    Tokenizer tokenizer = factory.create(toTokenize);
+    factory = new NGramTokenizerFactory
+    (new DefaultTokenizerFactory(), 2, 3);
+
+    List&lt;String&gt; tokens = factory.create(toTokenize).getTokens();
+    log.info(tokens.toString());
+</code></pre>
+
+<p>Output</p>
+
+<pre><code>[To, boldly],  [boldly, go],  [go, where],......
+[To, boldly, go],  [boldly, go, where] ......
+</code></pre>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0116" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:16">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Table of Contents</h1>
+
+<ul>
+<li>PreProcessing and tokenization</li>
+<li>Bag of Words</li>
+<li>N-Grams</li>
+<li>
+<strong>⇒</strong> Word2Vec</li>
+<li>Paragraph Vectors</li>
+<li>GloVE</li>
+<li>Words as Sequence of Characters</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0117" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:17">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Word2Vec</h1>
+
+<ul>
+<li>Model for word embeddings</li>
+<li>Vector Space </li>
+<li>Each word in corpus =&gt; vector in multi-dimensional vector space</li>
+<li>Relative location of word in vector space denotes relationship
+
+<ul>
+<li>Distance and direction from Boy-&gt;Man</li>
+<li>Distance and Direction from Girl-&gt;Woman</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0118" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:18">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Word2Vec</h1>
+
+<ul>
+<li>Model for word embeddings</li>
+<li>Vector Space </li>
+<li>Each word in Corpus =&gt; Vector in Vector Space</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0119" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:19">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Word2Vec - Generating the Vector Space</h1>
+
+<ul>
+<li>Neural Network trained to return word probabilities of a moving window
+
+<ul>
+<li>Given word "Paris", out of the corpus of words predict probility of each word occuring within say five words of the word "Paris"</li>
+</ul>
+</li>
+<li>One hot Vector, size of every word in the corpus</li>
+<li>all 0's except for 1 representing the word</li>
+<li>See Demo <a href="https://ronxin.github.io/wevi/">https://ronxin.github.io/wevi/</a>
+</li>
+<li>See example in intellij</li>
+<li>Allows you to do word math
+
+<ul>
+<li>King - Man + Woman = (?) Queen</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0120" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:20">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>One-hot encoding</h1>
+
+<ul>
+<li>Vector, the size of the vocabulary, all 0 except for single 1</li>
+</ul>
+
+<p><img src="./file//resources/onehot.png" alt="alt text"></p>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0121" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:21">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Two Methods for Building word2vec</h1>
+
+<ul>
+<li>CBOW
+
+<ul>
+<li>w1,w2,w4,w5 as input to neural network
+
+<ul>
+<li>Context words </li>
+</ul>
+</li>
+<li>Train net with w3 as target
+
+<ul>
+<li>Focus word</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>SKIP GRAM
+
+<ul>
+<li>Reverse of CBOW</li>
+<li>Input is focus word</li>
+<li>Output is context words</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0122" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:22">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>CBOW visually</h1>
+
+<p><img src="./file//resources/quickfox.png" alt="alt text"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0123" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:23">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>CBOW visually</h1>
+
+<p><img src="./file//resources/quickfox1.png" alt="alt text"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0124" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:24">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>CBOW visually</h1>
+
+<p><img src="./file//resources/quickfox2.png" alt="alt text"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0125" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:25">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>CBOW visually</h1>
+
+<p><img src="./file//resources/word2VecCBOW.png" alt="alt text"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0126" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:26">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Table of Contents</h1>
+
+<ul>
+<li>PreProcessing and tokenization</li>
+<li>Bag of Words</li>
+<li>N-Grams</li>
+<li>Word2Vec</li>
+<li>
+<strong>⇒</strong> Paragraph Vectors</li>
+<li>GloVE</li>
+<li>Words as Sequence of Characters</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0127" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:27">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Paragraph Vectors/doc2Vec</h1>
+
+<ul>
+<li>Extension to Word2Vec
+
+<ul>
+<li>Word2Vec associates words with words</li>
+<li>doc2vec has additional label</li>
+<li>Useful for sentiment analysis</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0128" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:28">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Table of Contents</h1>
+
+<ul>
+<li>PreProcessing and tokenization</li>
+<li>Bag of Words</li>
+<li>N-Grams</li>
+<li>Word2Vec</li>
+<li>Paragraph Vectors</li>
+<li>
+<strong>⇒</strong>  GloVE</li>
+<li>Words as Sequence of Characters</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0129" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:29">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>GloVE</h1>
+
+<ul>
+<li>Vector Representation of words obtained from unsupervised word-word co-occurance</li>
+<li>Pretrained vectors available
+
+<ul>
+<li>Wikipedia</li>
+<li>Twitter</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0130" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:30">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<ul>
+<li>PreProcessing and tokenization</li>
+<li>Bag of Words</li>
+<li>N-Grams</li>
+<li>Word2Vec</li>
+<li>Paragraph Vectors</li>
+<li>GloVE</li>
+<li>
+<strong>⇒</strong>  Words as Sequence of Characters</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0131" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:31">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Text as Sequence of Characters</h1>
+
+<p>Text can be treated as sequence of characters; neural networks can be trained to answer the question "Given input character X predict the next character"; then repeat.</p>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0132" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:32">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Character vs Word as Unit of Analysis</h1>
+
+<ul>
+<li>How many words are there? </li>
+<li>How many characters are there? </li>
+<li>Text-&gt;word processing is hard
+
+<ul>
+<li>prefix, suffix, etc</li>
+<li>"old school" , "New York"</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0133" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:33">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Sequence of Characters as SubTree in Tree of All Character Strings</h1>
+
+<p>Graph of 
+test branch teste, testi, branch tested, branch testing</p>
+
+<p>In an Recurrent Neural Network(Graves LSTM) each node is a hidden state vector</p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Data Ingest Case Study: Text" data-title="01" id="Data_Ingest_Case_Study_Text_0134" class="slide" data-transition="none">
+<div class="content " ref="Data_Ingest_Case_Study_Text/01:34">
+<h1 class="section_title">Data Ingestion Case Study: Text</h1>
+<h1>Using Recurrent Neural Networks to Write Weather Forecast</h1>
+
+<p>After the content that describes LSTM RNN in detail we will have a lab that builds a neural network to generate characters one character at a time from a learned corpus. </p>
+
+<p>In the lab we will train the network weather forecasts. </p>
+
+<p><em>**Instructor note, foreshadow the lab , do not start the lab yet, next chapter *</em>*</p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_011" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="Intro_to_Recurrent_Neural_Networks/01:1">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Introduction to Recurrent Neural Networks</h1>
+
+<ul>
+<li>Overview</li>
+<li>Benefits</li>
+<li>Modeling Sequences</li>
+<li>Details</li>
+<li>BackPropagation through time</li>
+<li>Tuning Guidelines</li>
+<li>PhysioNet Example</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_012" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:2">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Table of Contents</h1>
+
+<ul>
+<li>
+<strong>⇒</strong> Overview</li>
+<li>Benefits</li>
+<li>Modeling Sequences</li>
+<li>Details</li>
+<li>BackPropagation through time</li>
+<li>Tuning Guidelines</li>
+<li>PhysioNet Example</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_013" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:3">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>What is a Recurrent Neural Network?</h1>
+
+<ul>
+<li>FeedForward Network with hidden state</li>
+<li>Hidden state with own internal dynamics</li>
+<li>Information can be stored in "hidden state" for a long time</li>
+</ul>
+
+<p><strong><em>In this section when we refer to RNN we mean Graves LSTM as defined here <a href="https://arxiv.org/abs/1308.0850">https://arxiv.org/abs/1308.0850</a></em></strong></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_014" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:4">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Long Short Term Memory RNNs Uses</h1>
+
+<ul>
+<li>HandWriting Recognition</li>
+<li>Sequence/Time Series Data</li>
+<li>Sequence Generation</li>
+<li>Sequence Classification</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_015" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:5">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Long Short Term Memory RNN's</h1>
+
+<ul>
+<li>Consider dynamic state of NN as Short term</li>
+<li>We want to make that last a long time(Improve upon Vanilla RNN)</li>
+<li>Create modules that allow information to
+
+<ul>
+<li>Gate in</li>
+<li>Gate out when needed</li>
+<li>In between gate is closed and information is preserved</li>
+<li>Forget Gate</li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_016" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:6">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Long Short Term Memory RNN's</h1>
+
+<ul>
+<li>Logistic write gate with each node in Recurrent Layer</li>
+<li>Write Gate
+
+<ul>
+<li>ON/OFF state determined by rest of the network</li>
+<li>Write State=ON</li>
+<li>State is saved</li>
+</ul>
+</li>
+<li>Keep Gate 
+
+<ul>
+<li>On/OFF state determined by rest of Net</li>
+<li>Keep Gate=ON</li>
+<li>State is maintained</li>
+</ul>
+</li>
+<li>Read Gate
+
+<ul>
+<li>On/Off State Determined by rest of network</li>
+<li>Read Gate ON</li>
+<li>Data in cell is output to network</li>
+</ul>
+</li>
+<li>Data in the memory cell is actually analog</li>
+<li>It writes the data back to itself at each step while "keep" is closed using Weight of 1</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_017" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:7">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Why RNN and Not deep FeedForward Network?</h1>
+
+<ul>
+<li>Vanishing Gradient Challenge with Deep FeedForward Networks</li>
+<li>Makes training deep networks challenging</li>
+<li>Backward pass is Linear
+
+<ul>
+<li>Compound multiplication of values close to zero tend to vanish</li>
+<li>Vanishing Gradient</li>
+<li>Compound multiplication of large values tend to explode</li>
+</ul>
+</li>
+<li>Forward pass is Non-linear
+
+<ul>
+<li>Activation functions (squashing functions) prevent activity vectors from exploding</li>
+</ul>
+</li>
+<li>Solution is LSTM to preserve time based info isolated from backpropagation</li>
+</ul>
+
+<!-- Great picture from Hinton Coursera course Re-work -->
+
+<!-- ![network diagram](../resources/vanishing_gradient.png) -->
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_018" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:8">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<ul>
+<li>Overview</li>
+<li>
+<strong>⇒</strong> Benefits</li>
+<li>Modeling Sequences</li>
+<li>Details</li>
+<li>BackPropagation through time</li>
+<li>Tuning Guidelines</li>
+<li>PhysioNet Example</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_019" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:9">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>RNNs power</h1>
+
+<ul>
+<li>Distributed Hidden State</li>
+<li>Multiple hidden units can be active at once
+
+<ul>
+<li>Can "remember" several different things</li>
+</ul>
+</li>
+<li>Nonlinear
+
+<ul>
+<li>Allows updates to hidden state in complicated ways</li>
+</ul>
+</li>
+<li>"With enough neurons and enough time they can compute anything that can be computed on your computer" (Hinton Lecture)</li>
+</ul>
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0110" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:10">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>ARi's thoughts on content</h1>
+
+<ul>
+<li>Condense key concepts</li>
+<li>When to use</li>
+<li>Why to use</li>
+<li>Additional considerations
+
+<ul>
+<li>BPTT</li>
+<li>Activation considerations</li>
+<li>Train Test split considerations</li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0111" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:11">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Another Benefit of RNN over FeedForward Network</h1>
+
+<ul>
+<li>FeedForward network
+
+<ul>
+<li>One to one relationship input to ouptut</li>
+</ul>
+</li>
+<li>Recurrent network
+
+<ul>
+<li>one to many
+
+<ul>
+<li>One Image to many words in Caption</li>
+</ul>
+</li>
+<li>Many to many
+
+<ul>
+<li>English to French</li>
+</ul>
+</li>
+<li>Many to one
+
+<ul>
+<li>Voice classification</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0112" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:12">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Benefit of Recurrent Neural Network Over FeedForward Network with Fixed Time Window</h1>
+
+<ul>
+<li>Pre-configured window of time steps
+
+<ul>
+<li>Brittle hard coded</li>
+<li>Requires domain knowledge of feature dependencies</li>
+</ul>
+</li>
+<li>Flexible state information for flexible length events
+
+<ul>
+<li>Able to learn over long flexible event windows</li>
+<li>Learns feature dependencies over learned flexible time window</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0113" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:13">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>What Types of Activity can an RNN model</h1>
+
+<ul>
+<li>Oscillation
+
+<ul>
+<li>motor control, walking robots</li>
+</ul>
+</li>
+<li>Sequences
+
+<ul>
+<li>Including long term dependencies</li>
+</ul>
+</li>
+<li>Text as sequences of characters</li>
+<li>Text as Sequences of words</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0114" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:14">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>RNN Architectures</h1>
+
+<p><img src="./file//resources/RNN_architectures.png" alt="alt text"></p>
+
+<p>Add Captions somehow, or rebuild image</p>
+
+<ul>
+<li>Standard supervised learning</li>
+<li>Image Captioning</li>
+<li>Sentiment Analysis</li>
+<li>Video Captioning, Natural Language Translation</li>
+<li>Part of Speech Tagging</li>
+<li>Generative Mode for text</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0115" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:15">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>LSTM Recurrent Neural Networks Successes</h1>
+
+<ul>
+<li>Anomaly detection</li>
+<li>Handwriting Recognition</li>
+<li>Speech Recogntion</li>
+<li>Image Captioning</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0116" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:16">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Cursive handwriting recogntion</h1>
+
+<ul>
+<li>Input is sequence of pen coordinates as text is written</li>
+<li>Output is sequence of characters
+
+<ul>
+<li>Graves &amp; Schmidhuber (2009)</li>
+</ul>
+</li>
+<li>If sample is not live sequence of small image samples as input works</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0117" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:17">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Training Data Requirements for Natural Language Processing</h1>
+
+<ul>
+<li>RNN's require much less training data than other solutions </li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0118" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:18">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<ul>
+<li>Overview</li>
+<li>Benefits</li>
+<li>
+<strong>⇒</strong> Modeling Sequences</li>
+<li>Details</li>
+<li>BackPropagation through time</li>
+<li>Tuning Guidelines</li>
+<li>PhysioNet Example</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0119" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:19">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Timeseries and Recurrent Networks</h1>
+
+<ul>
+<li>When dealing with sequential or timeseries data
+
+<ul>
+<li>We prefer to apply Recurrent Networks</li>
+</ul>
+</li>
+<li>Allows us to plug in how the data changes over time
+
+<ul>
+<li>Patient data collected periodically</li>
+<li>State of power grid over time</li>
+<li>Sequence of actions by customer</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0120" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:20">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Recurrent Neural Networks and Sequence Data</h1>
+
+<ul>
+<li>Recurrent Neural Networks have the capacity to recognize dependencies in time series data</li>
+<li>Breaking a text corpus into a series of single characters allows the network to learn dependencies such as the most common letter after a "Q" is a "U", when a quote has been opened it should eventually be closed</li>
+<li>In the Lab you will train a neural network to write weather forecasts</li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0121" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:21">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Differences between RNN and FeedForward Networks</h1>
+
+<ul>
+<li>RNN allows for modeling change in Vectors over time</li>
+<li>RNN takes Multiple sets of vectors and inputs</li>
+<li>FFN takes single input feature vector</li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0122" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:22">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Modeling Sequences</h1>
+
+<ul>
+<li>Input Sequence to Output Sequence
+
+<ul>
+<li>French to Spanish</li>
+<li>Speech Recognition</li>
+<li>Sound Pressures to word identities</li>
+</ul>
+</li>
+<li>Training Sequence try to predict the value for current step + 1</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0123" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:23">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Sequence thinking outside the box</h1>
+
+<ul>
+<li>Sequence of words make sense conceptually</li>
+<li>Sequence of network requests fit pattern as well</li>
+<li>Sequence of pixels in image?</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0124" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:24">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Training Goal, one Sequence to another Sequence</h1>
+
+<ul>
+<li><p>When modeling Sequential data we often want to turn one sequence into another sequence</p></li>
+<li><p>A phrase in english to a phrase in Spanish</p></li>
+<li><p>Sequence of audio ad convert into word identitites</p></li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0125" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:25">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Training Goal</h1>
+
+<ul>
+<li>Next timestep of current sequence</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0126" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:26">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Non Sequence data as Sequence data</h1>
+
+<ul>
+<li>Pixels in an image , or Grid of pixels applied to next Grid</li>
+<li>works quite well, feels less natural</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0127" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:27">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Supervised vs unsupervised</h1>
+
+<ul>
+<li>Training to predict next term in sequence blurs the line between supervised and unsupervised</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0128" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:28">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Patterns that may use the Long Term memory of RNN's</h1>
+
+<ul>
+<li>Character Sequence
+
+<ul>
+<li>Parenthesis, quotes, brackets opened or closed</li>
+<li>Relationship of period space Capitalization for beginning of sentence</li>
+</ul>
+</li>
+<li>Oscilation
+
+<ul>
+<li>Normal</li>
+<li>Abnormal</li>
+</ul>
+</li>
+<li>Network activity patterns
+
+<ul>
+<li>Input packet followed by stream of output packets</li>
+<li>Anomolies in that pattern</li>
+</ul>
+</li>
+<li>Financial Transaction Sequences
+
+<ul>
+<li>Normal</li>
+<li>Abnormal</li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0129" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:29">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<ul>
+<li>Overview</li>
+<li>Benefits</li>
+<li>Modeling Sequences</li>
+<li>
+<strong>⇒</strong> Details</li>
+<li>BackPropagation through time</li>
+<li>Tuning Guidelines</li>
+<li>PhysioNet Example</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0130" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:30">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>How an LSTM RNN works</h1>
+
+<ul>
+<li><p>LSTMs contain information outside the normal flow of the recurrent network</p></li>
+<li><p>Network learns to store data there, read data from there, replace data in there</p></li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0131" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:31">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>How the gates function</h1>
+
+<ul>
+<li>Gates block or pass on information based on its strength and import, which they filter with their own sets of weights</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0132" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:32">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>How the gates learn</h1>
+
+<ul>
+<li>Gates learn when to allow data to enter, leave or be deleted through the iterative process of making guesses, backpropagating error, and adjusting weights via gradient descent</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0133" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:33">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<ul>
+<li>Overview</li>
+<li>Benefits</li>
+<li>Modeling Sequences</li>
+<li>Details</li>
+<li>
+<strong>⇒</strong> BackPropagation through time</li>
+<li>Tuning Guidelines</li>
+<li>PhysioNet Example</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0134" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:34">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>RNN Updater:  Back Propagation through time</h1>
+
+<ul>
+<li>How an RNN is updated</li>
+<li>Advanced topic</li>
+<li>The recurrent net is conceptually a layered net that re-uses the same weights</li>
+<li>Layered feed forward network with weights constrained at each layer to be the same</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0135" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:35">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>RNN Updater: Back Propagation through time...</h1>
+
+<ul>
+<li>Compute the gradients as usual</li>
+<li>Modify to meet the constraint (time constraint previous slide)</li>
+<li>Represent RNN as feed forward net with shared weights</li>
+<li>Forward pass builds stack of activities at each time slice</li>
+<li>Backward pass peels activities off that stack and computes error derivatives
+
+<ul>
+<li>That is why called BackPropagation through time</li>
+</ul>
+</li>
+<li>After back prop for each time step constrain weights to match</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0136" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:36">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Learning Process Review</h1>
+
+<ul>
+<li>Different sets of weights filter the input for input, output and forgetting </li>
+<li>The forget gate is represented as a linear identity function, 
+
+<ul>
+<li>If the gate is open, the current state of the memory cell is simply multiplied by one, to propagate forward one more time step</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0137" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:37">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Table of Contents</h1>
+
+<ul>
+<li>Overview</li>
+<li>Benefits</li>
+<li>Modeling Sequences</li>
+<li>Details</li>
+<li>BackPropagation through time</li>
+<li>
+<strong>⇒</strong>Tuning Guidelines</li>
+<li>PhysioNet Example</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0138" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:38">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>LSTM Hyperparameter Tuning</h1>
+
+<ul>
+<li>Avoid Overfitting
+
+<ul>
+<li>Great performance on training Data</li>
+<li>Bad performance on out-of-sample prediction</li>
+</ul>
+</li>
+<li>Use Regularization helps: 
+
+<ul>
+<li>l1</li>
+<li>l2</li>
+<li>dropout</li>
+</ul>
+</li>
+<li>Larger Network, more likely to overfit
+
+<ul>
+<li>Avoind trying to learn a million parameters from 10,000 examples</li>
+<li>parameters &gt; examples = trouble</li>
+<li>More data is always better</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0139" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:39">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>LSTM Hyperparameter Tuning: Continued...</h1>
+
+<ul>
+<li>Train over multiple epochs (complete passes through the dataset)</li>
+<li>Evaluate test set performance at each epoch to know when to stop (early stopping)</li>
+<li>The learning rate is the single most important hyperparameter 
+
+<ul>
+<li>Tune this using deeplearning4j-ui; see this graph</li>
+</ul>
+</li>
+<li>In general, stacking layers can help</li>
+<li>For LSTMs, use the softsign (not softmax) activation function over tanh (it’s faster and less prone to saturation (~0 gradients))</li>
+<li>Updaters: RMSProp, AdaGrad or momentum (Nesterovs) are usually good choices. AdaGrad also decays the learning rate, which can help sometimes</li>
+<li>Finally, remember data normalization, MSE loss function + identity activation function for regression, Xavier weight initialization</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0140" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:40">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Table of Contents</h1>
+
+<ul>
+<li>Overview</li>
+<li>Benefits</li>
+<li>Modeling Sequences</li>
+<li>Details</li>
+<li>BackPropagation through time</li>
+<li>Tuning Guidelines</li>
+<li>
+<strong>⇒</strong> PhysioNet Example</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0141" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:41">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Example: PhysioNet Raw Data</h1>
+
+<ul>
+<li>Set-a
+
+<ul>
+<li>Directory of single files</li>
+<li>One file per patient</li>
+<li>48 hours of ICU data</li>
+</ul>
+</li>
+<li>Format
+
+<ul>
+<li>Header Line</li>
+<li>6 Descriptor Values at 00:00 </li>
+<li>Collected at Admission </li>
+<li>37 Irregularly sampled columns</li>
+<li>Over 48 hours</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0142" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:42">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Physionet Data</h1>
+
+<pre><code>Time,Parameter,Value
+00:00,RecordID,132601
+00:00,Age,74
+00:00,Gender,1
+00:00,Height,177.8
+00:00,ICUType,2
+00:00,Weight,75.9
+00:15,pH,7.39
+00:15,PaCO2,39
+00:15,PaO2,137
+00:56,pH,7.39
+00:56,PaCO2,37
+00:56,PaO2,222
+01:26,Urine,250
+01:26,Urine,635
+01:31,DiasABP,70
+01:31,FiO2,1
+01:31,HR,103
+01:31,MAP,94
+</code></pre>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0143" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:43">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Physionet Data Continued...</h1>
+
+<pre><code>01:31,MechVent,1
+01:31,SysABP,154
+01:34,HCT,24.9
+01:34,Platelets,115
+01:34,WBC,16.4
+01:41,DiasABP,52
+01:41,HR,102
+01:41,MAP,65
+01:41,SysABP,95
+01:56,DiasABP,64
+01:56,GCS,3
+01:56,HR,104
+01:56,MAP,85
+01:56,SysABP,132
+</code></pre>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0144" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:44">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Preparing Input Data</h1>
+
+<p><img src="./file//resources/preparing_input_data.png" alt="alt text"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0145" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:45">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Preparing Input Data: continued</h1>
+
+<ul>
+<li>Input was 3D Tensor (3d Matrix)
+
+<ul>
+<li>Mini-batch as first dimension</li>
+<li>Feature Columns as second dimension</li>
+<li>Timesteps as third dimension</li>
+</ul>
+</li>
+<li>PhysioNet: Mini-batch size of 20, 43 columns, and 202 Timesteps
+
+<ul>
+<li>We have 173,720 values per Tensor input</li>
+</ul>
+</li>
+</ul>
+
+<p>TH- explain batch and minibatch in terms of training</p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0146" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:46">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Input Sequence</h1>
+
+<ul>
+<li>A single training example gets the added dimension of timesteps per column</li>
+</ul>
+
+<p><img src="./file//resources/physionet_input_table.png" alt="alt text"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0147" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:47">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<p><img src="./file//resources/uneven_timesteps_and_masking.png" alt="alt text"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0148" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:48">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Recurrent Networks For Classification</h1>
+
+<ul>
+<li>This is the “many-to-one” setup
+
+<ul>
+<li>Traditionally we’d do hand coded feature extraction on timeseries and encode into a vector
+
+<ul>
+<li>Losing the time aspect to the data</li>
+</ul>
+</li>
+<li>The “many”-part allows us to input a sequence without losing the time domain aspect</li>
+</ul>
+</li>
+<li>Input is a series of measurements aligned by timestep
+
+<ul>
+<li>0,1,0,0</li>
+<li>1,0,1,1</li>
+</ul>
+</li>
+<li>Output in this case is a classification
+
+<ul>
+<li>Example: “Fraud vs Normal transaction”</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Introduction to Recurrent Neural Networks" data-title="01" id="Intro_to_Recurrent_Neural_Networks_0149" class="slide" data-transition="none">
+<div class="content " ref="Intro_to_Recurrent_Neural_Networks/01:49">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Sequence Classification with RNNs</h1>
+
+<ul>
+<li>Recurrent Neural Networks have the ability to <i>model change of input over time</i>
+</li>
+<li>Older techniques (mostly) do not retain time domain
+
+<ul>
+<li>Hidden Markov Models do…
+
+<ul>
+<li><i>but are more limited</i></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Key Takeaway: 
+
+<ul>
+<li><font color="red">For working with Timeseries data, RNNs will be more accurate</font></li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="LSTM Character Generation of Weather Forecast Lab" data-title="01" id="Weather_Forecast_lab_01" class="slide" data-transition="none">
+<div class="content " ref="Weather_Forecast_lab/01">
+<h1 class="section_title">Introduction to Recurrent Neural Networks </h1>
+<h1>Character by Character Generation of Weather Forecasts with LSTM</h1>
+
+<ul>
+<li>Please refer to you Lab manual</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Convolutional Neural Networks" data-title="01" id="Convolutional_Neural_Networks_011" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="Convolutional_Neural_Networks/01:1">
+<h1 class="section_title">Convolutional Neural Networks</h1>
+<h1>Convolutional Neural Networks</h1>
+
+
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Convolutional Neural Networks" data-title="01" id="Convolutional_Neural_Networks_012" class="slide" data-transition="none">
+<div class="content " ref="Convolutional_Neural_Networks/01:2">
+<h1 class="section_title">Convolutional Neural Networks</h1>
+<h1>Convolutional Neural Networks</h1>
+
+<ul>
+<li>Convolutional Neural Networks are best-inclass
+today for image classification</li>
+<li>Uses locally connected filters to “scan” for
+features In image data
+
+<ul>
+<li>Better able to deal with scale and rotation of image
+features</li>
+</ul>
+</li>
+<li>Typically is a repeating pattern of:
+
+<ul>
+<li>Convolution Layer</li>
+<li>ReLU Layer</li>
+<li>Pooling Layer</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Convolutional Neural Networks" data-title="01" id="Convolutional_Neural_Networks_013" class="slide" data-transition="none">
+<div class="content " ref="Convolutional_Neural_Networks/01:3">
+<h1 class="section_title">Convolutional Neural Networks</h1>
+<h1>Convolutional Neural Network</h1>
+
+<h1>Note mention recent move to less Pool Layers</h1>
+
+<p><img src="./file//resources/convnet.png" alt="Convnet"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Convolutional Neural Networks" data-title="01" id="Convolutional_Neural_Networks_014" class="slide" data-transition="none">
+<div class="content " ref="Convolutional_Neural_Networks/01:4">
+<h1 class="section_title">Convolutional Neural Networks</h1>
+<h1>Convolutional Image Explained</h1>
+
+<ul>
+<li>Convolution layers “filter” x to extract features
+
+<ul>
+<li>Filters exploit (spatially) local regularities while preserving spatial relationships</li>
+</ul>
+</li>
+<li>Subsampling (pooling) layers combine local information, reduce resolution
+
+<ul>
+<li>pooling gives translational invariance (i.e., classifier robust to shifts in x)</li>
+</ul>
+</li>
+<li>Predict y from x with local structure (e.g., images, short time series)
+
+<ul>
+<li>2D: classify images of, e.g., cats, cat may appear in different locations</li>
+<li>1D: diagnose patients from lab time series, symptoms at different times</li>
+</ul>
+</li>
+<li>Special case: fully convolutional network with no MLP at “top” (filter for variablesized
+x’s)</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Convolutional Neural Networks" data-title="01" id="Convolutional_Neural_Networks_015" class="slide" data-transition="none">
+<div class="content " ref="Convolutional_Neural_Networks/01:5">
+<h1 class="section_title">Convolutional Neural Networks</h1>
+<h1>Convolutional Neural Network</h1>
+
+<p><img src="./file//resources/convnet2.png" alt="Convnet"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Convolutional Neural Networks" data-title="01" id="Convolutional_Neural_Networks_016" class="slide" data-transition="none">
+<div class="content " ref="Convolutional_Neural_Networks/01:6">
+<h1 class="section_title">Convolutional Neural Networks</h1>
+<h1>3 Dimensional Input</h1>
+
+<p><img src="./file//resources/convnet3.png" alt="Convnet"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Convolutional Neural Networks" data-title="01" id="Convolutional_Neural_Networks_017" class="slide" data-transition="none">
+<div class="content " ref="Convolutional_Neural_Networks/01:7">
+<h1 class="section_title">Convolutional Neural Networks</h1>
+<h1>Convolutions</h1>
+
+<p><img src="./file//resources/convnet4.png" alt="Convnet"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Convolutional Neural Networks" data-title="01" id="Convolutional_Neural_Networks_018" class="slide" data-transition="none">
+<div class="content " ref="Convolutional_Neural_Networks/01:8">
+<h1 class="section_title">Convolutional Neural Networks</h1>
+<h1>Mnist Digits</h1>
+
+<p><img src="./file//resources/mnist.png" alt="Convnet"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Convolutional Neural Networks" data-title="01" id="Convolutional_Neural_Networks_019" class="slide" data-transition="none">
+<div class="content " ref="Convolutional_Neural_Networks/01:9">
+<h1 class="section_title">Convolutional Neural Networks</h1>
+<h1>Learning Filters</h1>
+
+<p><img src="./file//resources/learning_filters.png" alt="Convnet"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Convolutional Neural Networks" data-title="01" id="Convolutional_Neural_Networks_0110" class="slide" data-transition="none">
+<div class="content " ref="Convolutional_Neural_Networks/01:10">
+<h1 class="section_title">Convolutional Neural Networks</h1>
+<h1>Building 3D Output</h1>
+
+<p><img src="./file//resources/building_3d_output.png" alt="Convnet"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Convolutional Neural Network Lab" data-title="Lab" id="Convolutional_Neural_Networks_Lab1" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="Convolutional_Neural_Networks/Lab:1">
+<h1 class="section_title">Convolutional Neural Network Lab</h1>
+<h1>Convolutional Neural Network Lab</h1>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Convolutional Neural Network Lab" data-title="Lab" id="Convolutional_Neural_Networks_Lab2" class="slide" data-transition="none">
+<div class="content " ref="Convolutional_Neural_Networks/Lab:2">
+<h1 class="section_title">Convolutional Neural Network Lab</h1>
+<h1>See your Lab Manual for Instructions</h1>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="The Paths to Production" data-title="01" id="Paths_to_production_011" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="Paths_to_production/01:1">
+<h1 class="section_title">Paths to Production</h1>
+<h1>Paths to Production</h1>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="The Paths to Production" data-title="01" id="Paths_to_production_012" class="slide" data-transition="none">
+<div class="content " ref="Paths_to_production/01:2">
+<h1 class="section_title">Paths to Production</h1>
+<h1>With DL4J</h1>
+
+<p><img src="./file//resources/production_paths2.png" height="400" width="400"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="The Paths to Production" data-title="01" id="Paths_to_production_013" class="slide" data-transition="none">
+<div class="content " ref="Paths_to_production/01:3">
+<h1 class="section_title">Paths to Production</h1>
+<h1>From Keras</h1>
+
+<p><img src="./file//resources/production_paths.png" height="400" width="400"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="The Paths to Production" data-title="01" id="Paths_to_production_014" class="slide" data-transition="none">
+<div class="content " ref="Paths_to_production/01:4">
+<h1 class="section_title">Paths to Production</h1>
+<h1>Execution</h1>
+
+<p><img src="./file//resources/gpus.png" height="400" width="400"></p>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Saving Keras Models" data-title="01" id="Saving_Keras_Models_011" class="slide" data-transition="none">
+<div class="content " ref="Saving_Keras_Models/01:1">
+<h1 class="section_title">Paths to Production</h1>
+<h1>Saving Keras Models</h1>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Saving Keras Models" data-title="01" id="Saving_Keras_Models_012" class="slide" data-transition="none">
+<div class="content " ref="Saving_Keras_Models/01:2">
+<h1 class="section_title">Paths to Production</h1>
+<h1>Saving just the Configuration</h1>
+
+<ul>
+<li>
+<p>model.to_json</p>
+
+<pre><code>json_string = model.to_json()
+text_file = open("/tmp/iris_model_json", "w")
+text_file.write(json_string)
+text_file.close()
+</code></pre>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Saving Keras Models" data-title="01" id="Saving_Keras_Models_013" class="slide" data-transition="none">
+<div class="content " ref="Saving_Keras_Models/01:3">
+<h1 class="section_title">Paths to Production</h1>
+<h1>Saving Just the Weights</h1>
+
+<ul>
+<li>
+<p>model.save_weights</p>
+
+<pre><code>model.save_weights('/tmp/iris_model_weights')
+</code></pre>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Saving Keras Models" data-title="01" id="Saving_Keras_Models_014" class="slide" data-transition="none">
+<div class="content " ref="Saving_Keras_Models/01:4">
+<h1 class="section_title">Paths to Production</h1>
+<h1>Saving Weights and Configuration</h1>
+
+<ul>
+<li>
+<p>model.save</p>
+
+<pre><code>model.save('/tmp/full_iris_model')
+</code></pre>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Importing Keras Models into DL4J" data-title="01" id="Loading_Keras_Models_Into_DL4J_011" class="slide" data-transition="none">
+<div class="content " ref="Loading_Keras_Models_Into_DL4J/01:1">
+<h1 class="section_title">Paths to Production</h1>
+<h1>Loading Keras Models into DL4J</h1>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Importing Keras Models into DL4J" data-title="01" id="Loading_Keras_Models_Into_DL4J_012" class="slide" data-transition="none">
+<div class="content " ref="Loading_Keras_Models_Into_DL4J/01:2">
+<h1 class="section_title">Paths to Production</h1>
+<h1>Keras Model Import</h1>
+
+<ul>
+<li>New Feature since 0.7.1</li>
+<li>Current DL4J Release 0.8.0
+
+<ul>
+<li>Use 0.8.0 or above</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Importing Keras Models into DL4J" data-title="01" id="Loading_Keras_Models_Into_DL4J_013" class="slide" data-transition="none">
+<div class="content " ref="Loading_Keras_Models_Into_DL4J/01:3">
+<h1 class="section_title">Paths to Production</h1>
+<h1>Using Model Import</h1>
+
+<ul>
+<li>
+<p>Add this to your pom.xml</p>
+
+<pre><code>&lt;dependency&gt;
+ &lt;groupId&gt;org.deeplearning4j&lt;/groupId&gt;
+ &lt;artifactId&gt;deeplearning4j-modelimport&lt;/artifactId&gt;
+ &lt;version&gt;${dl4j.version}&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Importing Keras Models into DL4J" data-title="01" id="Loading_Keras_Models_Into_DL4J_014" class="slide" data-transition="none">
+<div class="content " ref="Loading_Keras_Models_Into_DL4J/01:4">
+<h1 class="section_title">Paths to Production</h1>
+<h1>Computation Graph or MultiLayerNetwork</h1>
+
+<ul>
+<li>Keras Sequential Model =&gt; DL4J MultiLayerNetwork</li>
+<li>Keras Functional API =&gt; DL4J ComputationGraph</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Importing Keras Models into DL4J" data-title="01" id="Loading_Keras_Models_Into_DL4J_015" class="slide" data-transition="none">
+<div class="content " ref="Loading_Keras_Models_Into_DL4J/01:5">
+<h1 class="section_title">Paths to Production</h1>
+<h1>Import Configuration Only</h1>
+
+<ul>
+<li>
+<p>Sequential Model Configuration import, saved in Keras with model.to_json()</p>
+
+<pre><code>CopyMultiLayerNetworkConfiguration modelConfig = 
+KerasModelImport.importKerasSequentialConfiguration
+("PATH TO YOUR JSON FILE)
+</code></pre>
+</li>
+<li>
+<p>ComputationGraph Configuration import, saved in Keras with model.to_json()</p>
+
+<pre><code>ComputationGraphConfiguration computationGraphConfig = 
+KerasModelImport.importKerasModelConfiguration
+("PATH TO YOUR JSON FILE)
+</code></pre>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Importing Keras Models into DL4J" data-title="01" id="Loading_Keras_Models_Into_DL4J_016" class="slide" data-transition="none">
+<div class="content " ref="Loading_Keras_Models_Into_DL4J/01:6">
+<h1 class="section_title">Paths to Production</h1>
+<h1>Import Configuration and Weights</h1>
+
+<ul>
+<li>
+<p>Sequential Model single file </p>
+
+<pre><code>MultiLayerNetwork network = 
+KerasModelImport.importKerasSequentialModelAndWeights
+("PATH TO YOUR H5 FILE")
+</code></pre>
+</li>
+<li>
+<p>Sequential Model one file for config one file for weights</p>
+
+<pre><code>MultiLayerNetwork network = 
+KerasModelImport.importKerasSequentialModelAndWeights
+("PATH TO YOUR JSON FILE","PATH TO YOUR H5 FILE")
+</code></pre>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Importing Keras Models into DL4J" data-title="01" id="Loading_Keras_Models_Into_DL4J_017" class="slide" data-transition="none">
+<div class="content " ref="Loading_Keras_Models_Into_DL4J/01:7">
+<h1 class="section_title">Paths to Production</h1>
+<h1>enforceTrainingConfig</h1>
+
+<ul>
+<li>Use model only for inference? 
+
+<ul>
+<li>enforceTrainingConfig=false</li>
+</ul>
+</li>
+<li>Use model for further training
+
+<ul>
+<li> enforceTrainingConfig=false</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Saving and Loading trained Models" data-title="01" id="Saving_Models_011" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="Saving_Models/01:1">
+<h1 class="section_title">Saving and Loading Trained Models</h1>
+<h1>Saving and Loading Trained Models</h1>
+
+<ul>
+<li>Saving a Model</li>
+<li>Loading a Model</li>
+<li>Importing from Keras</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Saving and Loading trained Models" data-title="01" id="Saving_Models_012" class="slide" data-transition="none">
+<div class="content " ref="Saving_Models/01:2">
+<h1 class="section_title">Saving and Loading Trained Models</h1>
+<h1>Table of Contents</h1>
+
+<ul>
+<li>
+<strong>⇒</strong>Saving a Model</li>
+<li>Loading a Model</li>
+<li>Importing from Keras</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Saving and Loading trained Models" data-title="01" id="Saving_Models_013" class="slide" data-transition="none">
+<div class="content " ref="Saving_Models/01:3">
+<h1 class="section_title">Saving and Loading Trained Models</h1>
+<h1>Why Save a Model?</h1>
+
+<ul>
+<li>Training takes time</li>
+<li>Deploy on multiple machines</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Saving and Loading trained Models" data-title="01" id="Saving_Models_014" class="slide" data-transition="none">
+<div class="content " ref="Saving_Models/01:4">
+<h1 class="section_title">Saving and Loading Trained Models</h1>
+<h1>ModelSerializer</h1>
+
+<ul>
+<li><a href="https://deeplearning4j.org/doc/index.html?org/deeplearning4j/util/ModelSerializer.html">JavaDoc for ModelSerializer</a></li>
+<li>writeModel Method
+
+<ul>
+<li>Writes configuration,weights and optionally the updater to file or output stream</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Saving and Loading trained Models" data-title="01" id="Saving_Models_015" class="slide" data-transition="none">
+<div class="content " ref="Saving_Models/01:5">
+<h1 class="section_title">Saving and Loading Trained Models</h1>
+<h1>Table of Contents</h1>
+
+<ul>
+<li>Saving a Model</li>
+<li>
+<strong>⇒</strong> Loading a Model</li>
+<li>Importing From Keras</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Saving and Loading trained Models" data-title="01" id="Saving_Models_016" class="slide" data-transition="none">
+<div class="content " ref="Saving_Models/01:6">
+<h1 class="section_title">Saving and Loading Trained Models</h1>
+<h1>Restoring a Model</h1>
+
+<ul>
+<li>restoreMultiLayerNetwork</li>
+<li>restoreComputationGraph</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Saving and Loading trained Models" data-title="01" id="Saving_Models_017" class="slide" data-transition="none">
+<div class="content " ref="Saving_Models/01:7">
+<h1 class="section_title">Saving and Loading Trained Models</h1>
+<h1>loadUpdater</h1>
+
+<ul>
+<li>Updater is configuration needed for further training</li>
+<li>Without Updater model can be used for inference only</li>
+<li>With Updater model can be trained further</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Saving and Loading trained Models" data-title="01" id="Saving_Models_018" class="slide" data-transition="none">
+<div class="content " ref="Saving_Models/01:8">
+<h1 class="section_title">Saving and Loading Trained Models</h1>
+<h1>Table of Contents</h1>
+
+<ul>
+<li>Saving a Model</li>
+<li>Loading a Model</li>
+<li>
+<strong>⇒</strong> Importing From Keras</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Saving and Loading trained Models" data-title="01" id="Saving_Models_019" class="slide" data-transition="none">
+<div class="content " ref="Saving_Models/01:9">
+<h1 class="section_title">Saving and Loading Trained Models</h1>
+<h1>Keras Model Import</h1>
+
+<ul>
+<li>Import Trained models from Keras into DL4J</li>
+<li>Keras Sequential -&gt; DL4j MultiLayerNetwork</li>
+<li>Keras Functional API -&gt; DL4J Computation Graph</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Saving and Loading trained Models" data-title="01" id="Saving_Models_0110" class="slide" data-transition="none">
+<div class="content " ref="Saving_Models/01:10">
+<h1 class="section_title">Saving and Loading Trained Models</h1>
+<h1>VGG-16 Demo</h1>
+
+<ul>
+<li>Loaded from Keras</li>
+<li>Saved with ModelSerializer</li>
+<li>Reloaded for Demo</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Lab: Saving and Loading trained Models" data-title="02" id="Saving_Models_021" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="Saving_Models/02:1">
+<h1 class="section_title">Model Saving Lab Introduction</h1>
+<h1>Model Saving Lab Introduction</h1>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Lab: Saving and Loading trained Models" data-title="02" id="Saving_Models_022" class="slide" data-transition="none">
+<div class="content " ref="Saving_Models/02:2">
+<h1 class="section_title">Model Saving Lab Introduction</h1>
+<h1>Main Classes Used</h1>
+
+<ul>
+<li>ModelSerializer
+
+<ul>
+<li>Load and restore the model</li>
+</ul>
+</li>
+<li>NativeImageLoader</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Lab: Saving and Loading trained Models" data-title="02" id="Saving_Models_023" class="slide" data-transition="none">
+<div class="content " ref="Saving_Models/02:3">
+<h1 class="section_title">Model Saving Lab Introduction</h1>
+<h1>Inference vs Training</h1>
+
+<ul>
+<li>Native Image Loader in place of RecordReader</li>
+<li>Scales image as it is read</li>
+<li>Converts to INDArray</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Lab: Saving and Loading trained Models" data-title="02" id="Saving_Models_024" class="slide" data-transition="none">
+<div class="content " ref="Saving_Models/02:4">
+<h1 class="section_title">Model Saving Lab Introduction</h1>
+<h1>Matching Ingestion Pipeline</h1>
+
+<ul>
+<li>Apply same scaling</li>
+<li>Apply same normalization</li>
+<li>Normalizer may depend on statistics from Training Data</li>
+<li>To save/restore Normalizer
+
+<ul>
+<li>ModelSerializer.addNormalizerToModel</li>
+<li>ModelSerializer.restoreNormalizerFromFile</li>
+</ul>
+</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Lab: Saving and Loading trained Models" data-title="02" id="Saving_Models_025" class="slide" data-transition="none">
+<div class="content " ref="Saving_Models/02:5">
+<h1 class="section_title">Model Saving Lab Introduction</h1>
+<h1>Model Save/Restore Lab</h1>
+
+<ul>
+<li>Please refer to your Lab Manual</li>
+</ul>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Appendix" data-title="01" id="Appendix_011" class="slide center subsection" data-transition="none">
+<div class="content center subsection" ref="Appendix/01:1">
+<h1 class="section_title">Appendix</h1>
+<h1>Appendix</h1>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="Appendix" data-title="01" id="Appendix_012" class="slide" data-transition="none">
+<div class="content " ref="Appendix/01:2">
+<h1 class="section_title">Appendix</h1>
+<h1>Table of DataVec RecordReaders</h1>
+
+<!-- table generated with http://www.tablesgenerator.com/markdown_tables from CSV export of google sheets -->
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Summary</th>
+<th>Uses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BaseImageRecordReader</td>
+<td>Base class for the image record reader</td>
+<td>Image Data</td>
+</tr>
+<tr>
+<td>CodecRecordReader</td>
+<td>Codec record reader for parsing: H.264 ( AVC ) Main profile decoder MP3 decoder/encoder Apple ProRes decoder and encoder AAC encoder H264 Baseline profile encoder Matroska ( MKV ) demuxer and muxer MP4 ( ISO BMF, QuickTime ) demuxer/muxer and tools MPEG 1/2 decoder ( supports interlace ) MPEG PS/TS demuxer Java player applet VP8 encoder MXF demuxer Credit to jcodec for the underlying parser</td>
+<td>Video</td>
+</tr>
+<tr>
+<td>CollectionRecordReader</td>
+<td>Collection record reader. Mainly used for testing.</td>
+<td>Testing</td>
+</tr>
+<tr>
+<td>CollectionSequenceRecordReader</td>
+<td>Collection record reader for sequences. Mainly used for testing.</td>
+<td>Sequence Data</td>
+</tr>
+<tr>
+<td>ComposableRecordReader</td>
+<td>RecordReader for each pipeline. Individual record is a concatenation of the two collections. Create a recordreader that takes recordreaders and iterates over them and concatenates them hasNext would be the &amp; of all the recordreaders concatenation would be next &amp; addAll on the collection return one record</td>
+<td>Merged data</td>
+</tr>
+<tr>
+<td>CSVNLinesSequenceRecordReader</td>
+<td>A CSV Sequence record reader where:(a) all time series are in a single file(b) each time series is of the same length (specified in constructor)(c) no delimiter is used between time seriesFor example, with nLinesPerSequence=10, lines 0 to 9 are the first time series, 10 to 19 are the second, and so on.</td>
+<td>Tabular Sequence Data</td>
+</tr>
+<tr>
+<td>CSVRecordReader</td>
+<td>Simple csv record reader</td>
+<td>Tabular Data</td>
+</tr>
+<tr>
+<td>CSVSequenceRecordReader</td>
+<td>CSV Sequence Record Reader This reader is indended to read sequences of data in CSV format, where each sequence is defined in its own file (and there are multiple files) Each line in the file represents one time step</td>
+<td>Tabular Sequence Data</td>
+</tr>
+<tr>
+<td>FileRecordReader</td>
+<td>File reader/writer</td>
+<td>Files</td>
+</tr>
+<tr>
+<td>ImageRecordReader</td>
+<td>Image record reader. Reads a local file system and parses images of a given height and width. All images are rescaled and converted to the given height, width, and number of channels. Also appends the label if specified (one of k encoding based on the directory structure where each subdir of the root is an indexed label)</td>
+<td>Image Data</td>
+</tr>
+<tr>
+<td>JacksonRecordReader</td>
+<td>Support for JSON, XML and YAML: one record per file only, via Jackson ObjectMapper:</td>
+<td>JSON,XML, YAML</td>
+</tr>
+<tr>
+<td>LibSvmRecordReader</td>
+<td>Record Reader for SVM(Support Vector Machines) content.</td>
+<td>LibSVM content</td>
+</tr>
+<tr>
+<td>LineRecordReader</td>
+<td>Reads files line by line</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>ListStringRecordReader</td>
+<td>Iterates through a list of strings return a record. Only accepts an @link {ListStringInputSplit} as input.</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>MatlabRecordReader</td>
+<td>Matlab record reader</td>
+<td>Matlab</td>
+</tr>
+<tr>
+<td>RegexLineRecordReader</td>
+<td>RegexLineRecordReader: Read a file, one line at a time, and split it into fields using a regex. Specifically, we are using Pattern and Matcher.To load an entire file using a Example: Data in format "2016-01-01 23:59:59.001 1 DEBUG First entry message!"using regex String "(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}.\d{3}) (\d+) ([A-Z]+) (.*)"would be split into 4 Text writables: ["2016-01-01 23:59:59.001", "1", "DEBUG", "First entry message!"]</td>
+<td>Text with Regex</td>
+</tr>
+<tr>
+<td>RegexSequenceRecordReader</td>
+<td>RegexSequenceRecordReader: Read an entire file (as a sequence), one line at a time and split each line into fields using a regex. Specifically, we are using Pattern and Matcher to do the splitting into groups Example: Data in format "2016-01-01 23:59:59.001 1 DEBUG First entry message!"using regex String "(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}.\d{3}) (\d+) ([A-Z]+) (.*)"would be split into 4 Text writables: ["2016-01-01 23:59:59.001", "1", "DEBUG", "First entry message!"]Note: RegexSequenceRecordReader supports multiple error handling modes, via RegexSequenceRecordReader.LineErrorHandling. Invalid lines that don't match the provided regex can result in an exception (FailOnInvalid), can be skipped silently (SkipInvalid), or skip invalid but log a warning (SkipInvalidWithWarning)</td>
+<td>Text Sequence Data Regex</td>
+</tr>
+<tr>
+<td>SequenceRecordReader</td>
+<td>A sequence of records. sequenceRecord() is used locally. sequenceRecord(URI uri, DataInputStream dataInputStream) is used for spark etc.</td>
+<td>Sequence Data</td>
+</tr>
+<tr>
+<td>SVMLightRecordReader</td>
+<td>Adapted from the weka svmlight reader June 2015 - adapted to understand HDFS-style block splits</td>
+<td>SVMLight</td>
+</tr>
+<tr>
+<td>TfidfRecordReader</td>
+<td>TFIDF record reader (wraps a tfidf vectorizer for delivering labels and conforming to the record reader interface)</td>
+<td>NLP processing, Term Frequency Inverse Document Frequency</td>
+</tr>
+<tr>
+<td>VideoRecordReader</td>
+<td>A video is just a moving window of pictures. It should be processed as such. This iterates over a root folder and returns a</td>
+<td>Video</td>
+</tr>
+<tr>
+<td>WavFileRecordReader</td>
+<td>Wav file loader</td>
+<td>Audio</td>
+</tr>
+</tbody>
+</table>
+
+<hr>
+
+<!-- End Table -->
+</div>
+<canvas class="annotations"></canvas>
+</div>
+
+</div>
+</body>
+</html>
