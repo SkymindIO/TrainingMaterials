@@ -1,0 +1,63 @@
+!SLIDE center subsection
+
+# Activation Functions
+
+!SLIDE
+
+# What is an Activation Function
+
+* Determines output of Neuron Based on Inputs
+* Non-Linear Transform function at each node
+* Defined per layer
+* Allow neural networks to make complex boundary decisions for features at various levels of abstraction.
+
+!SLIDE
+
+# Common Activation Functions
+
+DeepLearning4J and Keras support the following Activation functions
+
+* CUBE
+* ELU
+* HARDSIGMOID
+* HARDTANH
+* IDENTITY
+* LEAKYRELU
+
+!SLIDE 
+
+# Supported Activation Functions...
+
+
+* RATIONALTANH
+* RELU
+* RRELU
+* SIGMOID
+* SOFTMAX
+* SOFTPLUS
+* SOFTSIGN
+* TANH
+
+!SLIDE
+
+# Commonly Used Activation Functions
+
+* Sigmoid
+* TanH
+* Relu
+
+!SLIDE
+ 
+# Activation Functions
+
+![img](../resources/Activation-func.png)
+ 
+!SLIDE
+ 
+# Activation Function and output
+ 
+* Activation Function on output is special
+  * Classification = softmax
+  * regression = identity
+
+ 

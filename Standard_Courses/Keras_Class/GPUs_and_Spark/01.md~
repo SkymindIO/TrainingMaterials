@@ -1,0 +1,99 @@
+!SLIDE 
+
+# Options for Increasing Performance
+
+
+!SLIDE 
+
+# Options for executing code
+
+* CPU
+* GPU
+* Multi GPU
+* Spark
+* SPark + GPU
+
+
+
+
+!SLIDE 
+
+# Architecture Details
+
+* libnd4j
+  * The C++ engine that powers ND4J
+* ND4J
+  * n-dimensional arrays for java
+* Datavec
+  * ETL 
+* DeepLEarning4j 
+  * Build, train and deploy models
+
+!SLIDE 
+
+# ND4J 
+
+* Where the math happens
+* ND4J-backend
+* Determines how execution happens
+
+
+!SLIDE 
+
+# Execute on CPU
+
+	<Your pom.xml file>
+	<properties>
+	<nd4j.backend>nd4j-native-platform</nd4j.backend>
+
+
+!SLIDE 
+
+# Execute on GPU
+
+	<Your pom.xml>
+	<properties>
+	<nd4j.backend>nd4j-cuda-8.0-platform</<nd4j.backend>
+
+!SLIDE 
+
+# Troubleshooting
+
+* Failure to use multiple GPU's
+
+		//Add this to your main
+		CudaEnvironment.getInstance().getConfiguration()
+		.allowMultiGPU(true);
+		
+		
+!SLIDE 
+
+# Multi-GPU Data Parallelism
+
+* ParallelWrapper
+  * Model Config remains the same
+  * ND4J-Backend set to GPU
+  
+  
+		ParallelWrapper wrapper = new ParallelWrapper.Builder(YourExistingModel)
+        .prefetchBuffer(24)
+        .workers(4)
+        .averagingFrequency(1)
+        .reportScoreAfterAveraging(true)
+        .useLegacyAveraging(false)
+        .build();
+
+
+!SLIDE 
+
+# ParallelWrapper Internals
+
+* Model will be duplicated
+* Each worker trains model
+* Models averaged at averagingFrequency(X)
+* Training Continues
+
+
+
+
+
