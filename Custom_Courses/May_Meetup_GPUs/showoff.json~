@@ -1,0 +1,39 @@
+{
+"name": "Distributed Training via Spark on Multi-GPUs",
+    "sections": {
+
+	"Performance Challenges": [
+	    "Performance_Challenges/01.md"
+	],
+
+
+		"Moving to GPU's": [
+	    "GPUs_and_Spark/01.md"
+	],
+	
+	"Moving to Spark": [
+	    "distributed_training/01.md"
+	],
+
+
+	"Assorted Topics Regarding Distributed Training" : [
+	    "assorted_topics/01.md"
+	],
+
+	"Additional Materials": [
+	    "extra/01.md"
+	],
+	
+
+	"Spark Transform": [
+	    "spark_transform/01.md"
+	]
+	
+
+	
+
+
+
+    }
+
+}
