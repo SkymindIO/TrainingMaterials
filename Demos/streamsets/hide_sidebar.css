@@ -1,0 +1,8 @@
+/*
+This CSS is used to hide the sidebar for autoplay demo's only
+*/
+
+
+#sidebarWrapper { display: none; }
+#hamburger { display: none;}
+#questionsIndicator { display: none;}
