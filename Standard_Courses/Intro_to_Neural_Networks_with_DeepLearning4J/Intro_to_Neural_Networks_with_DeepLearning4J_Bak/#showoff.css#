@@ -1,6 +1,0 @@
-.content::after {
-  position: absolute;
-  left: 1px;
-  bottom: 1px;
-  content: url(resources/skymind_medium.png);
-  }
