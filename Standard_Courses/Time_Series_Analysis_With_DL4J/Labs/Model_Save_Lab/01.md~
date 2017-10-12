@@ -1,0 +1,68 @@
+# Saving and Loading a Trained Model
+
+In this lab you will
+1. Attach a UI instance to a model
+2. Save the model
+3. Load the saved model
+
+## Goals of the Lab
+
+* Label Generation with ParentPathLabelGenerator
+* Attaching a UIServer
+* Saving a Trained model
+* Loading a Trained model
+
+
+# Step 1
+
+* Open up IntelliJ
+Open up IntelliJ and navigate to the Labs folder
+
+# Step 2
+
+* Open the MnistImageSave class
+
+This example uses the classic Machine Learning challenge of recognizing handwritten digits. 
+
+
+# Step 3
+
+* Review the Input
+
+The data is in the following directories resources/mnist_png/testing, resources/mnist_png/training.
+
+Open one of the directories and note that it contains subdirectories 0-9 each containing24*24 pixel gray scale images of digits. 
+
+
+
+# STEP 4
+
+* Attach a UI instance to the Neural Network. 
+
+See the SumplestNetwork for an example. 
+
+# Step 5
+
+* Save the Model
+
+The Javadoc for ModelSerializer is here https://deeplearning4j.org/doc/org/deeplearning4j/util/ModelSerializer.html
+
+You want to use ModelSerializer.writeModel with the constructor that takes(modelname,location_to_save, boolean saveUpdater)
+
+The modelname will be the name of the model in this example. 
+
+The location to save is already defined. 
+File locationToSave = new File("trained_mnist_model.zip");
+
+SaveUpdater is used when you want to train the model further or simply use it for inference. 
+
+***some models train for days or weeks, with any longrunning process it is important to save progress in case of disaster. Running ModelSerializer.writeModel allows you to save the model, perhaps every few hours. ***
+
+# Step 6
+
+Run the code
+
+
+
+
+

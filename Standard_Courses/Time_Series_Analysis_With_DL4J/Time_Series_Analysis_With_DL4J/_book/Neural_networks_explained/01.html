@@ -1,0 +1,1193 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>FeedForward Neural Networks Explained · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Abalone_intro/01.html" />
+    
+    
+    <link rel="prev" href="../DL4J_overview/DeepLearning4J.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Introduction/01.html">
+            
+                <a href="../Introduction/01.html">
+            
+                    
+                    Welcome to the Course
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../What_is_deep_learning/01.html">
+            
+                <a href="../What_is_deep_learning/01.html">
+            
+                    
+                    What is DeepLearning?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../Simplest_network_Lab_intro/01.html">
+            
+                <a href="../Simplest_network_Lab_intro/01.html">
+            
+                    
+                    Neural Network Demonstration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../Neural_Network_Types/01.html">
+            
+                <a href="../Neural_Network_Types/01.html">
+            
+                    
+                    Types of Neural Networks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../DL4J_overview/">
+            
+                <a href="../DL4J_overview/">
+            
+                    
+                    DeepLearning4J
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../DL4J_overview/DeepLearning4J.html">
+            
+                <a href="../DL4J_overview/DeepLearning4J.html">
+            
+                    
+                    DeepLearning4J Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../DL4J_overview/DataVec.html">
+            
+                <a href="../DL4J_overview/DataVec.html">
+            
+                    
+                    DataVec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../DL4J_overview/DataVecLab.html">
+            
+                <a href="../DL4J_overview/DataVecLab.html">
+            
+                    
+                    DataVec Lab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="../DL4J_overview/ND4J.html">
+            
+                <a href="../DL4J_overview/ND4J.html">
+            
+                    
+                    ND4J and libnd4j
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.5" data-path="../DL4J_overview/DeepLearning4J.html">
+            
+                <a href="../DL4J_overview/DeepLearning4J.html">
+            
+                    
+                    DeepLearning4J
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter active" data-level="6.1" data-path="01.html">
+            
+                <a href="01.html">
+            
+                    
+                    FeedForward Neural Networks Explained
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../Abalone_intro/01.html">
+            
+                <a href="../Abalone_intro/01.html">
+            
+                    
+                    Abalone Lab 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../Modeling_sequences/01.html">
+            
+                <a href="../Modeling_sequences/01.html">
+            
+                    
+                    Modeling Sequences
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../Data_Ingest_Case_Study_Text/01.html">
+            
+                <a href="../Data_Ingest_Case_Study_Text/01.html">
+            
+                    
+                    Data Ingest Case Study: Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../Intro_to_Recurrent_Neural_Networks/01.html">
+            
+                <a href="../Intro_to_Recurrent_Neural_Networks/01.html">
+            
+                    
+                    Introduction to Recurrent Neural Networks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../LSTM/01.html">
+            
+                <a href="../LSTM/01.html">
+            
+                    
+                    LSTM intro REALLY SHORT COMBINE 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" data-path="../Weather_Forecast_lab/01.html">
+            
+                <a href="../Weather_Forecast_lab/01.html">
+            
+                    
+                    LSTM Character Generation of Weather Forecast Lab
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="13.1" data-path="../ETL_Vectorization/01.html">
+            
+                <a href="../ETL_Vectorization/01.html">
+            
+                    
+                    ETL and Vectorization For UCI lab if I do it
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="14.1" data-path="../Appendix/01.html">
+            
+                <a href="../Appendix/01.html">
+            
+                    
+                    Appendix
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="15.1" data-path="../DeepLearning_Intro/01.html">
+            
+                <a href="../DeepLearning_Intro/01.html">
+            
+                    
+                    DeepLearning Introduction need better title
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="16.1" data-path="../Optimization_algorithms/01.html">
+            
+                <a href="../Optimization_algorithms/01.html">
+            
+                    
+                    Optimization Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >FeedForward Neural Networks Explained</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="feedforward-neural-networks-explained">FeedForward Neural Networks Explained</h1>
+<ul>
+<li>Overview</li>
+<li>Key Terms</li>
+<li>Uses of Feed Forward Neural Networks</li>
+<li>Output</li>
+<li>Training</li>
+<li>Inference</li>
+<li>Underfitting and Overfitting</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<ul>
+<li><strong>&#x21D2;</strong> Overview</li>
+<li>Key Terms</li>
+<li>Uses of Feed Forward Neural Networks</li>
+<li>Output</li>
+<li>Training</li>
+<li>Inference</li>
+<li>Underfitting and Overfitting</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+<h1 id="feedforward-neural-networks">FeedForward Neural Networks</h1>
+<ul>
+<li>Share many features with Convolutional and Recurrent Neural Networks</li>
+<li>FeedForward Neural Nets are sometimes called MultiLayerPerceptrons</li>
+<li>Perceptrons and Nueral Net theory was developed in the 1940s-1960&apos;s</li>
+<li>Succesful use came with the rise of GPU&apos;s and larger training sets</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="a-feedforward-neural-network">A FeedForward Neural Network</h1>
+<p><img src="../resources/general_network.png" alt="network diagram"></p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+<h1 id="a-neural-network-with-two-hidden-layers">A Neural Network With Two Hidden Layers</h1>
+<p><img src="../resources/two_layer.png" alt="network diagram"></p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="connections-between-nodes">Connections Between Nodes</h1>
+<ul>
+<li>Designed to be selective and trainable</li>
+<li>Filter, aggregate, convert, amplify, ignore what they pass on to next Neuron</li>
+<li>This transformation converts raw input into useful information</li>
+<li>Input has trainable weight applied</li>
+<li>Output determined by activation function</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="neural-network-diagram-explained">Neural Network Diagram Explained</h1>
+<h2 id="consider-node-j">Consider Node J</h2>
+<p><img src="../resources/single_node_ins_outs.png" alt="network diagram"></p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="single-node-diagram">Single Node Diagram</h1>
+<ul>
+<li><p>Input</p>
+<ul>
+<li>Input is determined by the output of the input neurons * the weights applied to that output. </li>
+</ul>
+</li>
+<li><p>Weights</p>
+<ul>
+<li>Assigned randomly* initially between 0-1</li>
+<li>Weight of 0, input is ignored</li>
+<li>Large weight input is amplified. </li>
+<li>As the network trains weights are adjusted. </li>
+</ul>
+</li>
+<li><p>Output</p>
+<ul>
+<li>Output is determined but it&apos;s input * weights, and the activation function. </li>
+<li>Sigmoid Activation low input output 0 higher input output 1, in between S curve.<ul>
+<li>ReLU low input 0 then linear after trigger. </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<ul>
+<li>Overview</li>
+<li><strong>&#x21D2;</strong> Key Terms</li>
+<li>Uses of Feed Forward Neural Networks</li>
+<li>Output</li>
+<li>Training</li>
+<li>Inference</li>
+<li>Underfitting and Overfitting</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+<h1 id="key-terms">Key Terms</h1>
+<ul>
+<li>Activation Function<ul>
+<li>A nonlinear A function that maps input on a nonlinear scale such as sigmoid or tanh. By definition, a nonlinear function&#x2019;s output is not directly proportional to its input.</li>
+</ul>
+</li>
+<li>Loss Function<ul>
+<li>How Error is Calculated</li>
+</ul>
+</li>
+<li>Weights  </li>
+<li>BackProp</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+
+
+<h1 id="neural-net-terms">Neural Net Terms</h1>
+<ul>
+<li><p>Weights
+Connection Weights. Weights on connections in a neural network are coefficients that
+scale (amplify or minimize) the input signal to a given neuron in the network.</p>
+</li>
+<li><p>Activation Function</p>
+<ul>
+<li>The sigmoid function. &quot;Its best thought of as a &#x201C;squashing function&#x201D;, because it takes the input and squashes it to be between zero and one: Very negative values are squashed towards zero and positive values get squashed towards one. &quot; Karpathy</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+<ul>
+<li>Overview</li>
+<li>Key Terms</li>
+<li><strong>&#x21D2;</strong> Uses of Feed Forward Neural Networks</li>
+<li>Output</li>
+<li>Training</li>
+<li>Inference</li>
+<li>Underfitting and Overfitting</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+
+<h1 id="using-neural-networks">Using Neural Networks</h1>
+<h2 id="framing-the-questions">Framing the Questions</h2>
+<ul>
+<li>To build models we have to define<ul>
+<li>What is our training data (&#x201C;evidence&#x201D;)?</li>
+<li>What kind of model (&#x201C;hypothesis&#x201D;) is appropriate for this data?</li>
+<li>What kind of answer (&#x201C;inference&#x201D;) would we like to get from the model?</li>
+</ul>
+</li>
+<li>These questions frame all machine learning workflows</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="in-neural-networks-were-solving-systems-of-non-linear-equations-of-the-form">In neural networks we&#x2019;re solving systems of (non-linear) equations of the form</h1>
+<h1 id="ax--b"><font color="red">A</font><font color="blue">x</font> = <font color="green">b</font></h1>
+<ul>
+<li><font color="red">A</font> matrix<ul>
+<li>This is our set of input data converted into an array of vectors</li>
+</ul>
+</li>
+<li><font color="blue">x</font> vector<ul>
+<li>The parameter vector of weights representing our model</li>
+</ul>
+</li>
+<li><font color="green">b</font> vector<ul>
+<li>Vector of output values or labels matching the rows  in the A matrix</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="ax--b-visually"><font color="red">A</font><font color="blue">x</font> = <font color="green">b</font> Visually</h1>
+<p><img src="../resources/vector_table.png" alt="alt text"></p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+<h1 id="recall-simplest-network">Recall Simplest Network</h1>
+<ul>
+<li><font color="red">A</font><font color="blue">x</font> = <font color="green">b</font>
+</li>
+<li><p>What was A?</p>
+</li>
+<li>What was B?</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="linear-algebra-terms">Linear Algebra Terms</h1>
+<ul>
+<li>Scalars<ul>
+<li>Elements in a vector</li>
+<li>In compsci synonymous with the term &#x201C;variable&#x201D;</li>
+</ul>
+</li>
+<li>Vectors<ul>
+<li>For a positive integer n, a vector is an n-tuple, ordered (multi)set, or array of n numbers, called elements or scalars</li>
+</ul>
+</li>
+<li>Matricies<ul>
+<li>Group of vectors that have the same dimension (number of columns)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="solving-systems-of-equations">Solving Systems of Equations</h1>
+<ul>
+<li>Two general Methods<ul>
+<li>Direct method</li>
+<li>Iterative methods</li>
+</ul>
+</li>
+<li>Direct method<ul>
+<li>Fixed set of computation gives answer</li>
+<li>Data fits in memory</li>
+<li>Ex: Gaussian Elimination, Normal Equations</li>
+</ul>
+</li>
+<li>Iterative methods<ul>
+<li>Converges after a series of steps</li>
+<li>Stochastic Gradient Descent (SGD)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<ul>
+<li>Overview</li>
+<li>Key Terms</li>
+<li>Uses of Feed Forward Neural Networks</li>
+<li><strong>&#x21D2;</strong> Output</li>
+<li>Training</li>
+<li>Inference</li>
+<li>Underfitting and Overfitting</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="supervised-vs-unsupervised-learning">Supervised vs Unsupervised Learning</h1>
+<ul>
+<li>Supervised Learning<ul>
+<li>We give the training process labels (&#x201C;outputs&#x201D;) for every training input data row</li>
+<li>Model learns to associate input data with output value</li>
+</ul>
+</li>
+<li>Unsupervised Learning<ul>
+<li>No labels</li>
+<li>Model attempts to learn structure in the data</li>
+</ul>
+</li>
+<li>Neural Networks can be used for either supervised or unserpervised Learning</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="clustering">Clustering</h1>
+<ul>
+<li>Typically unsupervised learning<ul>
+<li>&#x201C;K-Means Clustering&#x201D;</li>
+</ul>
+</li>
+<li>Example<ul>
+<li>&#x201C;cluster K groups of similar news articles together&#x201D;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="supervised-learning-framing-the-question">Supervised Learning &quot;Framing the Question&quot;</h1>
+<ul>
+<li>Determine<ul>
+<li>Output desired (&#x201C;question to be answered&#x201D;)</li>
+<li>Input data to build model (&#x201C;evidence&#x201D;)</li>
+<li>Appropriate model (&#x201C;hypothesis&#x201D;)</li>
+</ul>
+</li>
+<li>Setup data in Ax = b form<ul>
+<li>For linear models and neural networks</li>
+</ul>
+</li>
+<li>Then Optimize the x parameter vector</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="quick-statistics-review-probability">Quick Statistics Review: Probability</h1>
+<ul>
+<li>Probability<ul>
+<li>We define probability of an event E as a number always between 0 and 1. </li>
+<li>In this context the value 0 infers that the event E has no chance of occurring and the value 1 means that the event E is certain to occur. </li>
+</ul>
+</li>
+<li>The Canonical Coin Example<ul>
+<li>Fair coin flipped, looking for heads/tails (0.5 for each side)</li>
+<li>Probability of sample space is always 1.0</li>
+<li>P( Heads ) = 0.5 every time</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="probability-distributions">Probability Distributions</h1>
+<ul>
+<li>A specification of the stochastic structure of random variables</li>
+<li>In statistics we rely on making assumptions about how the data is distributed<ul>
+<li>To make inferences about the data</li>
+</ul>
+</li>
+<li>We want a formula specifying how frequent values of observations in the distribution are<ul>
+<li>And how values can be taken by the points in the distribution
+<img src="../resources/3_line_graph.png" alt="alt text"></li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+
+
+
+<h1 id="classification">Classification</h1>
+<ul>
+<li>A type of answer we can get from a model</li>
+<li>Example:<ul>
+<li>&#x201C;Is this an image of a cat or a dog?&#x201D;</li>
+<li>Binary classification</li>
+<li>Classes: { cat, dog }</li>
+</ul>
+</li>
+<li>Binary classification is where we have only 2 labels<ul>
+<li>Example: { positive, negative }</li>
+</ul>
+</li>
+<li>Multi-Label Classification<ul>
+<li>N number of labels</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+
+<h1 id="regression">Regression</h1>
+<ul>
+<li>Where we seek a continuous value output from the model</li>
+<li>Example: &#x201C;predict the temperature for tomorrow&#x201D;<ul>
+<li>Output: 75F</li>
+</ul>
+</li>
+<li>Example: &#x201C;predict price of house based on square footage&#x201D;<ul>
+<li>Output: $250,000.00</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+
+<ul>
+<li>Overview</li>
+<li>Key Terms</li>
+<li>Uses of Feed Forward Neural Networks</li>
+<li>Output</li>
+<li><strong>&#x21D2;</strong> Training</li>
+<li>Inference</li>
+<li>Underfitting and Overfitting</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="training-a-neural-net">Training a Neural Net</h1>
+<ul>
+<li>Input Features passed in</li>
+<li>Output generated</li>
+<li>Error calculated</li>
+<li>Weights adjusted via backprop to decrease error</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="training-a-neural-net">Training a Neural Net</h1>
+<ul>
+<li>Inputs: Data you want to produce information from</li>
+<li>Connection weights and biases govern the activity of the network</li>
+<li>Learning algorithm changes weights and biases with each learning pass</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="code-sample-to-train-a-network">Code sample to train a network</h1>
+<pre><code>for ( int n = 0; n &lt; nEpochs; n++) {
+            model.fit( #YourDataSetIterator# );
+        }
+</code></pre><hr>
+<div style="page-break-after: always;"></div>
+
+
+<h1 id="fitting-the-training-data">Fitting the Training Data</h1>
+<p><img src="../resources/fit_to_line.png" alt="alt text"></p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="optimization">Optimization</h1>
+<ul>
+<li>Iteratively adjust the values of the x parameter vector<ul>
+<li>Until we minimize the error in the model</li>
+</ul>
+</li>
+<li>Error = prediction &#x2013; actual</li>
+<li>Loss functions measure error<ul>
+<li>simple/common loss function: </li>
+<li>&#x201C;mean squared error&#x201D;</li>
+</ul>
+</li>
+<li>How do we make choices about the next iterative &#x201C;step&#x201D;?<ul>
+<li>Where  &#x201C;step&#x201D; is how we change the x parameter vector</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="convex-optimization">Convex Optimization</h1>
+<p><img src="../resources/convex.png" alt="alt text"></p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="gradient-descent">Gradient Descent</h1>
+<ul>
+<li>Optimization method where we consider parameter space as<ul>
+<li>&#x201C;hills of error&#x201D;</li>
+<li>Bottom of the loss curve is the most &#x201C;accurate&#x201D; spot for our parameter vector</li>
+</ul>
+</li>
+<li>We start at one point on the curved error surface<ul>
+<li>Then compute a next step based on local information</li>
+</ul>
+</li>
+<li>Typically we want to search in a downhill direction<ul>
+<li>So we compute the gradient<ul>
+<li>The derivative of the point in error-space</li>
+<li>Gives us the slope of the curve</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="stochastic-gradient-descent">Stochastic Gradient Descent</h1>
+<ul>
+<li>With basic Gradient Descent we look at every training instance before computing a &#x201C;next step&#x201D;</li>
+<li>With SGD with compute a next step after every training instance<ul>
+<li>Sometimes we&#x2019;ll do a mini-batch of instances</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="sgd-visually-explained">SGD Visually Explained</h1>
+<p><img src="../resources/gradient_descent.png" alt="alt text"></p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+<ul>
+<li>Overview</li>
+<li>Key Terms</li>
+<li>Uses of Feed Forward Neural Networks</li>
+<li>Output</li>
+<li>Training</li>
+<li>Inference</li>
+<li><strong>&#x21D2;</strong> Underfitting and Overfitting</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="underfitting-and-overfitting">Underfitting and Overfitting</h1>
+<ul>
+<li>Underfitting<ul>
+<li>Our model does not learn the structure of the training data well enough</li>
+<li>Doesn&#x2019;t perform on new data as well as it could</li>
+</ul>
+</li>
+<li>Overfitting<ul>
+<li>Our model gives tremendous accuracy scores on training data</li>
+<li>However, our model performs poorly on test data and other new data</li>
+</ul>
+</li>
+</ul>
+<p><img src="../resources/overfit.png" alt="alt text"></p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+<h1 id="logistic-regression">Logistic Regression</h1>
+<ul>
+<li>OUT OF PLACE MOVE OR ADD TO TOC</li>
+<li>3 parts to Logistic Regression Model<ul>
+<li>Hypothesis (logistic function): <img src="../resources/equation.gif" alt="alt text"><ul>
+<li>Gives us a prediction based on the parameter vector x and the input data features</li>
+</ul>
+</li>
+<li>Cost Function<ul>
+<li>Example: &#x201C;max likelihood estimation&#x201D;</li>
+<li>Tells us how far off the prediction from the hypothesis is from the actual value</li>
+</ul>
+</li>
+<li>Update Function<ul>
+<li>Derivative of the cost function</li>
+<li>Tells us what direction / how much of step to take
+[ more notes, gradient, etc ]</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="evaluation-and-the-confusion-matrix">Evaluation and The Confusion Matrix</h1>
+<ul>
+<li>OUT OF PLACE MOVE OR ADD TO TOC</li>
+<li>Table representing<ul>
+<li>Predictions vs Actual Data</li>
+</ul>
+</li>
+<li>We count these answers to get<ul>
+<li>True Positives</li>
+<li>False Positives</li>
+<li>True Negatives</li>
+<li>False Negatives</li>
+</ul>
+</li>
+<li>Allows us to evaluate the model beyond &#x201C;average accurate&#x201D; percent<ul>
+<li>Can look at well a model can perform when it needs to be more than just &#x201C;accurate a lot&#x201D; 
+<img src="../resources/truth_table.png" alt="alt text"></li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+<h1 id="chapter-questions">Chapter Questions</h1>
+<ul>
+<li>Is all DeepLearning Machine Learning? </li>
+<li>Is all Machine Learning Deep Learning? </li>
+<li>Need more? Probably need to structure the chapter a little bit so it answers specific questions</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../DL4J_overview/DeepLearning4J.html" class="navigation navigation-prev " aria-label="Previous page: DeepLearning4J">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Abalone_intro/01.html" class="navigation navigation-next " aria-label="Next page: Abalone Lab ">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"FeedForward Neural Networks Explained","level":"6.1","depth":1,"next":{"title":"Abalone Lab ","level":"7.1","depth":1,"path":"Abalone_intro/01.md","ref":"Abalone_intro/01.md","articles":[]},"previous":{"title":"DeepLearning4J","level":"5.1.5","depth":2,"path":"DL4J_overview/DeepLearning4J.md","ref":"DL4J_overview/DeepLearning4J.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Neural_networks_explained/01.md","mtime":"2017-03-01T08:14:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-02T02:11:34.219Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

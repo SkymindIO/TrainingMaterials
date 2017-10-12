@@ -1,0 +1,134 @@
+!SLIDE center subsection
+
+# Activation Functions
+
+!SLIDE
+
+# What is an Activation Function
+
+* Determines output of Neuron Based on Inputs
+* Non-Linear Transform function at each node
+* Defined per layer
+* Allow neural networks to make complex boundary decisions for features at various levels of abstraction.
+
+!SLIDE
+
+# Activation Function
+
+* Hidden Layer
+* Controls what is sent to connected Neurons
+* Output Layer
+* Determines Output Value
+  * Regression
+  * Classification
+  * Etc
+
+
+!SLIDE
+
+# Common Activation Functions
+
+* ReLU
+  * Recent Breakthrough
+  * Good Default
+* Sigmoid
+  * Had been Standard
+  * S curve Range 0 to 1
+* TanH
+  * S curve Range -1 to 1
+
+
+~~~SECTION:notes~~~
+# Keep SImple Listing and move most to the appendix
+~~~ENDSECTION~~~
+
+!SLIDE
+ 
+# Activation Functions
+
+![img](../resources/Activation-func.png)
+ 
+!SLIDE
+ 
+# Output Layer Activation
+ 
+* Special Case
+* Goal of hidden Layer activation is to squash intermediate values
+* Goal of output Layer is to answer our question
+  * Classification = softmax
+  * regression = identity
+
+~~~SECTION:notes~~~
+
+Add One Hot Encoding discussion with Classification and SoftMax
+
+~~~ENDSECTION~~~
+
+!SLIDE
+
+# Output Layer Guidelines
+
+* Classification 
+  * softmax activation
+  * Negative Log Likelihood for loss Function 
+  * Multi Class Cross Entropy
+* Softmax
+  * Probability Distribution over classes
+  * Outputs sum to 1.0
+* Regression
+  * Identity Activation
+  * MSE(Mean Squared Error) Loss Function
+
+!SLIDE
+
+# Quick Statistics Review: Probability
+
+* Probability
+	* We define probability of an event E as a number always between 0 and 1
+	* In this context the value 0 infers that the event E has no chance of occurring and the value 1 means that the event E is certain to occur
+* The Canonical Coin Example
+	* Fair coin flipped, looking for heads/tails (0.5 for each side)
+	* Probability of sample space is always 1.0
+	* P( Heads ) = 0.5 every time
+
+
+!SLIDE
+
+
+# Classification
+
+* A type of answer we can get from a model
+* Example:
+	* “Is this an image of a cat or a dog?”
+	* Binary classification
+	* Classes: { cat, dog }
+* Binary classification is where we have only 2 labels
+	* Example: { positive, negative }
+* Multi-Label Classification
+	* N number of labels
+
+!SLIDE
+
+
+
+# Regression
+
+
+* Where we seek a continuous value output from the model
+* Example: “predict the temperature for tomorrow”
+	* Output: 75F
+* Example: “predict price of house based on square footage”
+	* Output: $250,000.00
+
+
+
+~~~SECTION:notes~~~
+
+activation function for the output layer: 
+this is usually application specific. 
+For classification problems, you generally want to use the softmax activation function, combined with the negative log likelihood / MCXENT (multi-class cross entropy). 
+
+The softmax activation function gives you a probability distribution over classes (i.e., outputs sum to 1.0). For regression problems, the “identity” activation function is frequently a good choice, in conjunction with the MSE (mean squared error) loss function.
+
+
+~~~ENDSECTION~~~

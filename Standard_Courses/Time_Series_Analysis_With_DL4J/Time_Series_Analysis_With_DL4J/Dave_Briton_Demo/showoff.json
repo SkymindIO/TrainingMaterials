@@ -1,0 +1,16 @@
+{
+"name": "DeepLearning: Building Neural Networks with DeepLearning4J",
+    "sections": {
+
+	"Chapter One": [
+	    "Chapt1/01.md"
+	],
+	
+	"Chapter Two": [
+	    "Chapt2/01.md"
+	]
+
+	
+    }
+
+}

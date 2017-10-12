@@ -1,0 +1,22 @@
+!SLIDE center subsection
+
+# Neural Network Internals
+
+This section describes key configuration details of Neural Networks
+
+!SLIDE
+
+* Activation Functions
+* BackPropagation
+* Loss Functions
+* Weight Initialization
+* Data Normalization and Standardization
+
+
+~~~SECTION:notes~~~
+# ARI Sez, add picture of Regression ==> identity
+# Default with ==> to Relu
+# Classification ==> Softmax
+# Tanh is better than sigmoid because it is centered
+# Present hidden layer activation as timeline
+~~~ENDSECTION~~~

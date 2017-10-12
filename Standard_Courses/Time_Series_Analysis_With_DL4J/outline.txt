@@ -1,0 +1,17 @@
+Outline
+
+Day 1:
+
+* Introduction to neural networks and an overview of the different types of neural networks (feed forward, convolutional, and recurrent)
+
+* Choosing the appropriate neural network for time series data
+
+* Hands-on lab: Generating weather forecasts with a recurrent neural network
+
+
+Day 2:
+
+* Configuring a data ingestion pipeline sequence data
+* Recurrent neural nets for the prediction of medical outcomes
+* Recurrent neural nets for the classification of sequence data
+* Hands-on lab: Sequence classification with recurrent neural networks

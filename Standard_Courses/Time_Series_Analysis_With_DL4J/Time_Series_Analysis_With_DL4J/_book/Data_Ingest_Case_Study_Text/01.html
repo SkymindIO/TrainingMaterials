@@ -1,0 +1,991 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Data Ingest Case Study: Text · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Intro_to_Recurrent_Neural_Networks/01.html" />
+    
+    
+    <link rel="prev" href="../Modeling_sequences/01.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Introduction/01.html">
+            
+                <a href="../Introduction/01.html">
+            
+                    
+                    Welcome to the Course
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../What_is_deep_learning/01.html">
+            
+                <a href="../What_is_deep_learning/01.html">
+            
+                    
+                    What is DeepLearning?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../Simplest_network_Lab_intro/01.html">
+            
+                <a href="../Simplest_network_Lab_intro/01.html">
+            
+                    
+                    Neural Network Demonstration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../Neural_Network_Types/01.html">
+            
+                <a href="../Neural_Network_Types/01.html">
+            
+                    
+                    Types of Neural Networks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../DL4J_overview/">
+            
+                <a href="../DL4J_overview/">
+            
+                    
+                    DeepLearning4J
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../DL4J_overview/DeepLearning4J.html">
+            
+                <a href="../DL4J_overview/DeepLearning4J.html">
+            
+                    
+                    DeepLearning4J Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../DL4J_overview/DataVec.html">
+            
+                <a href="../DL4J_overview/DataVec.html">
+            
+                    
+                    DataVec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../DL4J_overview/DataVecLab.html">
+            
+                <a href="../DL4J_overview/DataVecLab.html">
+            
+                    
+                    DataVec Lab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="../DL4J_overview/ND4J.html">
+            
+                <a href="../DL4J_overview/ND4J.html">
+            
+                    
+                    ND4J and libnd4j
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.5" data-path="../DL4J_overview/DeepLearning4J.html">
+            
+                <a href="../DL4J_overview/DeepLearning4J.html">
+            
+                    
+                    DeepLearning4J
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../Neural_networks_explained/01.html">
+            
+                <a href="../Neural_networks_explained/01.html">
+            
+                    
+                    FeedForward Neural Networks Explained
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../Abalone_intro/01.html">
+            
+                <a href="../Abalone_intro/01.html">
+            
+                    
+                    Abalone Lab 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../Modeling_sequences/01.html">
+            
+                <a href="../Modeling_sequences/01.html">
+            
+                    
+                    Modeling Sequences
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter active" data-level="9.1" data-path="01.html">
+            
+                <a href="01.html">
+            
+                    
+                    Data Ingest Case Study: Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../Intro_to_Recurrent_Neural_Networks/01.html">
+            
+                <a href="../Intro_to_Recurrent_Neural_Networks/01.html">
+            
+                    
+                    Introduction to Recurrent Neural Networks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../LSTM/01.html">
+            
+                <a href="../LSTM/01.html">
+            
+                    
+                    LSTM intro REALLY SHORT COMBINE 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" data-path="../Weather_Forecast_lab/01.html">
+            
+                <a href="../Weather_Forecast_lab/01.html">
+            
+                    
+                    LSTM Character Generation of Weather Forecast Lab
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="13.1" data-path="../ETL_Vectorization/01.html">
+            
+                <a href="../ETL_Vectorization/01.html">
+            
+                    
+                    ETL and Vectorization For UCI lab if I do it
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="14.1" data-path="../Appendix/01.html">
+            
+                <a href="../Appendix/01.html">
+            
+                    
+                    Appendix
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="15.1" data-path="../DeepLearning_Intro/01.html">
+            
+                <a href="../DeepLearning_Intro/01.html">
+            
+                    
+                    DeepLearning Introduction need better title
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="16.1" data-path="../Optimization_algorithms/01.html">
+            
+                <a href="../Optimization_algorithms/01.html">
+            
+                    
+                    Optimization Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Data Ingest Case Study: Text</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="data-ingestion-case-study-text">Data Ingestion Case Study: Text</h1>
+<h1 id="table-of-contents">Table of Contents</h1>
+<ul>
+<li>PreProcessing and tokenization</li>
+<li>Bag of Words</li>
+<li>N-Grams</li>
+<li>Word2Vec</li>
+<li>Paragraph Vectors</li>
+<li>GloVE</li>
+<li>Words as Sequence of Characters</li>
+</ul>
+<h2 id=""><div style="page-break-after: always;"></div></h2>
+<h1 id="table-of-contents">Table of Contents</h1>
+<ul>
+<li><strong>&#x21D2;</strong> PreProcessing and tokenization</li>
+<li>Bag of Words</li>
+<li>N-Grams</li>
+<li>Word2Vec</li>
+<li>Paragraph Vectors</li>
+<li>GloVE</li>
+<li>Words as Sequence of Characters</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="preprocessing-and-tokenization">PreProcessing and tokenization</h1>
+<ul>
+<li>Tokenizer<ul>
+<li>Splits stream of words into individual words<ul>
+<li>DefaultTokenizer</li>
+<li>NGramTokenizer <ul>
+<li>PosUimaTokenizer</li>
+</ul>
+</li>
+<li>UimaTokenizer</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>PreProcessors<ul>
+<li>LowCasePreProcessor</li>
+<li>StemmingPreprocessor</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<ul>
+<li>PreProcessing and tokenization</li>
+<li><strong>&#x21D2;</strong> Bag of Words</li>
+<li>N-Grams</li>
+<li>Word2Vec</li>
+<li>Paragraph Vectors</li>
+<li>GloVE</li>
+<li>Words as Sequence of Characters</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="bag-of-words">Bag of Words</h1>
+<p>Corpus is represented as the bag(multiset) of its words. </p>
+<ul>
+<li>No Grammar</li>
+<li>No order</li>
+<li>Frequency only</li>
+</ul>
+<p>&quot;Bob and Carol and Ted and Alice&quot;</p>
+<p>Becomes the List
+[&quot;Bob&quot;,&quot;and&quot;,&quot;Carol&quot;,&quot;Ted&quot;,&quot;Alice&quot;]</p>
+<p>Term frequency
+ [1,3,1,1,1]</p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="bag-of-words-uses">Bag of Words uses</h1>
+<ul>
+<li>TfIDF<ul>
+<li>Frequency of word/document compared to word/corpus of documents</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="bag-of-words-example">Bag of Words Example</h1>
+<ul>
+<li>Lab Folder has example</li>
+<li>Tokenizer to read files from directory and label with filename</li>
+</ul>
+<pre><code>TokenizerFactory tokenizerFactory = new DefaultTokenizerFactory();
+
+        LabelAwareIterator iterator = new FilenamesLabelAwareIterator.Builder()
+                .addSourceFolder(new ClassPathResource(&quot;bow&quot;).getFile())
+                .useAbsolutePathAsLabel(false)
+                .build();
+</code></pre><hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="bag-of-words-example-continued">Bag of Words Example continued</h1>
+<ul>
+<li>Code to show contents of iterator</li>
+</ul>
+<pre><code>while(iterator.hasNext()){
+            LabelledDocument doc = iterator.nextDocument();
+            System.out.println(doc.getContent());
+            System.out.println(doc.getLabels().get(0));
+        }
+
+        iterator.reset();
+</code></pre><hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="bag-of-words-example-continued">Bag of Words Example Continued</h1>
+<pre><code>BagOfWordsVectorizer vectorizer = new BagOfWordsVectorizer.Builder()
+                .setMinWordFrequency(1)
+                .setStopWords(new ArrayList&lt;String&gt;())
+                .setTokenizerFactory(tokenizerFactory)
+                .setIterator(iterator)
+                .build();
+vectorizer.fit();
+</code></pre><hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="bag-of-words-example-continued">Bag of Words Example Continued</h1>
+<ul>
+<li>Code to explore the contents of the Bag of Words</li>
+</ul>
+<pre><code>    log.info(vectorizer.getVocabCache().tokens().toString());
+    System.out.println(vectorizer.getVocabCache().totalNumberOfDocs());
+    System.out.println(vectorizer.getVocabCache().docAppearedIn(&quot;two.&quot;));
+    System.out.println(vectorizer.getVocabCache().docAppearedIn(&quot;one.&quot;));
+    System.out.println(vectorizer.getVocabCache().docAppearedIn(&quot;world&quot;));
+</code></pre><hr>
+<div style="page-break-after: always;"></div>
+
+<ul>
+<li>PreProcessing and tokenization</li>
+<li>Bag of Words</li>
+<li><strong>&#x21D2;</strong> N-Grams</li>
+<li>Word2Vec</li>
+<li>Paragraph Vectors</li>
+<li>GloVE</li>
+<li>Words as Sequence of Characters</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="ngrams">NGrams</h1>
+<ul>
+<li>Contiguous sequence of n items from a sequence of text</li>
+</ul>
+<p>Example &quot;It is the year 2016&quot;</p>
+<p>Bi-grams &quot;It is&quot; &quot;is the&quot; &quot;the year&quot; &quot;year 2016&quot;
+Tri-grams &quot;It is the&quot; &quot;is the year&quot; &quot;the year 2016&quot;</p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="ngram-uses">NGram uses</h1>
+<ul>
+<li>Provide more context than Bag of Words</li>
+<li>Used in some Neural Net for Speech Recognition to narrow the scope of prediction<ul>
+<li>RNN predicts next word out of top x percent of trigram for previous 2 word predictions</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="ngram-code-example">NGram code Example</h1>
+<pre><code>
+public static void main(String[] args) throws Exception{
+        String toTokenize = &quot;To boldly go where no one has gone before.&quot;;
+        TokenizerFactory factory = new NGramTokenizerFactory(new DefaultTokenizerFactory(), 1, 2);
+        Tokenizer tokenizer = factory.create(toTokenize);
+        factory = new NGramTokenizerFactory(new DefaultTokenizerFactory(), 2, 3);
+        List&lt;String&gt; tokens = factory.create(toTokenize).getTokens();
+        log.info(tokens.toString());
+</code></pre><p>Output</p>
+<pre><code>[To, boldly],  [boldly, go],  [go, where],......
+[To, boldly, go],  [boldly, go, where] ......
+</code></pre><hr>
+<div style="page-break-after: always;"></div>
+
+<ul>
+<li>PreProcessing and tokenization</li>
+<li>Bag of Words</li>
+<li>N-Grams</li>
+<li><strong>&#x21D2;</strong> Word2Vec</li>
+<li>Paragraph Vectors</li>
+<li>GloVE</li>
+<li>Words as Sequence of Characters</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+<h1 id="word2vec">Word2Vec</h1>
+<ul>
+<li>Model for word embeddings</li>
+<li>Vector Space </li>
+<li>Each word in Corpus =&gt; Vector in Vector Space</li>
+<li>Relative location of word in vector space denotes relationship<ul>
+<li>Boy-&gt;Man Girl-&gt;Woman</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+
+<h1 id="word2vec">Word2Vec</h1>
+<ul>
+<li>Model for word embeddings</li>
+<li>Vector Space </li>
+<li>Each word in Corpus =&gt; Vector in Vector Space</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="word2vec---generating-the-vector-space">Word2Vec - Generating the Vector Space</h1>
+<ul>
+<li>Neural Network trained to return word probabilities of a moving window<ul>
+<li>Given word &quot;Paris&quot;, out of the corpus of words predict probility of each word occuring within say 5 words of the word &quot;Paris&quot;</li>
+</ul>
+</li>
+<li>One hot Vector, size of every word in the corpus</li>
+<li>all 0&apos;s except for 1 representing the word</li>
+<li>See Demo <a href="https://ronxin.github.io/wevi/" target="_blank">https://ronxin.github.io/wevi/</a></li>
+<li>See example in intellij</li>
+<li>ALlows you to do word math<ul>
+<li>King - Man + Woman = (?) Queen</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="one-hot-encoding">One-hot encoding</h1>
+<ul>
+<li>Vector, the size of the vocabulary, all 0&apos;s except for 1</li>
+</ul>
+<p><img src="../resources/onehot.png" alt="alt text"></p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="two-methods-for-building-word2vec">Two Methods for building word2vec</h1>
+<ul>
+<li>CBOW<ul>
+<li>w1,w2,w4,w5 as input to Neural Net<ul>
+<li>Context words </li>
+</ul>
+</li>
+<li>Train net with w3 as target<ul>
+<li>Focus word</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>SKIP GRAM<ul>
+<li>Reverse of CBOW</li>
+<li>Input is Focus word</li>
+<li>Output is Context Words</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="cbow-visually">CBOW visually</h1>
+<p><img src="../resources/quickfox.png" alt="alt text"></p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="cbow-visually">CBOW visually</h1>
+<p><img src="../resources/quickfox1.png" alt="alt text"></p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="cbow-visually">CBOW visually</h1>
+<p><img src="../resources/quickfox2.png" alt="alt text"></p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="cbow-visually">CBOW visually</h1>
+<p><img src="../resources/word2VecCBOW.png" alt="alt text"></p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+<ul>
+<li>PreProcessing and tokenization</li>
+<li>Bag of Words</li>
+<li>N-Grams</li>
+<li>Word2Vec</li>
+<li><strong>&#x21D2;</strong> Paragraph Vectors</li>
+<li>GloVE</li>
+<li>Words as Sequence of Characters</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="paragraph-vectors">Paragraph Vectors</h1>
+<ul>
+<li>Need Something here</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<ul>
+<li>PreProcessing and tokenization</li>
+<li>Bag of Words</li>
+<li>N-Grams</li>
+<li>Word2Vec</li>
+<li>Paragraph Vectors</li>
+<li><strong>&#x21D2;</strong>  GloVE</li>
+<li>Words as Sequence of Characters</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="glove">GloVE</h1>
+<ul>
+<li>Vector Representation</li>
+<li>word-word co-occurence algorithm for generating vector</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<ul>
+<li>PreProcessing and tokenization</li>
+<li>Bag of Words</li>
+<li>N-Grams</li>
+<li>Word2Vec</li>
+<li>Paragraph Vectors</li>
+<li>GloVE</li>
+<li><strong>&#x21D2;</strong>  Words as Sequence of Characters</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+<h1 id="text-as-sequence-of-characters">Text as Sequence of Characters</h1>
+<p>Text can be treated as sequence of characters, and  neural network can be trained to answer the question. Given input character X predict the next character, and repeat.</p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="why-choose-character-as-unit-of-analysis-vs-word">Why choose character as unit of analysis vs word?</h1>
+<ul>
+<li>How many words are there? </li>
+<li>How many characters are there? </li>
+<li>Text-&gt;word processing is hard<ul>
+<li>prefix, suffix, etc</li>
+<li>&quot;old school&quot; , &quot;New York&quot;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="subtree-in-tree-of-all-character-strings">SubTree in tree of all character strings</h1>
+<p>Graph of 
+test branch teste, testi, branch tested, branch testing</p>
+<p>In an RNN each node is a hidden state vector.</p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h1 id="using-recurrent-neural-networks-to-write-weather-forecast">Using Recurrent Neural Networks to write weather forecast</h1>
+<p>After the content that describes LSTM RNN in detail we will have a lab that builds a neural network to generate characters one character at a time from a learned corpus. </p>
+<p>In the lab we will train the network weather forecasts. </p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Modeling_sequences/01.html" class="navigation navigation-prev " aria-label="Previous page: Modeling Sequences">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Intro_to_Recurrent_Neural_Networks/01.html" class="navigation navigation-next " aria-label="Next page: Introduction to Recurrent Neural Networks">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Data Ingest Case Study: Text","level":"9.1","depth":1,"next":{"title":"Introduction to Recurrent Neural Networks","level":"10.1","depth":1,"path":"Intro_to_Recurrent_Neural_Networks/01.md","ref":"Intro_to_Recurrent_Neural_Networks/01.md","articles":[]},"previous":{"title":"Modeling Sequences","level":"8.1","depth":1,"path":"Modeling_sequences/01.md","ref":"Modeling_sequences/01.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Data_Ingest_Case_Study_Text/01.md","mtime":"2017-03-01T21:19:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-02T02:11:34.219Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
