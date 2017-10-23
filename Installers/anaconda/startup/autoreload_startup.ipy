@@ -1,0 +1,14 @@
+
+%load_ext autoreload
+%autoreload 2
+
+# Exclude autoimports
+%aimport -np
+%aimport -pd
+%aimport -sp
+%aimport -sklearn
+%aimport -skimage
+%aimport -mpl
+%aimport -plt
+%aimport -logging
+
