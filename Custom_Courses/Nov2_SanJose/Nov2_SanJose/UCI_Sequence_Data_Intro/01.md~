@@ -1,0 +1,98 @@
+!SLIDE center subsection
+
+# Classification of Univariate Time Series Using LSTM
+
+
+!SLIDE
+
+# The Data
+
+* Source: University California at Irvine
+
+
+
+~~~SECTION:notes~~~
+
+ Tom patch this !!!
+
+INSTRUCTOR NOTES LOOK LIKE THIS
+
+~~~ENDSECTION~~~
+
+
+!SLIDE
+
+# The Data Represents signal data of 6 different type
+
+
+
+
+!SLIDE
+
+# Normal
+
+![alt text](../resources/sequencenormal.png)
+
+
+!SLIDE
+
+
+# Cyclic
+
+![alt text](../resources/sequencecyclic.png)
+
+
+!SLIDE
+
+# Increasing trend
+
+![alt text](../resources/sequenceuptrend.png)
+
+!SLIDE
+
+# Decreasing trend
+
+![alt text](../resources/sequencedown.png)
+
+!SLIDE
+
+# Upward shift
+
+![alt text](../resources/sequenceupshift.png)
+
+!SLIDE
+
+# Downward shift
+
+![alt text](../resources/sequencedownshift.png)
+
+
+
+!SLIDE
+
+# TODO: Describe how the data is stored
+* Describe how the data is processed in DataVec
+
+
+
+  
+  
+~~~SECTION:notes~~~
+
+# Update outline
+Tom patch this !!!
+
+~~~ENDSECTION~~~
+
+
+
+
+
+
+
+
+
+
+
+
+

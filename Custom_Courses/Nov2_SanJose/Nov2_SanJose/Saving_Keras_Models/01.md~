@@ -1,0 +1,52 @@
+!SLIDE
+
+# Saving Keras Models
+
+
+!SLIDE
+
+# Saving just the Configuration
+
+```
+json_string = model.to_json()
+text_file = open("/tmp/iris_model_json", "w")
+text_file.write(json_string)
+text_file.close()
+```
+
+
+!SLIDE
+
+
+# Saving Just the Weights
+
+```
+model.save_weights('/tmp/iris_model_weights')
+```
+
+
+
+!SLIDE
+
+# Saving Weights and Configuration
+
+```
+model.save('/tmp/full_iris_model')
+```
+
+
+!SLIDE
+
+
+
+<!--
+
+# A Diagram
+
+![alt text](../resources/venn.png)
+
+
+
+!SLIDE
+
+!SLIDE

@@ -1,0 +1,107 @@
+{
+"name": "DeepLearning: Building Neural Networks with DeepLearning4J",
+    "sections": {
+
+	"Welcome to the Course": [
+	    "Introduction/01.md"
+	],
+	
+	"What is DeepLearning?": [
+	    "What_is_deep_learning/01.md"
+	],
+
+	"Framing the Question":
+	["Framing_the_Question/01.md"],
+	
+	"Neural Network Demonstration":
+	["Simplest_network_Lab_intro/01.md"],
+
+	  "Introduction to Keras": [
+            "Introduction_to_Keras/01.md"
+        ],
+
+        "Introduction to Tensorflow and Theano": [
+            "Introduction_to_Tensorflow_and_Theano/01.md"
+        ],
+	
+	 "DeepLearning4J Introduction": [
+            "DL4J_overview/README.md",
+            "DL4J_overview/DeepLearning4J.md",
+            "DL4J_overview/DataVec.md",
+            "DL4J_overview/DataVecLab.md",
+            "DL4J_overview/ND4J.md"
+
+        ],
+
+	"Neural Network internals": [
+            "Neural_Network_internals/01.md"
+	],
+
+
+	"Activation Functions": [
+            "Activation_Functions/01.md"
+        ],
+
+	"Backpropagation": [
+            "Backpropagation/01.md"
+        ],
+
+	"Loss Functions": [
+            "Loss_Functions/01.md"
+        ],
+
+	"Weight Initialization": [
+            "Weight_Initialization/01.md"
+        ],
+
+	"Data Normalization/Standardization": [
+            "Data_Normalization_Standardization/01.md"
+        ],
+
+	"Types of Neural Networks":
+        ["Neural_Network_Types/01.md"],
+
+	"FeedForward Neural Networks Explained":
+        ["Neural_networks_explained/01.md"],
+
+
+        "Abalone Lab":
+        ["Abalone_intro/01.md"],
+
+        "Data Ingest Case Study: Text":
+        ["Data_Ingest_Case_Study_Text/01.md"],
+
+        "Introduction to Recurrent Neural Networks":
+        ["Intro_to_Recurrent_Neural_Networks/01.md"],
+
+        "LSTM Character Generation of Weather Forecast Lab":
+        ["Weather_Forecast_lab/01.md"],
+
+	 "LSTM for classification of Univariate Sequence Data":
+        ["UCI_Sequence_Data_Intro/01.md"],
+
+        "LSTM for predicting patient mortality":
+        ["Physionet/01.md"],
+
+        "Convolutional Neural Networks":
+        ["Convolutional_Neural_Networks/01.md"],
+
+        "Convolutional Neural Network Lab":
+        ["Convolutional_Neural_Networks/Lab.md"],
+
+        "The Paths to Production": [
+            "Paths_to_production/01.md"
+        ],
+	
+	"Importing Keras Models into DL4J": [
+            "Loading_Keras_Models_Into_DL4J/01.md"
+        ],
+
+        "Saving and Loading trained Models":
+        ["Saving_Models/01.md"],
+
+        "Lab: Saving and Loading trained Models":
+        ["Saving_Models/02.md"]
+    }
+
+}
