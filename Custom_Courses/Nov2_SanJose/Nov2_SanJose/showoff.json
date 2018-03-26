@@ -98,7 +98,13 @@
         ["Saving_Models/01.md"],
 
         "Lab: Saving and Loading trained Models":
-        ["Saving_Models/02.md"]
+        ["Saving_Models/02.md"],
+
+	
+	"The Skymind Intelligence Layer, SKIL":
+        ["SKIL/01.md"]
+	
+	
     }
 
 }
