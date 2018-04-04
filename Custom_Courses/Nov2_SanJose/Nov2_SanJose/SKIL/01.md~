@@ -1,0 +1,90 @@
+!SLIDE center subsection
+
+# SKIL, the Skymind Intelligence Layer
+
+
+!SLIDE
+
+# What SKIL provides
+
+* Develop Neural Networks in Python or Scala Notebooks
+* Save and Deploy Models to a REST Server
+
+
+
+!SLIDE
+
+# SKIL Main Page
+
+<img src="../resources/SKIL_Main.png">
+
+
+!SLIDE
+
+# SKIL Navigation Panel: WorkSpaces
+
+
+<img src="../resources/SKIL_Leftnav1.png">
+
+
+!SLIDE
+
+# SKIL Workspaces Explained
+
+* A collection of Notebooks
+* Zeppelin Based
+  * Scala
+  * Python
+
+!SLIDE
+
+# SKIL Navigation Panel: Deployments
+
+<img src="../resources/SKIL_Leftnav2.png">
+
+!SLIDE
+
+# SKIL Deployments Explained
+
+* Rest Wrapper for Model Input-Output
+* Single Deployment 
+* One or more models
+
+
+!SLIDE
+
+# SKIL Navigation Panel: Agents
+
+<img src="../resources/SKIL_Leftnav3.png">
+
+!SLIDE
+
+# SKIL Agents Explained
+
+* SKIL can work as Distributed Process
+* Agent = Worker Node
+
+!SLIDE
+
+# SKIL Navigation Panel: Processes
+
+<img src="../resources/SKIL_Leftnav4.png" height="400">
+
+!SLIDE
+
+# SKIL Processes  Explained
+
+* Zeppelin
+  * Notebook
+* Model History Server
+  * Model Registry
+
+!SLIDE
+
+# SKIL Architecture
+
+
+<img src="../resources/SKILdiagram.png">
+
+
+

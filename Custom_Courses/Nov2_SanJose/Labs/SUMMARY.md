@@ -21,3 +21,5 @@
 * [Building a Convolutional Neural Network](Convolution/01.md)
 
 * [Model Saving and Loading  Lab](Model_Save_Lab/01.md)
+
+* [SKIL Model Serving Lab](SKIL/01.md)
