@@ -1,0 +1,170 @@
+!SLIDE center subsection
+
+# Patch this if I have time add picture
+
+# Types of Neural Networks
+
+This section introduces the various types of Neural Networks
+
+!SLIDE
+
+* **&rArr;** Inspiration for Neural Networks
+* FeedForward Neural Networks
+* Recurrent Neural Networks
+* Convolutional Neural Networks
+* Other
+
+!SLIDE
+
+
+
+# Inspired by Biological Neurons
+
+* Interconnected computational units with output based on input combined with an activation function
+
+!SLIDE
+
+
+# The Main Types of Neural Networks
+
+* FeedForward Neural Networks (Multi Layer Perceptron)
+* Recurrent Neural Networks
+* Convolutional Neural Networks
+  
+
+!SLIDE
+
+!SLIDE
+* Inspiration for Neural Networks
+* **&rArr;** FeedForward Neural Networks
+* Recurrent Neural Networks
+* Convolutional Neural Networks
+* Other
+!SLIDE
+
+
+# FeedForward Neural Network Uses
+
+* Supervised Learning
+* Classification
+* Regression
+
+!SLIDE
+
+# FeedForward Neural Network Data
+
+* Tabular data
+* Image data
+
+!SLIDE
+
+# FeedForward Neural Network Output 
+
+* Flexible, range of values, one of a class probabilities
+
+* Limitation, one input maps to one output
+
+
+
+
+!SLIDE
+
+!SLIDE
+* Inspiration for Neural Networks
+* FeedForward Neural Networks
+* **&rArr;** Recurrent Neural Networks
+* Convolutional Neural Networks
+* Other
+
+!SLIDE
+
+# Recurrent Neural Networks
+
+* In this class when we talk about RNNs we are typically talking about LSTMs
+
+!SLIDE
+
+# Recurrent Neural Networks Uses
+
+
+* Sequence or Time Series Data
+
+
+
+!SLIDE
+
+# Recurrent Neural Networks Input and Output
+
+* One to Many
+  * Image to words for caption
+* Many to Many
+  * French word sequence to English word sequence
+* Many to one
+  * Speaker identification given voice sample
+  
+  
+!SLIDE
+
+!SLIDE
+* Inspiration for Neural Networks
+* FeedForward Neural Networks
+* Recurrent Neural Networks
+* **&rArr;** Convolutional Neural Networks**
+* Other
+
+!SLIDE
+
+# Convolutional Neural Network
+
+* Inspired by the visual cortex
+* Useful for image recognition
+
+
+
+!SLIDE
+
+# How Convolutional Neural Networks differ from other Networks
+
+* Image data analyzed as 4D NDArrays (tensors)
+* For a 10*10 image, a series of 3*3, or 5*5 subsets are analyzed
+
+<!-- * Need more on Convnets -->
+
+!SLIDE
+
+!SLIDE
+* Inspiration for Neural Networks
+* FeedForward Neural Networks
+* Recurrent Neural Networks
+* Convolutional Neural Networks
+* **&rArr;** Other
+!SLIDE
+
+
+# Other Useful Neural Network Types
+
+**Not covered in this course**
+
+* Variational Autoencoders
+* Restricted Boltzman Machines
+* more....
+
+!SLIDE
+
+# Variational Autoencoders
+
+* Unsupervised learning of features
+* Input -> Neural Net -> rebuild input
+* Reduction in dataset dimensionality
+
+
+!SLIDE
+
+# Restricted Boltzmann Machines
+
+* Feature extraction and dimensionality reduction
+* Model probability
+* Useful for the pre-training phase in other large Deep Networks
+
+
+!SLIDE
