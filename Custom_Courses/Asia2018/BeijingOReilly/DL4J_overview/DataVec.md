@@ -102,16 +102,22 @@
 * 在训练例子里的数据管道
 
 ```
-ImageRecordReader recordReader = new ImageRecordReader(height,width,channels);
+ImageRecordReader recordReader = new ImageRecordReader(height, width, channels);
 ```
 
 * 将图像缩放至于NativeImageLoader适当的维数
 * 使用于一次性的推理
 
 ```
-NativeImageLoader loader = new NativeImageLoader(height, width, channels); \\ load and scale
-INDArray image = loader.asMatrix(file); \\ create INDarray
-INDArray output = model.output(image);   \\ get model prediction for image
+NativeImageLoader loader = new NativeImageLoader(height, width, channels); //load and scale
+```
+
+```                          
+INDArray image = loader.asMatrix(file); //create INDarray
+```
+
+```                       
+INDArray output = model.output(image);  //get model prediction for image
 ```
 
 !SLIDE
@@ -122,7 +128,13 @@ INDArray output = model.output(image);   \\ get model prediction for image
 
 ```
 DataNormalization scaler = new ImagePreProcessingScaler(0,1);
+```
+
+```
 scaler.fit(dataIter);
+```
+
+```
 dataIter.setPreProcessor(scaler);
 ```
 
@@ -177,59 +189,67 @@ dataIter.setPreProcessor(scaler);
 !SLIDE
 
 
+# 将CSV数据转换成INDArray
+
+* CSV是用于存储表格数据的简单文件格式
+
+<img src="../resources/sample_csv.png" align="center" height="480" width="620" >
+
+
+!SLIDE
+
+# CSV数据转换成INDArray实验
+
+* 请运行solutions/feedforward/MLPClassifierLinear.java例子
+
+!SLIDE
+
+
 # 代码例子: CSV数据转换成INDArray
 
 
-	public class CSVExample {
-	private static Logger log = LoggerFactory.getLogger(CSVExample.class);
-	public static void main(String[] args) throws  Exception {
-        //First: get the dataset using the record reader.
-		//CSVRecordReader handles loading/parsing
+	public class MLPClassifierLinear{
+	public static void main(String[] args) throws Exception{
+        final String fileNameTrain = new ClassPathResource("/classification
+        /linear_data_train.csv").getFile().getPath();
+
         int numLinesToSkip = 0;
         String delimiter = ",";
-        RecordReader recordReader =
-		new CSVRecordReader(numLinesToSkip,delimiter);
-        recordReader.initialize(new FileSplit
-		(new ClassPathResource("iris.txt").getFile()));
+
+        //First: the RecordReader
+        RecordReader rrTrain = new CSVRecordReader(numLinesToSkip,delimiter);
+
+        rrTrain.initialize(new FileSplit(new File(fileNameTrain)));
 
 
 !SLIDE
 
 # 代码例子: CSV数据转换成INDArray
 
-	//Second: the RecordReaderDataSetIterator
-		//handles conversion to
-		//DataSet objects, ready for use in neural network
-        int labelIndex = 4;     
-		//5 values in each row of the iris.txt CSV:
-		//4 input features followed by an integer label (class) index.
-		//Labels are the 5th value (index 4) in each row
-        int numClasses = 3;     
-		//3 classes (types of iris flowers) in the iris data set.
-		//Classes have integer values 0, 1 or 2
-        int batchSize = 150;
-		//Iris data set: 150 examples total.
-		//Loading all of them into one DataSet
-		//(not recommended for large data sets)
 
-        DataSetIterator iterator =
-		new RecordReaderDataSetIterator
-		(recordReader,batchSize,labelIndex,numClasses);
-        DataSet allData = iterator.next();
+      int labelIndex = 0;
+      int numClasses = 2;     
+      int batchSize = 50;
+      //Data set: 1000 examples total.
+      //Loading them into small dataset batch
+
+      //Second: the RecordReaderDataSetIterator
+      DataSetIterator dataIterTrain
+      = new RecordReaderDataSetIterator
+      (recordReader, batchSize, labelIndex, numClasses);
+
 
 !SLIDE
 
 # DataVec 代码讲解
 
-* RecordReader recordReader = new CSVRecordReader(numLinesToSkip,delimiter);
-	* A RecordReader prepares a list of Writables
-	* A Writable is an efficient Serialization format
-* DataSetIterator iterator = new RecordReaderDataSetIterator
-	* We are in DL4J know, with DataSetIterator
-	* Builds an Iterator over the list of records
-* DataSet allData = iterator.next();
-	* Builds a DataSet
-	* INDArray of Features, INDArray of Labels
+* RecordReader rrTrain = new CSVRecordReader(numLinesToSkip,delimiter);
+	* RecordReader准备Writable的列表
+	* Writable是个高效的序列化格式
+* DataSetIterator dataIterTrain = new RecordReaderDataSetIterator
+	* 从记录列表上建立Iterator
+* DataSet data = dataIterTrain.next();
+	* 建立DataSet
 
 
 !SLIDE
