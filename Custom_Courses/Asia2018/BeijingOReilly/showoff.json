@@ -44,7 +44,7 @@
   "循环神经网络(RNN), 长短期记忆网络(LSTM)":
   ["Intro_to_Recurrent_Neural_Networks/01.md"],
 
-  "[实验]用LSTM预测序数据":
+  "[实验]用LSTM预测序列数据":
   ["Sentence_Lab/01.md"],
 
   "[实验]用LSTM实现天气预报":
@@ -70,16 +70,18 @@
     "YOLO/01.md"
   ],
 
+  "SKIL简介":
+  [
+      "SKIL/01.md"
+  ],
+
+
   "YOLO SKIL":
   [
     "yoloSkil/01.md"
   ],
 
 
-  "SKIL简介":
-  [
-      "SKIL/01.md"
-  ],
 
 
   "通往生产之路": [
