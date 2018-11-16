@@ -1,6 +1,0 @@
-#!/bin/sh
-
-export SPARK_HOME=$INSTALL_DEST_DIR/spark
-export PYTHONPATH=$SPARK_HOME/python:$PYTHONPATH
-export PATH=$SPARK_HOME/bin:$PATH
-
