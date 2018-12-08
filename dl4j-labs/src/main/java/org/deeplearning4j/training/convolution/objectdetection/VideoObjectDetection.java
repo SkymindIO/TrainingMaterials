@@ -19,10 +19,7 @@ import java.awt.event.KeyEvent;
 import java.util.List;
 
 import static org.bytedeco.javacpp.opencv_core.FONT_HERSHEY_DUPLEX;
-import static org.bytedeco.javacpp.opencv_imgproc.putText;
-import static org.bytedeco.javacpp.opencv_imgproc.rectangle;
-import static org.bytedeco.javacpp.opencv_imgproc.resize;
-import static org.opencv.imgproc.Imgproc.COLOR_BGR2RGB;
+import static org.bytedeco.javacpp.opencv_imgproc.*;
 
 /**
  * Yolo Detection with video
@@ -48,10 +45,10 @@ public class VideoObjectDetection
 
     public static void main(String[] args) throws Exception {
 
-        String videoPath = "videoSample.mp4";
-        FrameGrabber grabber = FrameGrabber.createDefault(videoPath);
+        String videoPath = "D:\\videoSample.mp4";
+        FFmpegFrameGrabber grabber = new FFmpegFrameGrabber(videoPath);
+        grabber.setFormat("mp4");
         OpenCVFrameConverter.ToMat converter = new OpenCVFrameConverter.ToMat();
-
         grabber.start();
 
         String winName = "Object Detection";
@@ -75,51 +72,30 @@ public class VideoObjectDetection
 
         while (true)
         {
-            Frame frame = grabber.grab();
-
+            Frame frame = grabber.grabImage();
             //if a thread is null, create new thread
-            if (thread == null)
-            {
-                thread = new Thread(() ->
-                {
-                    while (frame != null)
-                    {
-                        try
-                        {
-                            opencv_core.Mat rawImage = converter.convert(frame);
-                            opencv_core.Mat resizeImage = new opencv_core.Mat();
-                            resize(rawImage, resizeImage, new opencv_core.Size(tinyyolowidth, tinyyoloheight));
 
-                            INDArray inputImage = loader.asMatrix(resizeImage);
-                            scaler.transform(inputImage);
-                            INDArray outputs = initializedModel.outputSingle(inputImage);
-                            List<DetectedObject> objs = YoloUtils.getPredictedObjects(Nd4j.create(((TinyYOLO) model).getPriorBoxes()), outputs, detectionThreshold, 0.4);
+            opencv_core.Mat rawImage = converter.convert(frame);
+            opencv_core.Mat resizeImage = new opencv_core.Mat();//rawImage);
+            resize(rawImage, resizeImage, new opencv_core.Size(tinyyolowidth, tinyyoloheight));
+            INDArray inputImage = loader.asMatrix(resizeImage);
+            scaler.transform(inputImage);
+            INDArray outputs = initializedModel.outputSingle(inputImage);
+            List<DetectedObject> objs = YoloUtils.getPredictedObjects(Nd4j.create(((TinyYOLO) model).getPriorBoxes()), outputs, detectionThreshold, 0.4);
 
+            for (DetectedObject obj : objs) {
+                double[] xy1 = obj.getTopLeftXY();
+                double[] xy2 = obj.getBottomRightXY();
+                String label = labels.getLabel(obj.getPredictedClass());
+                int x1 = (int) Math.round(w * xy1[0] / gridWidth);
+                int y1 = (int) Math.round(h * xy1[1] / gridHeight);
+                int x2 = (int) Math.round(w * xy2[0] / gridWidth);
+                int y2 = (int) Math.round(h * xy2[1] / gridHeight);
+                rectangle(rawImage, new opencv_core.Point(x1, y1), new opencv_core.Point(x2, y2), opencv_core.Scalar.RED, 2, 0, 0);
+                putText(rawImage, label, new opencv_core.Point(x1 + 2, y2 - 2), FONT_HERSHEY_DUPLEX, 1, opencv_core.Scalar.GREEN);
 
-                            for (DetectedObject obj : objs) {
-                                double[] xy1 = obj.getTopLeftXY();
-                                double[] xy2 = obj.getBottomRightXY();
-                                String label = labels.getLabel(obj.getPredictedClass());
-                                int x1 = (int) Math.round(w * xy1[0] / gridWidth);
-                                int y1 = (int) Math.round(h * xy1[1] / gridHeight);
-                                int x2 = (int) Math.round(w * xy2[0] / gridWidth);
-                                int y2 = (int) Math.round(h * xy2[1] / gridHeight);
-                                rectangle(rawImage, new opencv_core.Point(x1, y1), new opencv_core.Point(x2, y2), opencv_core.Scalar.RED, 2, 0, 0);
-                                putText(rawImage, label, new opencv_core.Point(x1 + 2, y2 - 2), FONT_HERSHEY_DUPLEX, 1, opencv_core.Scalar.GREEN);
-                            }
-
-                            canvas.showImage(converter.convert(rawImage));
-
-                        }
-                        catch (Exception e)
-                        {
-                            throw new RuntimeException(e);
-                        }
-                    }
-                });
-                thread.start();
             }
-
+            canvas.showImage(converter.convert(rawImage));
 
             KeyEvent t = canvas.waitKey(33);
 

@@ -60,6 +60,60 @@
     </dependencyManagement>
 
     <dependencies>
+        <dependency>
+            <groupId>org.bytedeco.javacpp-presets</groupId>
+            <artifactId>ffmpeg</artifactId>
+            <version>4.0.2-1.4.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.bytedeco.javacpp-presets</groupId>
+            <artifactId>ffmpeg</artifactId>
+            <version>4.0.2-1.4.3</version>
+            <classifier>windows-x86_64</classifier>
+        </dependency>
+
+        <dependency>
+            <groupId>org.bytedeco.javacpp-presets</groupId>
+            <artifactId>ffmpeg-platform</artifactId>
+            <version>4.0.2-1.4.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacpp</artifactId>
+            <version>1.4.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.bytedeco.javacpp-presets</groupId>
+            <artifactId>opencv</artifactId>
+            <version>3.4.3-1.4.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacv-platform</artifactId>
+            <version>1.4.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacpp</artifactId>
+            <version>1.4.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacv</artifactId>
+            <version>1.4.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.bytedeco.javacpp-presets</groupId>
+            <artifactId>opencv-platform</artifactId>
+            <version>3.4.3-1.4.3</version>
+        </dependency>
+
         <!-- ND4J backend. You need one in every DL4J project. Normally define artifactId as either "nd4j-native-platform" or "nd4j-cuda-7.5-platform" -->
         <dependency>
             <groupId>org.nd4j</groupId>
@@ -149,12 +203,6 @@
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
             <version>4.3.5</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.bytedeco</groupId>
-            <artifactId>javacpp</artifactId>
-            <version>1.4.1</version>
         </dependency>
 
     </dependencies>
