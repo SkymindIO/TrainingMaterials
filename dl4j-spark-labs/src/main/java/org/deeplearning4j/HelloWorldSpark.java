@@ -41,9 +41,9 @@ import java.util.concurrent.TimeUnit;
  *      a. as a local mode
  *
  *      Step 1: mvn clean package
- *      Step 2: /usr/local/spark/bin/spark-submit --useSparkLocal true \
- *              --class org.deeplearning4j.HelloWorldSpark \
- *              path/to/helloworldspark-bin.jar
+ *      Step 2: /usr/local/spark/bin/spark-submit --class org.deeplearning4j.HelloWorldSpark \
+ *              path/to/helloworldspark-bin.jar \
+ *              --useSparkLocal true \
  *
  *      b. as a standalone cluster
  *
@@ -188,12 +188,11 @@ public class HelloWorldSpark {
                 .meshBuildMode(MeshBuildMode.PLAIN)
                 .build();
 
+
         TrainingMaster tm = new SharedTrainingMaster.Builder(voidConfiguration, batchSizePerWorker)
                 .rngSeed(12345)
                 .collectTrainingStats(false)
-                // Minibatch size for each worker
                 .batchSizePerWorker(batchSizePerWorker)
-                //Threshold algorithm determines the encoding threshold to be use. See docs for details
                 .thresholdAlgorithm(new AdaptiveThresholdAlgorithm(this.gradientThreshold))
                 .workersPerNode(numWorkersPerNode)
                 .build();

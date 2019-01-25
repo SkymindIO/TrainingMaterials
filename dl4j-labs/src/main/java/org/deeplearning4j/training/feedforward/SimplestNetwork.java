@@ -15,10 +15,12 @@ import org.deeplearning4j.ui.storage.InMemoryStatsStorage;
 import org.nd4j.linalg.activations.Activation;
 import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.factory.Nd4j;
+import org.nd4j.linalg.io.ClassPathResource;
 import org.nd4j.linalg.learning.config.Nesterovs;
 import org.nd4j.linalg.lossfunctions.LossFunctions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 
 /**
  * Simplest Network - Predicting an output value from an input value
@@ -38,6 +40,7 @@ public class SimplestNetwork
 
     public static void main(String[] args) throws Exception
     {
+
         int seed = 123; // consistent Random Numbers needed for testing. Initial weights are randomized
         int epochs = 50; // Number of epochs(full passes of the data)
         double learningRate = 0.001; //How fast to adjust weights to minimize error
