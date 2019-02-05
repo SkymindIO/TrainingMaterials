@@ -33,20 +33,19 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
- * This example read in data from a text file, perform some analysis using Spark, and output the data.
+ * This example reads in mnist data, perform training using Spark, and output the data.
  *
  * Set up a simple spark application up and runnning with two methods below
  * Declare useSparkLocal=true for local mode or declare masterIP for standalone
  *
- *      a. as a local mode
+ *      a. as a local mode (only provide flag useSparkLocal)
  *
  *      Step 1: mvn clean package
  *      Step 2: /usr/local/spark/bin/spark-submit --class org.deeplearning4j.HelloWorldSpark \
  *              path/to/helloworldspark-bin.jar \
  *              --useSparkLocal true \
  *
- *      b. as a standalone cluster
- *
+ *      b. as a standalone cluster (provide flag masterIP) - run this on a cluster of nodes.
  *
  *      Step 1: Start a Spark master node:
  *
@@ -135,6 +134,7 @@ public class HelloWorldSpark {
                 log.error("Master IP not provided for standalone mode. Abort");
             }
 
+            //badly written. Need to change to detect two . infront and replace with .0.0/16 in the end.
             int endIndex = masterIP.length() - 4;
             networkMask = masterIP.substring(0, endIndex) + ".0.0/16";
         }
@@ -145,8 +145,8 @@ public class HelloWorldSpark {
 
         //Load the data into memory then parallelize
         //Not commonly done - but is simple to use for this example
-        DataSetIterator iterTrain = new MnistDataSetIterator(batchSizePerWorker, true, 12345);
-        DataSetIterator iterTest = new MnistDataSetIterator(batchSizePerWorker, false, 12345);
+        DataSetIterator iterTrain = new MnistDataSetIterator(batchSizePerWorker, 10000, false, true, true, (long) 12345);
+        DataSetIterator iterTest = new MnistDataSetIterator(batchSizePerWorker, 1000, false, true, false, (long) 12345);
 
         List<DataSet> trainDataList = new ArrayList<>();
         List<DataSet> testDataList = new ArrayList<>();
