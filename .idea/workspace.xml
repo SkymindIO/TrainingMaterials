@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a9e42d4-91e4-40f8-8bb5-aff52eded1cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/wei.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl4j-labs/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dl4j-labs/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl4j-labs/src/main/java/org/deeplearning4j/training/convolution/objectdetection/VideoObjectDetection.java" beforeDir="false" afterPath="$PROJECT_DIR$/dl4j-labs/src/main/java/org/deeplearning4j/training/convolution/objectdetection/VideoObjectDetection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl4j-labs/src/main/java/org/deeplearning4j/training/convolution/objectdetection/WebCamObjectDetection.java" beforeDir="false" afterPath="$PROJECT_DIR$/dl4j-labs/src/main/java/org/deeplearning4j/training/convolution/objectdetection/WebCamObjectDetection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl4j-labs/target/classes/org/deeplearning4j/training/convolution/objectdetection/VideoObjectDetection.class" beforeDir="false" afterPath="$PROJECT_DIR$/dl4j-labs/target/classes/org/deeplearning4j/training/convolution/objectdetection/VideoObjectDetection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl4j-labs/target/classes/org/deeplearning4j/training/convolution/objectdetection/WebCamObjectDetection.class" beforeDir="false" afterPath="$PROJECT_DIR$/dl4j-labs/target/classes/org/deeplearning4j/training/convolution/objectdetection/WebCamObjectDetection.class" afterDir="false" />
+    <list default="true" id="ee8d3bd6-4eec-417c-8dcc-56118eec1f60" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SKIL_mnist_inference/src/main/java/mnist_client/MnistInference.java" beforeDir="false" afterPath="$PROJECT_DIR$/SKIL_mnist_inference/src/main/java/mnist_client/MnistInference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid11356.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/keras_notebooks/python_keras_tf_sentencePredictionLSTM.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/keras_notebooks/python_keras_tf_simplestLSTM.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/keras_notebooks/python_keras_tf_simplestNetwork.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/physionet/PhysionetMultivariateTimeSeriesClassification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_keras_tf_notebook/python_keras_tf_sentencePredictionLSTM.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_keras_tf_notebook/python_keras_tf_simplestLSTM.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_keras_tf_notebook/python_keras_tf_simplestNetwork.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_dl4j_notebook/lab0_simplestNetwork.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_dl4j_notebook/lab1_mnistInference.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_dl4j_notebook/lab1_mnistTraining.json" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dl4j-labs/target/" />
+    <ignored path="$PROJECT_DIR$/SKIL_mnist_inference/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/dl4j-spark-labs/target/" />
+    <ignored path="$PROJECT_DIR$/SKIL_labs/SKIL_mnist_inference/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,45 +33,31 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="-1931096308">
+    <session id="1267077940">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="6" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="7" />
-          <entry key="txt" value="1" />
-          <entry key="xml" value="3" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="6" />
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="7" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="1428" />
-          <entry key="xml" value="32" />
+          <entry key="CLASS" value="5" />
+          <entry key="JAVA" value="5" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1428" />
-          <entry key="XML" value="32" />
+          <entry key="JAVA" value="424" />
+          <entry key="XML" value="10" />
         </counts>
       </usages-collector>
     </session>
@@ -64,56 +65,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dl4j-labs/src/main/java/org/deeplearning4j/training/convolution/objectdetection/WebCamObjectDetection.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-130">
-              <caret line="30" selection-start-line="28" selection-start-column="3" selection-end-line="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1105">
+              <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dl4j-labs/src/main/java/org/deeplearning4j/training/convolution/objectdetection/VideoObjectDetection.java">
+        <entry file="file://$PROJECT_DIR$/SKIL_mnist_inference/src/main/java/mnist_client/MnistInference.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="63" column="33" lean-forward="true" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="44">
+              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacv/1.4.3/javacv-1.4.3.jar!/org/bytedeco/javacv/OpenCVFrameConverter.class">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/nd4j/nd4j-api/0.9.1/nd4j-api-0.9.1.jar!/org/nd4j/linalg/api/ndarray/INDArray.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
-              <folding>
-                <element signature="e#9348#9349#0" expanded="true" />
-                <element signature="e#9403#9404#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dl4j-labs/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4326">
-              <caret line="206" selection-start-line="206" selection-end-line="206" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacv/1.4.3/javacv-1.4.3.jar!/org/bytedeco/javacv/FFmpegFrameGrabber.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="993" column="21" selection-start-line="993" selection-start-column="17" selection-end-line="993" selection-end-column="21" />
+            <state relative-caret-position="289">
+              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -122,14 +95,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>FFmpegFrameGrabber</find>
-      <find>javacv-</find>
-      <find>1.4.1</find>
-      <find>resizeImage</find>
-      <find>x1</find>
-      <find>depth</find>
-      <find>frame</find>
-      <find>grab</find>
+      <find>networkMask</find>
+      <find>stana</find>
+      <find>USERNAME</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,24 +106,55 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dl4j-labs/pom.xml" />
-        <option value="$PROJECT_DIR$/dl4j-labs/src/main/java/org/deeplearning4j/training/convolution/objectdetection/WebCamObjectDetection.java" />
-        <option value="$PROJECT_DIR$/dl4j-labs/src/main/java/org/deeplearning4j/training/convolution/objectdetection/VideoObjectDetection.java" />
+        <option value="$PROJECT_DIR$/dl4j-spark-labs/src/main/java/org/deeplearning4j/HelloWorldSpark.java" />
+        <option value="$PROJECT_DIR$/SKIL_labs/SKIL_mnist_inference/src/main/java/mnist_client/MnistInference.java" />
+        <option value="$PROJECT_DIR$/SKIL_labs/SKIL_mnist_inference/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/SKIL_mnist_inference/src/main/java/mnist_client/MnistInference.java" />
       </list>
     </option>
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="/usr/local/Cellar/maven/3.5.3/libexec" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-16" />
-    <option name="y" value="116" />
-    <option name="width" value="1388" />
-    <option name="height" value="624" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="1372" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Concurrency annotation issuesJava</id>
+          </State>
+          <State>
+            <id>Declaration redundancyJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>InstanceGuardedByStatic</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -163,6 +162,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -174,154 +174,48 @@
             <path>
               <item name="deeplearning4j-training-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="TrainingMaterials" type="462c0819:PsiDirectoryNode" />
-              <item name="dl4j-labs" type="462c0819:PsiDirectoryNode" />
+              <item name="SKIL_mnist_inference" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="deeplearning4j-training-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="TrainingMaterials" type="462c0819:PsiDirectoryNode" />
-              <item name="dl4j-labs" type="462c0819:PsiDirectoryNode" />
+              <item name="SKIL_mnist_inference" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="deeplearning4j-training-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="TrainingMaterials" type="462c0819:PsiDirectoryNode" />
-              <item name="dl4j-labs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="deeplearning4j-training-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrainingMaterials" type="462c0819:PsiDirectoryNode" />
-              <item name="dl4j-labs" type="462c0819:PsiDirectoryNode" />
+              <item name="SKIL_mnist_inference" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="deeplearning4j-training-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="TrainingMaterials" type="462c0819:PsiDirectoryNode" />
-              <item name="dl4j-labs" type="462c0819:PsiDirectoryNode" />
+              <item name="SKIL_mnist_inference" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="deeplearning4j" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="deeplearning4j-training-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="TrainingMaterials" type="462c0819:PsiDirectoryNode" />
-              <item name="dl4j-labs" type="462c0819:PsiDirectoryNode" />
+              <item name="SKIL_mnist_inference" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="deeplearning4j" type="462c0819:PsiDirectoryNode" />
-              <item name="solution" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="deeplearning4j-training-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrainingMaterials" type="462c0819:PsiDirectoryNode" />
-              <item name="dl4j-labs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="deeplearning4j" type="462c0819:PsiDirectoryNode" />
-              <item name="solution" type="462c0819:PsiDirectoryNode" />
-              <item name="dataexamples" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="deeplearning4j-training-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrainingMaterials" type="462c0819:PsiDirectoryNode" />
-              <item name="dl4j-labs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="deeplearning4j" type="462c0819:PsiDirectoryNode" />
-              <item name="solution" type="462c0819:PsiDirectoryNode" />
-              <item name="modelsaveload" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="deeplearning4j-training-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrainingMaterials" type="462c0819:PsiDirectoryNode" />
-              <item name="dl4j-labs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="deeplearning4j" type="462c0819:PsiDirectoryNode" />
-              <item name="solution" type="462c0819:PsiDirectoryNode" />
-              <item name="recurrent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="deeplearning4j-training-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrainingMaterials" type="462c0819:PsiDirectoryNode" />
-              <item name="dl4j-labs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="deeplearning4j" type="462c0819:PsiDirectoryNode" />
-              <item name="solution" type="462c0819:PsiDirectoryNode" />
-              <item name="recurrent" type="462c0819:PsiDirectoryNode" />
-              <item name="character" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="deeplearning4j-training-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrainingMaterials" type="462c0819:PsiDirectoryNode" />
-              <item name="dl4j-labs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="deeplearning4j" type="462c0819:PsiDirectoryNode" />
-              <item name="training" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="deeplearning4j-training-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrainingMaterials" type="462c0819:PsiDirectoryNode" />
-              <item name="dl4j-labs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="deeplearning4j" type="462c0819:PsiDirectoryNode" />
-              <item name="training" type="462c0819:PsiDirectoryNode" />
-              <item name="convolution" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="deeplearning4j-training-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrainingMaterials" type="462c0819:PsiDirectoryNode" />
-              <item name="dl4j-labs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="deeplearning4j" type="462c0819:PsiDirectoryNode" />
-              <item name="training" type="462c0819:PsiDirectoryNode" />
-              <item name="convolution" type="462c0819:PsiDirectoryNode" />
-              <item name="objectdetection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="deeplearning4j-training-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrainingMaterials" type="462c0819:PsiDirectoryNode" />
-              <item name="dl4j-labs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="deeplearning4j" type="462c0819:PsiDirectoryNode" />
-              <item name="training" type="462c0819:PsiDirectoryNode" />
-              <item name="feedforward" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="deeplearning4j-training-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrainingMaterials" type="462c0819:PsiDirectoryNode" />
-              <item name="dl4j-labs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mnist_client" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544293977597" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551114390552" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -335,64 +229,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.VideoObjectDetection">
-    <configuration name="VideoObjectDetection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.deeplearning4j.training.convolution.objectdetection.VideoObjectDetection" />
-      <module name="dl4j-labs" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.deeplearning4j.training.convolution.objectdetection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <shortenClasspath name="MANIFEST" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebCamObjectDetection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.deeplearning4j.training.convolution.objectdetection.WebCamObjectDetection" />
-      <module name="dl4j-labs" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.deeplearning4j.training.convolution.objectdetection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <shortenClasspath name="CLASSPATH_FILE" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.WebCamObjectDetection" />
-      <item itemvalue="Application.VideoObjectDetection" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.VideoObjectDetection" />
-        <item itemvalue="Application.WebCamObjectDetection" />
-      </list>
-    </recent_temporary>
+  <component name="ScalaProjectSettings">
+    <option name="addOverrideToImplementInConverter" value="false" />
+    <option name="collectionTypeHighlightingLevel" value="2" />
+    <option name="enableJavaToScalaConversion" value="false" />
+    <option name="intInjectionMapping">
+      <map>
+        <entry key="xml" value="XML" />
+      </map>
+    </option>
+    <option name="scalaPriority" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9a9e42d4-91e4-40f8-8bb5-aff52eded1cd" name="Default Changelist" comment="" />
-      <created>1544277513454</created>
+      <changelist id="ee8d3bd6-4eec-417c-8dcc-56118eec1f60" name="Default Changelist" comment="" />
+      <created>1549258650512</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1544277513454</updated>
+      <updated>1549258650512</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25755167" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13090129" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -401,16 +266,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.37191358" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.8012048" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3287037" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
@@ -419,143 +283,60 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25755167" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.37191358" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3287037" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/deeplearning4j-examples-parent.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/net/URLClassLoader.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/deeplearning4j/deeplearning4j-datasets/1.0.0-beta3/deeplearning4j-datasets-1.0.0-beta3-sources.jar!/org/deeplearning4j/datasets/iterator/impl/MnistDataSetIterator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="380" selection-start-line="380" selection-end-line="380" />
+        <state relative-caret-position="918">
+          <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar!/sun/misc/Launcher.class">
+    <entry file="file://$PROJECT_DIR$/dl4j-spark-labs/src/main/java/org/deeplearning4j/HelloWorldSpark.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="199" selection-start-line="199" selection-end-line="199" />
+        <state relative-caret-position="17">
+          <caret line="47" column="92" selection-start-line="47" selection-start-column="92" selection-end-line="47" selection-end-column="92" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/ClassLoader.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/nd4j/nd4j-parameter-server-node_2.11/1.0.0-beta3/nd4j-parameter-server-node_2.11-1.0.0-beta3.jar!/org/nd4j/parameterserver/distributed/conf/VoidConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="356" selection-start-line="356" selection-end-line="356" />
+        <state relative-caret-position="435">
+          <caret line="905" column="58" selection-start-line="905" selection-start-column="58" selection-end-line="905" selection-end-column="58" />
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/deeplearning4j/dl4j-spark-parameterserver_2.11/1.0.0-beta3_spark_2/dl4j-spark-parameterserver_2.11-1.0.0-beta3_spark_2.jar!/org/deeplearning4j/spark/parameterserver/training/SharedTrainingMaster.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="224" column="50" selection-start-line="224" selection-start-column="50" selection-end-line="224" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SKIL_labs/SKIL_mnist_inference/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/SKIL_labs/SKIL_mnist_inference/src/main/java/mnist_client/MnistInference.java" />
+    <entry file="file://$PROJECT_DIR$/SKIL_labs/SKIL_mnist_inference/src/main/java/mnist_client/auth/Authorization.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2331">
-          <caret line="114" column="18" lean-forward="true" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
+        <state relative-caret-position="1105">
+          <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/deeplearning4j/deeplearning4j-zoo/1.0.0-beta3/deeplearning4j-zoo-1.0.0-beta3.jar!/org/deeplearning4j/zoo/ZooModel.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/nd4j/nd4j-api/0.9.1/nd4j-api-0.9.1.jar!/org/nd4j/linalg/api/ndarray/INDArray.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="289">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/Thread.java">
+    <entry file="file://$PROJECT_DIR$/SKIL_mnist_inference/src/main/java/mnist_client/MnistInference.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14532">
-          <caret line="747" selection-start-line="747" selection-end-line="747" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dl4j-labs/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4326">
-          <caret line="206" selection-start-line="206" selection-end-line="206" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/awt/image/ComponentColorModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="358" selection-start-line="358" selection-end-line="358" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacv/1.4.3/javacv-1.4.3.jar!/org/bytedeco/javacv/CanvasFrame.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="404" selection-start-line="404" selection-end-line="404" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacv/1.4.3/javacv-1.4.3.jar!/org/bytedeco/javacv/OpenCVFrameConverter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
-          <folding>
-            <element signature="e#9348#9349#0" expanded="true" />
-            <element signature="e#9403#9404#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacv/1.4.3/javacv-1.4.3.jar!/org/bytedeco/javacv/FFmpegFrameGrabber.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="993" column="21" selection-start-line="993" selection-start-column="17" selection-end-line="993" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dl4j-labs/src/main/java/org/deeplearning4j/training/convolution/objectdetection/WebCamObjectDetection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-130">
-          <caret line="30" selection-start-line="28" selection-start-column="3" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dl4j-labs/src/main/java/org/deeplearning4j/training/convolution/objectdetection/VideoObjectDetection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="63" column="33" lean-forward="true" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="44">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -565,6 +346,17 @@
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

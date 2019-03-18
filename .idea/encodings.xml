@@ -2,6 +2,9 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SKIL_labs/SKIL_mnist_inference" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SKIL_mnist_inference" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dl4j-labs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dl4j-spark-labs" charset="UTF-8" />
   </component>
 </project>
